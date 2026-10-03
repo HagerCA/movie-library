@@ -14,6 +14,7 @@ node build.mjs                      # regenerate index.html, movie-library.md, l
 node enrich.mjs                     # fill posters, runtimes, Costa Rica streaming from TMDB
 node enrich.mjs --streaming         # refresh just the streaming column
 node enrich.mjs --file=suggestions.csv
+node upcoming.mjs                   # rebuild the Coming Soon tracker
 ```
 
 `enrich.mjs` needs a TMDB read token in a `.env` file. That file is not in this repo
