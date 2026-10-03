@@ -196,7 +196,10 @@ const lanes = Object.entries(laneAgg).map(([name, v]) => ({
 
 const conflicts = films.filter(f => f.f === 'conflict');
 const carried = films.filter(f => f.f === 'carry');
-const seenUnrated = films.filter(f => f.c === null && /^seen/i.test(f.s));
+// "Seen, Chris partial" means he watched part of it and has deliberately
+// declined to score it. That is a settled answer, not an outstanding task, so
+// it does not sit in the needs-a-number count forever.
+const seenUnrated = films.filter(f => f.c === null && /^seen/i.test(f.s) && !/partial/i.test(f.s));
 const enriched = films.filter(f => f.img).length;
 
 /* ---------------------------------------------------------------- markdown */
@@ -373,6 +376,7 @@ const html = `<!DOCTYPE html>
 </footer>
 </div>
 
+<div class="savestate" id="savestate" hidden></div>
 <div class="basket" id="basket" hidden></div>
 <div class="scrim" id="scrim"></div>
 <aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></aside>

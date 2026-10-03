@@ -27,6 +27,14 @@
    * those as owned would be the single most misleading thing this app could do. */
   var ADDON = /Amazon Channel$/i;
 
+  /* ------------------------------------------------------------------------
+   * LIVE SAVING. Paste the Apps Script web app URL here and every change
+   * writes straight to the Google Sheet instead of waiting for a copy-paste.
+   * Empty means the copy-for-SAGE loop stays, which always works.
+   * ---------------------------------------------------------------------- */
+  var SAVE_ENDPOINT = '';
+
+  var APP_URL = 'https://hagerca.github.io/movie-library/';
   var LS = 'hager-movie-pending-v1';
   var pending = {};
   try { pending = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) { pending = {}; }
@@ -129,6 +137,33 @@
     pending[k] = Object.assign({ title: title }, pending[k] || {}, patch);
     localStorage.setItem(LS, JSON.stringify(pending));
     paintBasket();
+    push(pending[k]);
+  }
+
+  /* With an endpoint configured, each change goes straight to the sheet. It
+   * stays in the basket until the next build confirms it, so a failed request
+   * never silently loses an edit: worst case it is still there to copy. */
+  function push(change) {
+    if (!SAVE_ENDPOINT) return;
+    var bar = $('savestate');
+    if (bar) { bar.hidden = false; bar.className = 'savestate saving'; bar.textContent = 'Saving...'; }
+    fetch(SAVE_ENDPOINT, {
+      method: 'POST', mode: 'cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(change)
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (bar) {
+        bar.className = 'savestate ' + (j && j.ok ? 'saved' : 'failed');
+        bar.textContent = j && j.ok ? 'Saved to the sheet' : 'Could not save, it is still in Review';
+        setTimeout(function () { bar.hidden = true; }, 2600);
+      }
+    }).catch(function () {
+      if (bar) {
+        bar.className = 'savestate failed';
+        bar.textContent = 'Offline. Change kept in Review.';
+        setTimeout(function () { bar.hidden = true; }, 2600);
+      }
+    });
   }
   function pendingFor(title) { return pending[key(title)] || null; }
   function countPending() { return Object.keys(pending).length; }
@@ -505,6 +540,66 @@
 
   var QUICK = [2.5, 3, 3.5, 4, 4.3, 4.5, 4.8, 5];
 
+  /* ---------------------------------------------------------------- sharing */
+  /* Everything in the drawer, as text somebody can read in WhatsApp. */
+  function shareText(d, opts) {
+    opts = opts || {};
+    var L = [];
+    L.push('\uD83C\uDFAC ' + d.t + (d.y ? ' (' + d.y + ')' : ''));
+    var rate = [];
+    if (d.c !== null && d.c !== undefined && d.c !== '') rate.push('Chris ' + Number(d.c).toFixed(1));
+    if (d.p !== null && d.p !== undefined && d.p !== '' && d.p !== d.c) rate.push('Pixie ' + Number(d.p).toFixed(1));
+    if (rate.length) L.push('\u2B50 ' + rate.join('  \u00b7  ') + ' out of 5');
+    if (opts.why) L.push('');
+    if (opts.why) L.push(opts.why);
+    if (d.ov) { L.push(''); L.push(d.ov); }
+    if (d.thread) { L.push(''); L.push('Why: ' + d.thread); }
+    if (d.sv) {
+      L.push('');
+      L.push(/^(Rent|Buy):/.test(d.sv) ? '\uD83D\uDCB3 ' + d.sv : '\u25B6\uFE0F Streaming on ' + d.sv +
+        (d.sc ? ' (Costa Rica, checked ' + d.sc + ')' : ''));
+    }
+    L.push('');
+    L.push('From the Hager Movie Library \u2192 ' + APP_URL);
+    return L.join('\n');
+  }
+
+  function shareRow(d, opts) {
+    return '<div class="sharerow">' +
+      '<button class="pbtn primary sharebtn" data-share="1">\uD83D\uDCE4 Share this</button>' +
+      '<a class="pbtn wa" target="_blank" rel="noopener" data-wa="1">WhatsApp</a>' +
+      '<button class="pbtn" data-copy="1">Copy</button>' +
+      '</div>';
+  }
+
+  function wireShare(d, opts) {
+    var txt = shareText(d, opts);
+    var box = sheetEl.querySelector('.sharerow');
+    if (!box) return;
+    var wa = box.querySelector('[data-wa]');
+    if (wa) wa.href = 'https://wa.me/?text=' + encodeURIComponent(txt);
+    var btn = box.querySelector('[data-share]');
+    // The native sheet is the good path on a phone: it offers WhatsApp,
+    // Messages, Mail, AirDrop, whatever they have. Desktop usually has none,
+    // so fall back to the clipboard rather than showing a dead button.
+    if (!navigator.share) btn.textContent = '\uD83D\uDCCB Copy to share';
+    btn.addEventListener('click', function () {
+      if (navigator.share) {
+        navigator.share({ title: d.t, text: txt }).catch(function () {});
+      } else {
+        navigator.clipboard.writeText(txt).then(function () {
+          btn.textContent = 'Copied. Paste it anywhere.'; btn.classList.add('done');
+        });
+      }
+    });
+    var cp = box.querySelector('[data-copy]');
+    cp.addEventListener('click', function () {
+      navigator.clipboard.writeText(txt).then(function () {
+        cp.textContent = 'Copied'; cp.classList.add('done');
+      });
+    });
+  }
+
   function ratePicker(who, cls, value) {
     return '<div class="picker" data-who="' + who + '">' +
       '<div class="pwho">' + who + '</div>' +
@@ -562,11 +657,13 @@
       '<div class="suggwhere" style="margin-top:4px">' + whereBadge(d.sv, d.sc) + '</div>' +
       (says ? '<div class="says">' + says + '</div>' : '') +
       (d.n ? '<div class="sysnote">' + esc(d.n) + '</div>' : '') +
+      shareRow(d) +
       '</div>';
 
     showSheet();
     $('closeX').addEventListener('click', closeSheet);
     wireEditor(d.t);
+    wireShare(d);
   }
 
   function wireEditor(title, extra) {
@@ -716,10 +813,12 @@
         '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
           ? 'Answered. Open <b>Review</b> at the bottom to send it to SAGE.'
           : 'Your answer trains the next batch.') + '</div>' +
-      '</div></div>';
+      '</div>' + shareRow(x) + '</div>';
     showSheet();
     $('closeX').addEventListener('click', closeSheet);
     wireEditor(x.t, { from: 'suggestion' });
+    wireShare({ t: x.t, y: x.y, c: null, p: null, ov: x.ov, sv: x.sv, sc: x.sc, thread: x.thread },
+      { why: 'SAGE picked this one: ' + x.why });
   }
 
   /* --------------------------------------------------------- Coming Soon */
@@ -798,10 +897,12 @@
         '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
           ? 'Noted. Open <b>Review</b> at the bottom to send it to SAGE.'
           : 'Every yes and no sharpens what gets tracked next.') + '</div>' +
-      '</div></div>';
+      '</div>' + shareRow(x) + '</div>';
     showSheet();
     $('closeX').addEventListener('click', closeSheet);
     wireEditor(x.t, { from: 'upcoming' });
+    wireShare({ t: x.t, y: x.y, c: null, p: null, ov: x.ov, sv: x.sv, sc: x.sc },
+      { why: x.status + (x.date ? ', out ' + x.date : '') + '. Tracked because of ' + x.src + '.' });
   }
 
   /* --------------------------------------------------------------- wiring */

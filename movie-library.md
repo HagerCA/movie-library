@@ -5,7 +5,7 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-03** · **398 films** · Chris has rated 364 (avg **4.26**), Pixie 367 (avg 4.25)
+Last built **2026-10-03** · **398 films** · Chris has rated 364 (avg **4.25**), Pixie 367 (avg 4.25)
 The app is `index.html` in this folder.
 
 ## The scale
@@ -72,7 +72,7 @@ The app is `index.html` in this folder.
 | Set It Up | 2018 | **3** | 3 | Date Night | Rated | Streaming-Era | Netflix | Funny rom-com, still only a 3. |
 | The Idea of You | 2024 | **3** | 3 | Date Night | Rated | Streaming-Era | Amazon Prime Video | Solid rom-com, still only a 3. |
 | Your Place or Mine | 2023 | **3** | 3 | Date Night | Rated | Streaming-Era | Netflix | Solid rom-com, still only a 3. |
-| Amélie | 2001 |  | 4.5 | Date Night | Seen, Chris partial | Whimsy |  | Watched 2026-10-03. Chris was exhausted from travel and passed out about halfway. Pixie loved it: 4.5. Chris owes it a rewatch and a number. |
+| Amélie | 2001 |  | 4.5 | Date Night | Seen, Chris partial | Whimsy |  | Watched 2026-10-03. Chris fell asleep about halfway after travelling, and declined to rate it rather than borrow Pixie’s number. Her 4.5 stands on its own. A film he did not finish honestly has no score from him, and one true gap beats one borrowed figure. |
 | An Affair to Remember | 1957 |  |  | Queue | Watchlist | Classic Canon | Disney Plus | The film When Harry Met Sally is built around. |
 | Bridget Jones: Mad About the Boy | 2025 |  |  | Queue | Watchlist | Richard Curtis | Disney Plus |  |
 | Confessions of a Shopaholic | 2009 |  |  | Queue | Watchlist | Modern Rom-com |  |  |
@@ -130,13 +130,13 @@ The app is `index.html` in this folder.
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
 | Good Will Hunting | 1997 | **5** | 5 | Date Night | Rated | Being Seen | Paramount Plus | “Definitely not a romance movie but it does have elements of the romance in it.” |
-| The Greatest Showman | 2017 | **5** | 5 | Family | Rated | Prestige | Disney Plus |  |
+| The Shawshank Redemption | 1994 | **5** | 5 | Household | Rated | Prestige | Netflix, HBO Max |  |
 | Beats, Rhymes & Life: The Travels of A Tribe Called Quest | 2011 | **4.9** | 4.9 | Solo | Rated | Documentary |  |  |
-| The Shawshank Redemption | 1994 | **4.9** | 4.9 | Household | Seen, unrated | Prestige | Netflix, HBO Max |  |
 | The Sunshine Makers | 2015 | **4.9** | 4.9 | Solo | Rated | Documentary |  |  |
 | Forrest Gump | 1994 | **4.8** | 4.8 | Household | Seen, unrated | Prestige | Paramount Plus |  |
 | Piece by Piece | 2024 | **4.8** | 4.8 | Family | Rated | Documentary | Rent: Apple TV Store, Google Play Movies | Pharrell, in Lego. |
 | Pulp Fiction | 1994 | **4.8** | 4.8 | Household | Seen, unrated | Prestige | Rent: Apple TV Store |  |
+| The Greatest Showman | 2017 | **4.8** | 4.8 | Family | Rated | Prestige | Disney Plus |  |
 | Young Woman and the Sea | 2024 | **4.6** | 4.6 | Family | Rated | Family Adventure | Disney Plus | Identified 2026-10-03: the 2024 film, Daisy Ridley as Trudy Ederle, the first woman to swim the English Channel. Chris: all of us loved it, amazing film. |
 | Everything Everywhere All at Once | 2022 | **4.5** | 4.5 | Date Night | Rated | Prestige | Amazon Prime Video, HBO Max |  |
 | Goodfellas | 1990 | **4.5** | 4.5 | Household | Seen, unrated | Prestige | HBO Max |  |
@@ -207,11 +207,10 @@ The app is `index.html` in this folder.
 
 ## ACTION-COMEDY
 
-*43 films · avg 4.52*
+*43 films · avg 4.51*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| The Adam Project | 2022 | **5** | 5 | Family | Rated | Ryan Reynolds | Netflix |  |
 | Guardians of the Galaxy Vol. 2 | 2017 | **4.9** | 4.9 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Guardians of the Galaxy Vol. 3 | 2023 | **4.9** | 4.9 | Family | Rated | Marvel | Disney Plus | Highest-rated Marvel film in the library. Rocket’s origin. |
 | Sherlock Holmes: A Game of Shadows | 2011 | **4.9** | 4.9 | Date Night | Rated | Guy Ritchie | HBO Max | Added 2026-10-03. Chris called it "Sherlock Holmes in the Shadows". Was missing from the library entirely. |
@@ -222,6 +221,7 @@ The app is `index.html` in this folder.
 | Sherlock Holmes | 2009 | **4.8** | 4.8 | Date Night | Rated | Guy Ritchie | Apple TV, HBO Max | Guy Ritchie. |
 | Spider-Man: Far From Home | 2019 | **4.8** | 4.8 | Household | Seen, unrated | Marvel | Netflix, Amazon Prime Video, Apple TV, Universal+ Amazon Channel |  |
 | Spider-Man: No Way Home | 2021 | **4.8** | 4.8 | Household | Seen, unrated | Marvel | Universal+ Amazon Channel |  |
+| The Adam Project | 2022 | **4.8** | 4.8 | Family | Rated | Ryan Reynolds | Netflix |  |
 | Thor: Ragnarok | 2017 | **4.8** | 4.8 | Family | Rated | Marvel | Disney Plus |  |
 | Captain America: Civil War | 2016 | **4.7** | 4.7 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Guardians of the Galaxy Vol. 1 | 2014 | **4.7** | 4.7 | Family | Rated | Marvel | Disney Plus | Second-highest Marvel score after Vol. 3 at 4.9. |
@@ -257,11 +257,10 @@ The app is `index.html` in this folder.
 
 ## ACTION
 
-*28 films · avg 4.36*
+*28 films · avg 4.34*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| Batman: The Dark Knight Returns | 2012 | **4.8** | 4.8 | Household | Seen, unrated | Superhero | HBO Max | Chris listed this as a documentary; it is the two-part animated film. Worth confirming which he means. |
 | Die Hard | 1988 | **4.8** | 4.8 | Household | Seen, unrated | Blockbuster | Disney Plus |  |
 | A Knight's Tale | 2001 | **4.7** | 4.7 | Family | Rated | Blockbuster | HBO Max |  |
 | Wonder Woman | 2017 | **4.7** | 4.7 | Household | Seen, unrated | Superhero | Rent: Apple TV Store, Google Play Movies |  |
@@ -281,6 +280,7 @@ The app is `index.html` in this folder.
 | The Mummy | 1999 | **4.4** | 4.4 | Household | Seen, unrated | Blockbuster | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel |  |
 | The Mummy Returns | 2001 | **4.4** | 4.4 | Household | Seen, unrated | Blockbuster | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel |  |
 | Batman v Superman: Dawn of Justice | 2016 | **4.3** | 4.3 | Household | Seen, unrated | Superhero | HBO Max |  |
+| Batman: The Dark Knight Returns | 2012 | **4.3** | 4.3 | Household | Rated | Superhero | HBO Max | Chris listed this as a documentary; it is the two-part animated film. Worth confirming which he means. |
 | Aquaman | 2018 | **4.2** | 4.2 | Household | Seen, unrated | Superhero | HBO Max, Universal+ Amazon Channel |  |
 | Argylle | 2024 | **4** | 4 | Family | Rated | Blockbuster | Apple TV |  |
 | Armageddon | 1998 | **4** | 4 | Family | Rated | Blockbuster | Disney Plus |  |
@@ -298,10 +298,10 @@ The app is `index.html` in this folder.
 |---|---|---|---|---|---|---|---|---|
 | Jaws | 1975 | **5** | 5 | Household | Seen, unrated | Spielberg | HBO Max |  |
 | The Princess Bride | 1987 | **5** | 5 | Family | Rated | 80s Nostalgia | Rent: Apple TV Store |  |
-| The Sandlot | 1993 | **5** | 4.8 | Family | Rated | 80s Nostalgia | Disney Plus |  |
 | E.T. the Extra-Terrestrial | 1982 | **4.9** | 4.9 | Household | Seen, unrated | Spielberg | HBO Max |  |
 | Indiana Jones and the Last Crusade | 1989 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | Saving Private Ryan | 1998 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus, VIX , ViX Premium Amazon Channel |  |
+| The Sandlot | 1993 | **4.8** | 4.8 | Family | Rated | 80s Nostalgia | Disney Plus |  |
 | Harry Potter (complete series, 8 films) |  | **4.7** † | 4.7 | Household | Seen, unrated | Wizarding World |  | Chris: "one through seven, all of them were great." Collapsed to one row; say the word and I will split it into eight. |
 | The Lord of the Rings: The Fellowship of the Ring | 2001 | **4.7** † | 4.7 | Household | Seen, unrated | Middle-earth | Netflix, Disney Plus, HBO Max | Chris listed "The Lord of the Rings"; read as the first film. |
 | Catch Me If You Can | 2002 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
@@ -337,11 +337,10 @@ The app is `index.html` in this folder.
 
 ## SCI-FI
 
-*37 films · avg 4.50*
+*37 films · avg 4.49*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| Interstellar | 2014 | **5** | 5 | Family | Rated | Space & Science | Amazon Prime Video, HBO Max | Confirmed 2026-10-03: 5, watched with the boys, "slightly over their heads" and they still enjoyed it. An earlier pass in the thread said 4.5. |
 | Rogue One: A Star Wars Story | 2016 | **4.9** | 4.9 | Family | Rated | Star Wars | Disney Plus |  |
 | Star Wars: Episode V - The Empire Strikes Back | 1980 | **4.9** | 4.9 | Family | Rated | Star Wars | Disney Plus |  |
 | The Fifth Element | 1997 | **4.9** | 4.9 | Household | Seen, unrated | Sci-fi Canon |  |  |
@@ -349,6 +348,7 @@ The app is `index.html` in this folder.
 | Dune | 2021 | **4.8** | 4.8 | Household | Seen, unrated | Sci-fi Canon | HBO Max, Universal+ Amazon Channel |  |
 | Edge of Tomorrow | 2014 | **4.8** | 4.8 | Household | Rated | Time & Second Chances | Netflix, Amazon Prime Video, HBO Max | Was recorded as unseen; Chris rated it 2026-10-03, so the library had it wrong. |
 | Inception | 2010 | **4.8** | 4.8 | Date Night | Rated | Mind-Bender | HBO Max |  |
+| Interstellar | 2014 | **4.8** | 4.8 | Family | Rated | Space & Science | Amazon Prime Video, HBO Max | Confirmed 2026-10-03: 5, watched with the boys, "slightly over their heads" and they still enjoyed it. An earlier pass in the thread said 4.5. |
 | Project Hail Mary | 2026 | **4.8** | 4.8 | Queue | Rated | Space & Science | Amazon Prime Video | Loves the book. Film in theatres. Listed among films he loves, which is the book talking. Was on the queue as unseen. Rated in the sheet 2026-10-03, so it has been watched. |
 | The Martian | 2015 | **4.8** | 4.8 | Family | Rated | Space & Science | Disney Plus | “That movie was fantastic. The boys really loved it.” The gateway film. |
 | Avatar: The Way of Water | 2022 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | Disney Plus |  |
@@ -385,12 +385,12 @@ The app is `index.html` in this folder.
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| Puss in Boots: The Last Wish | 2022 | **5** | 5 | Family | Rated | Animated Family | Universal+ Amazon Channel |  |
 | Soul | 2020 | **5** | 5 | Family | Rated | Animated Family | Disney Plus |  |
-| The Iron Giant | 1999 | **5** | 5 | Family | Rated | Choose Who You Are | Rent: Apple TV Store, Google Play Movies | “You are who you choose to be.” |
+| Puss in Boots: The Last Wish | 2022 | **4.9** | 4.9 | Family | Rated | Animated Family | Universal+ Amazon Channel |  |
 | Encanto | 2021 | **4.8** | 4.8 | Family | Rated | Animated Family | Disney Plus |  |
 | Paddington 2 | 2017 | **4.8** | 4.8 | Family | Rated | Animated Family | Amazon Prime Video, Universal+ Amazon Channel |  |
 | The Boy, the Mole, the Fox and the Horse | 2022 | **4.8** | 4.8 | Family | Rated | Animated Family | Apple TV |  |
+| The Iron Giant | 1999 | **4.8** | 4.8 | Family | Rated | Choose Who You Are | Rent: Apple TV Store, Google Play Movies | “You are who you choose to be.” |
 | Up | 2009 | **4.8** | 4.8 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Charlie and the Chocolate Factory | 2005 | **4.7** | 4.7 | Household | Seen, unrated | Animated Family | Netflix, HBO Max |  |
 | Paddington | 2014 | **4.7** | 4.7 | Family | Rated | Animated Family | Rent: Apple TV Store, Google Play Movies |  |
@@ -510,8 +510,6 @@ The app is `index.html` in this folder.
 
 **3 unconfirmed second-hand ratings:** Flight of the Navigator, Harry Potter (complete series, 8 films), The Lord of the Rings: The Fellowship of the Ring.
 
-**1 watched but never rated.**
-
 **TMDB enrichment: 396 of 398 films have a poster.**
 
 ---
@@ -521,11 +519,11 @@ The app is `index.html` in this folder.
 | Lane | Films | Rated | Avg |
 |---|---|---|---|
 | Being Seen | 1 | 1 | 5.00 |
-| Choose Who You Are | 1 | 1 | 5.00 |
-| Ryan Reynolds | 2 | 2 | 4.75 |
+| Choose Who You Are | 1 | 1 | 4.80 |
 | Guy Ritchie | 6 | 5 | 4.74 |
 | Spielberg | 8 | 8 | 4.72 |
 | Mind-Bender | 6 | 2 | 4.70 |
+| Ryan Reynolds | 2 | 2 | 4.65 |
 | Documentary | 5 | 5 | 4.60 |
 | Wizarding World | 3 | 3 | 4.60 |
 | Middle-earth | 2 | 2 | 4.60 |
@@ -536,16 +534,16 @@ The app is `index.html` in this folder.
 | Shane Black | 2 | 1 | 4.50 |
 | Action | 1 | 1 | 4.50 |
 | Irish Lane | 7 | 3 | 4.47 |
-| Space & Science | 7 | 7 | 4.44 |
-| Prestige | 14 | 14 | 4.43 |
+| Prestige | 14 | 14 | 4.42 |
+| Space & Science | 7 | 7 | 4.41 |
 | Blockbuster | 21 | 21 | 4.36 |
 | Time & Second Chances | 8 | 5 | 4.34 |
-| Superhero | 6 | 6 | 4.33 |
 | Love That Costs | 12 | 10 | 4.32 |
 | Unsorted | 15 | 15 | 4.32 |
 | Christmas | 14 | 14 | 4.31 |
 | Richard Curtis | 4 | 3 | 4.30 |
 | Classic Canon | 13 | 10 | 4.28 |
+| Superhero | 6 | 6 | 4.25 |
 | Austen | 5 | 2 | 4.25 |
 | Frat Pack | 24 | 24 | 4.22 |
 | Animated Family | 88 | 86 | 4.16 |
@@ -554,7 +552,7 @@ The app is `index.html` in this folder.
 | Cornetto | 3 | 3 | 4.00 |
 | Rebuild & Relocate | 1 | 1 | 4.00 |
 | Family Adventure | 9 | 8 | 3.84 |
-| 80s Nostalgia | 12 | 12 | 3.83 |
+| 80s Nostalgia | 12 | 12 | 3.82 |
 | Modern Rom-com | 23 | 19 | 3.77 |
 | Whodunnit | 2 | 2 | 3.75 |
 | Kid Sport | 7 | 7 | 3.36 |
@@ -567,10 +565,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-03
 
-- **398 films.** Rated 227 · Seen, unrated 139 · Watchlist 26 · Owned, unwatched 3 · Seen, Chris partial 1 · Not released 1 · Not watching 1
-- **Chris 364 rated, avg 4.26. Pixie 367 rated, avg 4.25.**
+- **398 films.** Rated 229 · Seen, unrated 137 · Watchlist 26 · Owned, unwatched 3 · Seen, Chris partial 1 · Not released 1 · Not watching 1
+- **Chris 364 rated, avg 4.25. Pixie 367 rated, avg 4.25.**
 - Rewatches (4.0+): **312** · enjoyed once (3.5): 35 · below: 17
-- Where they differ: **1** (The Sandlot)
-- Spread: 5.0 (13) · 4.9 (14) · 4.8 (27) · 4.7 (17) · 4.6 (21) · 4.5 (71) · 4.4 (14) · 4.3 (22) · 4.2 (22) · 4.1 (7) · 4.0 (84) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (23) · 3.0 (15) · 2.5 (2)
+- Where they differ: **0**, her column is still seeded from his
+- Spread: 5.0 (8) · 4.9 (14) · 4.8 (31) · 4.7 (17) · 4.6 (21) · 4.5 (71) · 4.4 (14) · 4.3 (23) · 4.2 (22) · 4.1 (7) · 4.0 (84) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (23) · 3.0 (15) · 2.5 (2)
 - Context: Household 142 · Family 125 · Date Night 81 · Queue 38 · Solo 12
 - Retired rows kept in the CSV but hidden: 5

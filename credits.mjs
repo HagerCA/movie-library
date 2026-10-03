@@ -87,7 +87,7 @@ await Promise.all(Array.from({ length: 6 }, async () => {
     if (done % 50 === 0) console.log('  ... ' + done + '/' + todo.length);
     if (!d) continue;
     cache[f.id] = {
-      cast: (d.cast || []).slice(0, 12).map(c => ({ id: c.id, n: c.name, g: c.gender, o: c.order })),
+      cast: (d.cast || []).slice(0, 15).map(c => ({ id: c.id, n: c.name, g: c.gender, o: c.order })),
       crew: (d.crew || []).filter(c => /^(Director|Writer|Screenplay|Original Music Composer)$/.test(c.job))
         .map(c => ({ id: c.id, n: c.name, j: c.job, g: c.gender }))
     };
@@ -98,6 +98,16 @@ console.log('credits cached. ' + calls + ' API calls.');
 
 /* ------------------------------------------------------------- the ranking */
 
+/* Chris, 2026-10-03: "let's go with people who have leading roles, being like
+ * 2x for those in supporting roles. I want the supporting roles in there for
+ * sure but I'm really looking for the leading man, the leading ladies."
+ *
+ * His example was exact. Vin Diesel topped the actors on three words as Groot,
+ * which is not a relationship with an actor. TMDB billing order is the honest
+ * proxy: top three billed counts double, everyone else counts once, so a lead
+ * across nine films outranks a voice cameo across five.
+ *
+ * Crew have no billing order, so they always weigh 1 and `lead` stays false. */
 function collect(pick) {
   const by = {};
   for (const f of films) {
@@ -106,8 +116,9 @@ function collect(pick) {
     for (const p of pick(cr)) {
       if (seen.has(p.id)) continue;      // one credit per person per film
       seen.add(p.id);
+      const lead = p.o !== undefined && p.o <= 2;
       const e = by[p.id] = by[p.id] || { id: p.id, name: p.n, g: p.g, films: [] };
-      e.films.push({ t: f.t, r: f.c });
+      e.films.push({ t: f.t, r: f.c, w: lead ? 3 : 1, lead: lead, crew: p.o === undefined });
     }
   }
   return by;
@@ -119,8 +130,12 @@ function collect(pick) {
 const K = 4;
 function score(e) {
   const n = e.films.length;
+  const leads = e.films.filter(f => f.lead).length;
+  // Weight by billing: a lead carries twice the evidence of a supporting part.
+  const W = e.films.reduce((s, f) => s + f.w, 0);
   const avg = e.films.reduce((s, f) => s + f.r, 0) / n;
-  return { n, avg, weighted: (avg * n + MEAN * K) / (n + K) };
+  const wavg = e.films.reduce((s, f) => s + f.r * f.w, 0) / W;
+  return { n, leads, W, avg, wavg, weighted: (wavg * W + MEAN * K) / (W + K) };
 }
 
 function rank(by, minFilms, filter) {
@@ -130,9 +145,11 @@ function rank(by, minFilms, filter) {
     .filter(e => !filter || filter(e))
     .sort((a, b) => b.weighted - a.weighted || b.n - a.n)
     .map(e => ({
-      name: e.name, n: e.n, avg: Number(e.avg.toFixed(2)),
+      name: e.name, n: e.n, leads: e.leads,
+      avg: Number(e.avg.toFixed(2)), wavg: Number(e.wavg.toFixed(2)),
       weighted: Number(e.weighted.toFixed(3)),
-      top: e.films.sort((a, b) => b.r - a.r).slice(0, 4).map(f => f.t + ' ' + f.r.toFixed(1))
+      top: e.films.sort((a, b) => (b.lead - a.lead) || (b.r - a.r)).slice(0, 4)
+        .map(f => f.t + ' ' + f.r.toFixed(1) + (f.crew || f.lead ? '' : ' (supporting)'))
     }));
 }
 
@@ -148,8 +165,12 @@ const favorites = {
   mean: Number(MEAN.toFixed(3)),
   directors: rank(directors, 2).slice(0, 12),
   writers:   rank(writers, 2).slice(0, 10),
-  actors:    rank(actors, 3, e => e.g === 2).slice(0, 12),
-  actresses: rank(actors, 3, e => e.g === 1).slice(0, 12),
+  // Two leading roles minimum. One lead plus four cameos is not somebody you
+  // follow, it is somebody who keeps turning up. Vin Diesel topped this list on
+  // The Iron Giant plus four Groot credits, which was Chris's exact objection.
+  // He stays visible under Most Appearances, where that fact belongs.
+  actors:    rank(actors, 3, e => e.g === 2 && e.leads >= 2).slice(0, 12),
+  actresses: rank(actors, 3, e => e.g === 1 && e.leads >= 2).slice(0, 12),
   composers: rank(composers, 3).slice(0, 8),
   prolific:  rank(actors, 1).sort((a, b) => b.n - a.n).slice(0, 10)
 };
@@ -175,8 +196,9 @@ fs.writeFileSync(OUT, JSON.stringify(favorites, null, 1), 'utf8');
 const show = (label, list) => {
   console.log('\n=== ' + label + ' ===');
   list.slice(0, 8).forEach((e, i) =>
-    console.log('  ' + (i + 1) + '. ' + e.name.padEnd(26) + e.n + ' films, avg ' +
-      e.avg.toFixed(2) + (e.top ? '   ' + e.top.slice(0, 2).join(', ') : '')));
+    console.log('  ' + (i + 1) + '. ' + e.name.padEnd(24) + String(e.n).padStart(2) + ' films' +
+      (e.leads !== undefined ? ', ' + e.leads + ' leading' : '') +
+      ', avg ' + e.avg.toFixed(2) + (e.top ? '   ' + e.top.slice(0, 2).join(', ') : '')));
 };
 show('DIRECTORS', favorites.directors);
 show('ACTORS', favorites.actors);
