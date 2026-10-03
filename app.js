@@ -14,6 +14,19 @@
 (function () {
   'use strict';
 
+  /* ------------------------------------------------------------------------
+   * WHAT THE HAGERS ACTUALLY PAY FOR. Edit this one line when that changes.
+   * Chris, 2026-10-03: "we have Disney+, Amazon Prime, Netflix, and Apple TV.
+   * We do not have anything else."
+   * ---------------------------------------------------------------------- */
+  var SUBSCRIPTIONS = ['Netflix', 'Amazon Prime Video', 'Disney Plus', 'Apple TV', 'Apple TV+'];
+
+  /* Amazon "Channels" are paid add-ons sold on top of Prime, not included with
+   * it. Universal+ alone covers 57 films in this library, and every one of them
+   * looks like Amazon while being something they would have to buy. Treating
+   * those as owned would be the single most misleading thing this app could do. */
+  var ADDON = /Amazon Channel$/i;
+
   var LS = 'hager-movie-pending-v1';
   var pending = {};
   try { pending = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) { pending = {}; }
@@ -25,6 +38,31 @@
   };
   var num = function (v) { return v === null || v === undefined || v === '' ? null : Number(v).toFixed(1); };
   var $ = function (id) { return document.getElementById(id); };
+
+  /* Green: on something they pay for. Amber: rentable. Red: needs a service
+   * they do not have. Grey: not available in Costa Rica at all. */
+  function classify(sv) {
+    if (!sv) return { k: 'none', cls: 'swNone', label: 'Not available in Costa Rica', short: 'not here' };
+    if (/^(Rent|Buy):/i.test(sv)) {
+      return { k: 'rent', cls: 'swRent', label: sv.replace(/^Rent: /, 'Rent from '),
+               short: 'rent' };
+    }
+    var all = sv.split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+    var mine = all.filter(function (x) { return SUBSCRIPTIONS.indexOf(x) > -1; });
+    if (mine.length) {
+      return { k: 'have', cls: 'swHave', label: mine.join(', '), short: mine[0],
+               note: 'You pay for this already.' };
+    }
+    var addons = all.filter(function (x) { return ADDON.test(x); });
+    return {
+      k: 'need', cls: 'swNeed',
+      label: all.join(' or '),
+      short: all[0],
+      note: addons.length
+        ? 'These are paid Amazon add-ons, not included with Prime.'
+        : 'You do not have this service.'
+    };
+  }
 
   /* A stable colour per title, so a film with no poster still looks deliberate. */
   function hue(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) % 360; return h; }
@@ -125,7 +163,7 @@
     { k: 'best',    label: 'The 5s',              fn: function (f) { return f.c !== null && f.c >= 4.9; } },
     { k: 'need',    label: 'Seen, Needs a Number', fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
     { k: 'xmas',    label: 'Christmas',           fn: function (f) { return f.l === 'Christmas'; } },
-    { k: 'stream',  label: 'On a Subscription',   fn: function (f) { return !!f.sv && !/^(Rent|Buy):/.test(f.sv); } },
+    { k: 'stream',  label: '\u2705 Watch Tonight',  fn: function (f) { return classify(f.sv).k === 'have'; } },
     { k: 'sagg',    label: '✨ SAGE Suggests', special: true },
     { k: 'soon',    label: '🎬 Coming Soon', special: true }
   ];
@@ -169,9 +207,12 @@
     return Object.keys(s).sort();
   })();
   $('fw').innerHTML = '<option value="">Anywhere</option>' +
-    services.map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('') +
-    '<option value="__rent">Rent or buy only</option>' +
-    '<option value="__none">Not streaming in Costa Rica</option>';
+    '<option value="__have">\u2705 On a service we have</option>' +
+    '<option value="__rent">\uD83D\uDCB3 Rent or buy</option>' +
+    '<option value="__need">\u274C Service we do not have</option>' +
+    '<option value="__none">Not available in Costa Rica</option>' +
+    '<option disabled>\u2500\u2500 by service \u2500\u2500</option>' +
+    services.map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('');
 
   function current() {
     var q = $('q').value.toLowerCase().trim();
@@ -183,8 +224,8 @@
         (!q || (d.t + ' ' + d.l + ' ' + d.g + ' ' + d.n + ' ' + d.cs + ' ' + d.ps + ' ' + d.bs)
           .toLowerCase().indexOf(q) > -1) &&
         (!r || (r === 'u' ? d.c === null : d.c !== null && d.c >= parseFloat(r))) &&
-        (!w || (w === '__none' ? !d.sv
-              : w === '__rent' ? (!!d.sv && /^(Rent|Buy):/.test(d.sv))
+        (!w || (w.slice(0, 2) === '__'
+              ? classify(d.sv).k === w.slice(2)
               : (!!d.sv && !/^(Rent|Buy):/.test(d.sv) &&
                  d.sv.split(',').map(function (x) { return x.trim(); }).indexOf(w) > -1)));
     });
@@ -225,8 +266,8 @@
         '<div class="meta"><div class="nm">' + esc(d.t) + '</div><div class="sub">' +
         (d.y ? '<span>' + d.y + '</span><span class="dot"></span>' : '') +
         '<span>' + esc(d.g) + '</span>' +
-        (d.sv ? '<span class="dot"></span><span class="stream">' +
-          esc(d.sv.replace(/^Rent: /, '$').split(/[,;]/)[0]) + '</span>' : '') +
+        '<span class="dot"></span><span class="stream ' + classify(d.sv).cls + '">' +
+          esc(classify(d.sv).short) + '</span>' +
         '</div></div></button>';
     }).join('');
     $('empty').hidden = list.length > 0;
@@ -305,7 +346,8 @@
           : 'Changes are held on this device until you hand them to SAGE.') + '</div>' +
       '</div>' +
       '<div class="rows">' + row('Watched with', d.w) + row('Status', d.s) + row('Lane', d.l) +
-        row('Streaming', d.sv ? d.sv + (d.sc ? ' (checked ' + d.sc + ')' : '') : '') + '</div>' +
+        '</div>' +
+      '<div class="suggwhere" style="margin-top:4px">' + whereBadge(d.sv, d.sc) + '</div>' +
       (says ? '<div class="says">' + says + '</div>' : '') +
       (d.n ? '<div class="sysnote">' + esc(d.n) + '</div>' : '') +
       '</div>';
@@ -388,9 +430,9 @@
   var audience = 'All of it';
 
   function whereBadge(sv, sc) {
-    if (!sv) return '<span class="nobadge">Not streaming in Costa Rica</span>';
-    var cls = /^(Rent|Buy):/.test(sv) ? 'rentbadge' : 'streambadge';
-    return '<span class="' + cls + '">' + esc(sv) + '</span>' +
+    var c = classify(sv);
+    return '<span class="swbadge ' + c.cls + '">' + esc(c.label) + '</span>' +
+      (c.note ? '<span class="swnote">' + esc(c.note) + '</span>' : '') +
       (sc ? '<span class="checked">checked ' + esc(sc) + '</span>' : '');
   }
 

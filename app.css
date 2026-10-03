@@ -221,3 +221,26 @@
   .forwho.statnow{color:var(--green);border-color:#2f6b4c}
   .forwho.statsoon{color:var(--gold);border-color:var(--gold2)}
   .forwho.statwait{color:var(--fg3);border-color:var(--line)}
+
+  /* ---------- streaming traffic lights ---------- */
+  /* Green: on something they pay for. Amber: rentable. Red: a service they do
+     not have, including Amazon Channels, which are add-ons on top of Prime.
+     Grey: not available in Costa Rica at all. */
+  .stream.swHave{color:var(--green)}
+  .stream.swRent{color:var(--gold)}
+  .stream.swNeed{color:var(--rose)}
+  .stream.swNone{color:var(--fg3)}
+  .stream.swHave:before,.stream.swRent:before,
+  .stream.swNeed:before,.stream.swNone:before{
+    content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+    margin-right:5px;vertical-align:1px;background:currentColor}
+
+  .swbadge{font-size:11.5px;font-weight:650;padding:4px 10px;border-radius:7px;
+    display:inline-flex;align-items:center;gap:6px}
+  .swbadge:before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+  .swbadge.swHave{background:rgba(95,177,131,.14);color:var(--green);border:1px solid #2f6b4c}
+  .swbadge.swRent{background:rgba(224,178,83,.12);color:var(--gold);border:1px solid var(--gold2)}
+  .swbadge.swNeed{background:rgba(224,113,74,.12);color:var(--rose);border:1px solid #6b3326}
+  .swbadge.swNone{background:var(--bg3);color:var(--fg3);border:1px solid var(--line)}
+  .swnote{font-size:11px;color:var(--fg3);line-height:1.4}
+  .suggwhere{align-items:center}

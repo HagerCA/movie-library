@@ -151,7 +151,10 @@ if (fs.existsSync(UP_CSV)) {
     status: u(r, 'Status'), sv: u(r, 'Streaming'), sc: u(r, 'Streaming Checked'),
     img: u(r, 'Poster'), rt: Number(u(r, 'Runtime')) || null, ov: u(r, 'Overview'),
     interest: u(r, 'Interest')
-  })).filter(x => x.t);
+  })).filter(x => x.t)
+    // A tracked film that got watched now lives in the library. Keep the row in
+    // upcoming.csv as the record, but stop showing it in Coming Soon.
+    .filter(x => !/moved to the library/i.test(x.status));
 }
 
 /* ------------------------------------------------------------------- stats */
