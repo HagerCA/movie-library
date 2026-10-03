@@ -157,3 +157,67 @@
     .suggart{flex:0 0 72px}
     .suggtop{flex-direction:column;gap:5px}
   }
+
+  /* ---------- editing: the change basket ---------- */
+  .basket{position:fixed;z-index:70;bottom:16px;left:50%;transform:translateX(-50%);
+    display:flex;align-items:center;gap:11px;background:var(--gold);color:#14110a;
+    border-radius:999px;padding:9px 11px 9px 14px;box-shadow:0 8px 30px rgba(0,0,0,.5);
+    font-size:13.5px;font-weight:600;max-width:calc(100vw - 32px)}
+  .basket .bcount{background:#14110a;color:var(--gold);border-radius:999px;
+    min-width:22px;height:22px;display:grid;place-items:center;font-size:12px;font-weight:700;padding:0 6px}
+  .basket .btext{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .basket .bbtn{background:#14110a;color:var(--gold);border:0;border-radius:999px;
+    padding:7px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+  .basket .bbtn:hover{background:#000}
+  .basketpre{background:var(--bg3);border:1px solid var(--line);border-radius:10px;
+    padding:12px;font-size:12px;line-height:1.6;overflow-x:auto;white-space:pre-wrap;
+    word-break:break-word;color:var(--fg);max-height:42vh;overflow-y:auto;margin:14px 0 0}
+  .bnote{color:var(--fg2);font-size:13px;margin:14px 0 0;line-height:1.55}
+  .brow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+  /* ---------- editing: controls inside the drawer ---------- */
+  .editbox{margin-top:20px;background:var(--bg3);border:1px solid var(--line);
+    border-radius:12px;padding:14px}
+  .editbox .eh{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;
+    color:var(--fg3);font-weight:650;margin:4px 0 8px}
+  .editbox .eh:not(:first-child){margin-top:16px}
+  .picker{margin-bottom:10px}
+  .picker .pwho{font-size:12px;color:var(--fg2);margin-bottom:5px;font-weight:600}
+  .pchips{display:flex;flex-wrap:wrap;gap:5px}
+  .pc{background:var(--bg2);border:1px solid var(--line);color:var(--fg2);border-radius:8px;
+    padding:7px 10px;font:inherit;font-size:13px;cursor:pointer;min-width:46px;transition:.12s}
+  .pc:hover{border-color:var(--gold2);color:var(--fg)}
+  .pc.on{background:var(--gold);border-color:var(--gold);color:#14110a;font-weight:700}
+  .pfree{margin-top:6px}
+  .pnum{width:100%;background:var(--bg2);color:var(--fg);border:1px solid var(--line);
+    border-radius:8px;padding:8px 10px;font:inherit;font-size:13px}
+  .actions{display:flex;flex-wrap:wrap;gap:6px}
+  .pbtn{background:var(--bg2);border:1px solid var(--line);color:var(--fg2);border-radius:9px;
+    padding:9px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
+  .pbtn:hover{border-color:var(--gold2);color:var(--fg)}
+  .pbtn.on{background:var(--gold);border-color:var(--gold);color:#14110a}
+  .pbtn.primary{background:var(--gold);border-color:var(--gold);color:#14110a}
+  .pbtn.primary:hover{filter:brightness(1.08)}
+  .pbtn.primary.done{background:var(--green);border-color:var(--green);color:#07130d}
+  .pbtn.danger{color:var(--rose);border-color:#6b3326}
+  .pbtn.danger:hover{background:rgba(224,113,74,.12)}
+  .pbtn.danger.on{background:var(--rose);border-color:var(--rose);color:#1a0b06}
+  .tsay{width:100%;background:var(--bg2);color:var(--fg);border:1px solid var(--line);
+    border-radius:9px;padding:9px 11px;font:inherit;font-size:13px;margin-bottom:7px;resize:vertical}
+  .tsay::placeholder{color:var(--fg3)}
+  .ehint{font-size:12px;color:var(--fg3);margin-top:8px;line-height:1.5}
+  .ehint b{color:var(--gold)}
+  .ov{color:var(--fg2);font-size:13.5px;margin:14px 0 0;line-height:1.55}
+
+  /* ---------- edited markers ---------- */
+  .card.edited{border-color:var(--gold2)}
+  .editdot{position:absolute;bottom:7px;right:8px;z-index:3;color:var(--gold);
+    font-size:15px;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+  .sugg.edited{border-color:var(--gold2);background:linear-gradient(90deg,rgba(224,178,83,.05),transparent 40%)}
+  .pendflag{color:var(--gold);font-weight:650}
+  .art .phbg{position:absolute;inset:0}
+
+  /* ---------- Coming Soon status pills ---------- */
+  .forwho.statnow{color:var(--green);border-color:#2f6b4c}
+  .forwho.statsoon{color:var(--gold);border-color:var(--gold2)}
+  .forwho.statwait{color:var(--fg3);border-color:var(--line)}

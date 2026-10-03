@@ -1,0 +1,563 @@
+/* The Hager Movie Library — app logic.
+ *
+ * SOURCE FILE. Hand-written, committed, and never generated. build.mjs only
+ * writes index.html (the shell plus the inlined data) and leaves this alone,
+ * so it is safe to edit directly.
+ *
+ * DATA, SUGG and UPCOMING are inlined into index.html by the build, so this
+ * page makes no network request of any kind and works offline.
+ *
+ * Edits are held in localStorage and handed back to SAGE as text. This is a
+ * staging basket, not a live database: nothing on GitHub Pages can accept a
+ * write, so "Copy for SAGE" is the save button.
+ */
+(function () {
+  'use strict';
+
+  var LS = 'hager-movie-pending-v1';
+  var pending = {};
+  try { pending = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) { pending = {}; }
+
+  var esc = function (s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  };
+  var num = function (v) { return v === null || v === undefined || v === '' ? null : Number(v).toFixed(1); };
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* A stable colour per title, so a film with no poster still looks deliberate. */
+  function hue(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) % 360; return h; }
+  function art(d) {
+    if (d.img) return '<img src="' + esc(d.img) + '" alt="" loading="lazy">';
+    var h = hue(d.t);
+    return '<div class="phbg" style="background:linear-gradient(155deg,hsl(' + h +
+      ' 42% 26%),hsl(' + ((h + 42) % 360) + ' 38% 13%))"></div><div class="ph">' + esc(d.t) + '</div>';
+  }
+
+  /* ---------------------------------------------------------- pending edits */
+
+  function key(title) { return title; }
+  function edit(title, patch) {
+    var k = key(title);
+    pending[k] = Object.assign({ title: title }, pending[k] || {}, patch);
+    localStorage.setItem(LS, JSON.stringify(pending));
+    paintBasket();
+  }
+  function pendingFor(title) { return pending[key(title)] || null; }
+  function countPending() { return Object.keys(pending).length; }
+
+  function paintBasket() {
+    var n = countPending();
+    var bar = $('basket');
+    if (!n) { bar.hidden = true; return; }
+    bar.hidden = false;
+    bar.innerHTML = '<span class="bcount">' + n + '</span>' +
+      '<span class="btext">' + (n === 1 ? 'change' : 'changes') + ' not saved yet </span>' +
+      '<button class="bbtn" id="bopen">Review</button>';
+    $('bopen').addEventListener('click', openBasket);
+  }
+
+  /* The format SAGE parses. Readable to a human, trivial to apply. */
+  function basketText() {
+    var lines = ['MOVIE LIBRARY CHANGES ' + new Date().toISOString().slice(0, 10)];
+    Object.keys(pending).forEach(function (k) {
+      var p = pending[k], bits = [p.title];
+      if (p.chris !== undefined && p.chris !== '') bits.push('Chris ' + p.chris);
+      if (p.pixie !== undefined && p.pixie !== '') bits.push('Pixie ' + p.pixie);
+      if (p.status) bits.push(p.status);
+      if (p.context) bits.push('watched with ' + p.context);
+      if (p.interest) bits.push('interest ' + p.interest);
+      if (p.chrisSays) bits.push('Chris says: ' + p.chrisSays);
+      if (p.pixieSays) bits.push('Pixie says: ' + p.pixieSays);
+      if (p.boysSay) bits.push('Boys say: ' + p.boysSay);
+      lines.push(bits.join(' | '));
+    });
+    return lines.join('\n');
+  }
+
+  function openBasket() {
+    var txt = basketText();
+    sheetEl.innerHTML =
+      '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
+      '<h2 id="sheetTitle">' + countPending() + ' unsaved ' + (countPending() === 1 ? 'change' : 'changes') + '</h2>' +
+      '<div class="yr">Nothing here has reached the library yet.</div></div>' +
+      '<div class="bd">' +
+      '<p class="bnote">This page is served as static files, so it cannot write to the library by itself. ' +
+      'Copy these lines, paste them to SAGE in chat, and they go into the real file and get rebuilt. ' +
+      'Your edits stay on this device until you do.</p>' +
+      '<pre class="basketpre">' + esc(txt) + '</pre>' +
+      '<div class="brow">' +
+      '<button class="pbtn primary" id="copyAll">Copy for SAGE</button>' +
+      '<button class="pbtn" id="dlAll">Download .txt</button>' +
+      '<button class="pbtn danger" id="clearAll">Discard all</button>' +
+      '</div></div>';
+    showSheet();
+    $('closeX').addEventListener('click', closeSheet);
+    $('copyAll').addEventListener('click', function () {
+      var b = this;
+      navigator.clipboard.writeText(txt).then(function () {
+        b.textContent = 'Copied. Now paste it to SAGE.';
+        b.classList.add('done');
+      }, function () {
+        b.textContent = 'Could not copy. Select the text above instead.';
+      });
+    });
+    $('dlAll').addEventListener('click', function () {
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([txt], { type: 'text/plain' }));
+      a.download = 'movie-changes-' + new Date().toISOString().slice(0, 10) + '.txt';
+      a.click();
+    });
+    $('clearAll').addEventListener('click', function () {
+      if (!confirm('Discard all ' + countPending() + ' unsaved changes? They have not reached the library.')) return;
+      pending = {}; localStorage.removeItem(LS); paintBasket(); closeSheet(); render();
+    });
+  }
+
+  /* -------------------------------------------------------------- the tabs */
+
+  var TABS = [
+    { k: 'all',     label: 'Everything',          fn: function () { return true; } },
+    { k: 'towatch', label: 'To Watch',            fn: function (f) { return /watchlist|owned|theaters|not released/i.test(f.s); } },
+    { k: 'date',    label: 'Date Night',          fn: function (f) { return f.w === 'Date Night'; } },
+    { k: 'fam',     label: 'With the Boys',       fn: function (f) { return f.w === 'Family'; } },
+    { k: 'best',    label: 'The 5s',              fn: function (f) { return f.c !== null && f.c >= 4.9; } },
+    { k: 'need',    label: 'Seen, Needs a Number', fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
+    { k: 'xmas',    label: 'Christmas',           fn: function (f) { return f.l === 'Christmas'; } },
+    { k: 'stream',  label: 'On a Subscription',   fn: function (f) { return !!f.sv && !/^(Rent|Buy):/.test(f.sv); } },
+    { k: 'sagg',    label: '✨ SAGE Suggests', special: true },
+    { k: 'soon',    label: '🎬 Coming Soon', special: true }
+  ];
+  var tab = 'all';
+
+  var tabsEl = $('tabs');
+  tabsEl.innerHTML = TABS.map(function (t) {
+    return '<button class="tab" role="tab" data-k="' + t.k + '" aria-selected="' +
+      (t.k === 'all') + '">' + t.label + '</button>';
+  }).join('');
+  tabsEl.addEventListener('click', function (e) {
+    var b = e.target.closest('.tab');
+    if (!b) return;
+    tab = b.dataset.k;
+    Array.prototype.forEach.call(tabsEl.querySelectorAll('.tab'), function (x) {
+      x.setAttribute('aria-selected', x === b);
+    });
+    render();
+  });
+
+  /* ------------------------------------------------------------- filtering */
+
+  function uniq(k) {
+    var s = {};
+    DATA.forEach(function (d) { if (d[k]) s[d[k]] = 1; });
+    return Object.keys(s).sort();
+  }
+  function fill(id, label, k) {
+    $(id).innerHTML = '<option value="">' + label + '</option>' +
+      uniq(k).map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('');
+  }
+  fill('fg', 'All genres', 'g');
+  fill('fl', 'All lanes', 'l');
+
+  var services = (function () {
+    var s = {};
+    DATA.forEach(function (d) {
+      if (d.sv && !/^(Rent|Buy):/.test(d.sv))
+        d.sv.split(',').forEach(function (x) { s[x.trim()] = 1; });
+    });
+    return Object.keys(s).sort();
+  })();
+  $('fw').innerHTML = '<option value="">Anywhere</option>' +
+    services.map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('') +
+    '<option value="__rent">Rent or buy only</option>' +
+    '<option value="__none">Not streaming in Costa Rica</option>';
+
+  function current() {
+    var q = $('q').value.toLowerCase().trim();
+    var g = $('fg').value, l = $('fl').value, w = $('fw').value;
+    var r = $('fr').value, so = $('fs').value;
+    var tf = TABS.filter(function (t) { return t.k === tab; })[0].fn;
+    var list = DATA.filter(function (d) {
+      return tf(d) && (!g || d.g === g) && (!l || d.l === l) &&
+        (!q || (d.t + ' ' + d.l + ' ' + d.g + ' ' + d.n + ' ' + d.cs + ' ' + d.ps + ' ' + d.bs)
+          .toLowerCase().indexOf(q) > -1) &&
+        (!r || (r === 'u' ? d.c === null : d.c !== null && d.c >= parseFloat(r))) &&
+        (!w || (w === '__none' ? !d.sv
+              : w === '__rent' ? (!!d.sv && /^(Rent|Buy):/.test(d.sv))
+              : (!!d.sv && !/^(Rent|Buy):/.test(d.sv) &&
+                 d.sv.split(',').map(function (x) { return x.trim(); }).indexOf(w) > -1)));
+    });
+    list.sort(function (a, b) {
+      if (so === 't') return a.t.localeCompare(b.t);
+      if (so === 'y') return (b.y || 0) - (a.y || 0) || a.t.localeCompare(b.t);
+      if (so === 'yo') return (a.y || 9999) - (b.y || 9999) || a.t.localeCompare(b.t);
+      var ac = a.c === null ? -1 : a.c, bc = b.c === null ? -1 : b.c;
+      return bc - ac || a.t.localeCompare(b.t);
+    });
+    return list;
+  }
+
+  /* ---------------------------------------------------------------- render */
+
+  var gridEl = $('grid');
+
+  function render() {
+    if (tab === 'sagg') return renderSuggest();
+    if (tab === 'soon') return renderSoon();
+    gridEl.className = 'grid';
+    var list = current();
+    gridEl.innerHTML = list.map(function (d) {
+      var i = DATA.indexOf(d);
+      var p = pendingFor(d.t);
+      var c = p && p.chris !== undefined && p.chris !== '' ? p.chris : d.c;
+      var px = p && p.pixie !== undefined && p.pixie !== '' ? p.pixie : d.p;
+      var cc = c === null || c === undefined || c === '' ? '' : '<span class="chip c">' + num(c) + '</span>';
+      var pp = (px !== null && px !== undefined && px !== '' && num(px) !== num(c))
+        ? '<span class="chip p">' + num(px) + '</span>' : '';
+      var qq = (!cc && /watchlist|owned|theaters|not released/i.test(d.s))
+        ? '<span class="chip q">to watch</span>' : '';
+      return '<button class="card' + (p ? ' edited' : '') + '" data-i="' + i + '">' +
+        '<div class="art">' + art(d) +
+        '<div class="badges"><span>' + (cc || qq) + '</span><span>' + pp + '</span></div>' +
+        (p ? '<span class="editdot" title="You changed this. Not saved yet.">●</span>' : '') +
+        '</div>' +
+        '<div class="meta"><div class="nm">' + esc(d.t) + '</div><div class="sub">' +
+        (d.y ? '<span>' + d.y + '</span><span class="dot"></span>' : '') +
+        '<span>' + esc(d.g) + '</span>' +
+        (d.sv ? '<span class="dot"></span><span class="stream">' +
+          esc(d.sv.replace(/^Rent: /, '$').split(/[,;]/)[0]) + '</span>' : '') +
+        '</div></div></button>';
+    }).join('');
+    $('empty').hidden = list.length > 0;
+    var rated = list.filter(function (d) { return d.c !== null; });
+    $('found').textContent = list.length + ' of ' + DATA.length + ' films' +
+      (rated.length ? '  ·  ' + rated.filter(function (d) { return d.c >= 4; }).length +
+        ' of them we go back to' : '');
+  }
+
+  /* --------------------------------------------------------- detail drawer */
+
+  var sheetEl = $('sheet'), scrimEl = $('scrim');
+  function showSheet() {
+    sheetEl.classList.add('on'); scrimEl.classList.add('on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeSheet() {
+    sheetEl.classList.remove('on'); scrimEl.classList.remove('on');
+    document.body.style.overflow = '';
+  }
+  scrimEl.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSheet(); });
+
+  var QUICK = [2.5, 3, 3.5, 4, 4.3, 4.5, 4.8, 5];
+
+  function ratePicker(who, cls, value) {
+    return '<div class="picker" data-who="' + who + '">' +
+      '<div class="pwho">' + who + '</div>' +
+      '<div class="pchips">' + QUICK.map(function (v) {
+        return '<button class="pc' + (String(value) === String(v) ? ' on' : '') +
+          '" data-v="' + v + '">' + v.toFixed(1) + '</button>';
+      }).join('') + '</div>' +
+      '<div class="pfree"><input type="number" min="0" max="5" step="0.1" placeholder="or type e.g. 4.4" ' +
+      'value="' + (value === null || value === undefined ? '' : value) + '" class="pnum ' + cls + '"></div>' +
+      '</div>';
+  }
+
+  function openFilm(i) {
+    var d = DATA[i];
+    var p = pendingFor(d.t) || {};
+    var curC = p.chris !== undefined && p.chris !== '' ? p.chris : d.c;
+    var curP = p.pixie !== undefined && p.pixie !== '' ? p.pixie : d.p;
+    var row = function (k, v) {
+      return v ? '<div class="row"><div class="k">' + k + '</div><div class="v">' + esc(v) + '</div></div>' : '';
+    };
+    var says = [['Chris', d.cs, 'c'], ['Pixie', d.ps, 'p'], ['The boys', d.bs, 'b']]
+      .filter(function (x) { return x[1]; })
+      .map(function (x) {
+        return '<div class="quote ' + x[2] + '"><div class="who">' + x[0] +
+          ' says</div><div class="q">' + esc(x[1]) + '</div></div>';
+      }).join('');
+
+    sheetEl.innerHTML =
+      '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
+      '<h2 id="sheetTitle">' + esc(d.t) + '</h2><div class="yr">' +
+      [d.y, d.g, d.rt ? d.rt + ' min' : ''].filter(Boolean).map(esc).join(' · ') + '</div></div>' +
+      '<div class="bd">' +
+      (d.ov ? '<p class="ov">' + esc(d.ov) + '</p>' : '') +
+      '<div class="editbox">' +
+        '<div class="eh">Rate it</div>' +
+        ratePicker('Chris', 'nC', curC) +
+        ratePicker('Pixie', 'nP', curP) +
+        '<div class="eh">Mark it</div>' +
+        '<div class="actions">' +
+          '<button class="pbtn" data-set="status" data-val="Rated">Seen it</button>' +
+          '<button class="pbtn" data-set="status" data-val="Watchlist">Add to To Watch</button>' +
+          '<button class="pbtn" data-set="context" data-val="Date Night">Date Night</button>' +
+          '<button class="pbtn" data-set="context" data-val="Family">With the boys</button>' +
+        '</div>' +
+        '<div class="eh">Say something about it</div>' +
+        '<textarea class="tsay" id="sayC" rows="2" placeholder="Chris says...">' + esc(p.chrisSays || '') + '</textarea>' +
+        '<textarea class="tsay" id="sayP" rows="2" placeholder="Pixie says...">' + esc(p.pixieSays || '') + '</textarea>' +
+        '<textarea class="tsay" id="sayB" rows="2" placeholder="The boys say...">' + esc(p.boysSay || '') + '</textarea>' +
+        '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
+          ? 'Changed. Open <b>Review</b> at the bottom to send it to SAGE.'
+          : 'Changes are held on this device until you hand them to SAGE.') + '</div>' +
+      '</div>' +
+      '<div class="rows">' + row('Watched with', d.w) + row('Status', d.s) + row('Lane', d.l) +
+        row('Streaming', d.sv ? d.sv + (d.sc ? ' (checked ' + d.sc + ')' : '') : '') + '</div>' +
+      (says ? '<div class="says">' + says + '</div>' : '') +
+      (d.n ? '<div class="sysnote">' + esc(d.n) + '</div>' : '') +
+      '</div>';
+
+    showSheet();
+    $('closeX').addEventListener('click', closeSheet);
+    wireEditor(d.t);
+  }
+
+  function wireEditor(title, extra) {
+    var box = sheetEl.querySelector('.editbox');
+    if (!box) return;
+    var flash = function (msg) {
+      var h = $('ehint');
+      if (h) h.innerHTML = msg || 'Changed. Open <b>Review</b> at the bottom to send it to SAGE.';
+    };
+    box.querySelectorAll('.picker').forEach(function (pk) {
+      var who = pk.dataset.who;
+      var field = who === 'Chris' ? 'chris' : 'pixie';
+      pk.querySelectorAll('.pc').forEach(function (b) {
+        b.addEventListener('click', function () {
+          pk.querySelectorAll('.pc').forEach(function (x) { x.classList.remove('on'); });
+          b.classList.add('on');
+          pk.querySelector('.pnum').value = b.dataset.v;
+          var patch = { status: 'Rated' };
+          patch[field] = b.dataset.v;
+          if (extra) Object.assign(patch, extra);
+          edit(title, patch);
+          flash();
+        });
+      });
+      pk.querySelector('.pnum').addEventListener('change', function () {
+        var v = this.value;
+        if (v === '') return;
+        var patch = { status: 'Rated' };
+        patch[field] = v;
+        if (extra) Object.assign(patch, extra);
+        edit(title, patch);
+        flash();
+      });
+    });
+    box.querySelectorAll('[data-set]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var patch = {};
+        patch[b.dataset.set] = b.dataset.val;
+        if (extra) Object.assign(patch, extra);
+        edit(title, patch);
+        box.querySelectorAll('[data-set="' + b.dataset.set + '"]').forEach(function (x) {
+          x.classList.remove('on');
+        });
+        b.classList.add('on');
+        flash();
+      });
+    });
+    [['sayC', 'chrisSays'], ['sayP', 'pixieSays'], ['sayB', 'boysSay']].forEach(function (pair) {
+      var el = $(pair[0]);
+      if (!el) return;
+      el.addEventListener('change', function () {
+        var patch = {};
+        patch[pair[1]] = this.value.trim();
+        if (extra) Object.assign(patch, extra);
+        edit(title, patch);
+        flash();
+      });
+    });
+  }
+
+  gridEl.addEventListener('click', function (e) {
+    var c = e.target.closest('.card');
+    if (c) { openFilm(Number(c.dataset.i)); return; }
+    var s = e.target.closest('[data-sugg]');
+    if (s) { openSugg(Number(s.dataset.sugg)); return; }
+    var u = e.target.closest('[data-soon]');
+    if (u) { openSoon(Number(u.dataset.soon)); return; }
+  });
+
+  /* ------------------------------------------------------- SAGE Suggests */
+
+  var AUDIENCES = ['All of it', 'Date Night', 'The Boys', 'Whole Family', 'Chris'];
+  var audience = 'All of it';
+
+  function whereBadge(sv, sc) {
+    if (!sv) return '<span class="nobadge">Not streaming in Costa Rica</span>';
+    var cls = /^(Rent|Buy):/.test(sv) ? 'rentbadge' : 'streambadge';
+    return '<span class="' + cls + '">' + esc(sv) + '</span>' +
+      (sc ? '<span class="checked">checked ' + esc(sc) + '</span>' : '');
+  }
+
+  function renderSuggest() {
+    var list = audience === 'All of it' ? SUGG : SUGG.filter(function (x) { return x.who === audience; });
+    gridEl.className = 'sugglist';
+    gridEl.innerHTML = '<div class="suggintro"><h2>✨ SAGE Suggests</h2>' +
+      '<p>' + SUGG.length + ' films you have never seen. Every reason below cites a rating already in your ' +
+      'library, never general taste. Streaming checked for Costa Rica. Tap one to add it, rate it, or kill it.</p>' +
+      '<div class="audpills">' + AUDIENCES.map(function (a) {
+        var n = a === 'All of it' ? SUGG.length : SUGG.filter(function (x) { return x.who === a; }).length;
+        return '<button class="tab sm" data-aud="' + a + '" aria-selected="' + (a === audience) + '">' +
+          a + ' (' + n + ')</button>';
+      }).join('') + '</div></div>' +
+      list.map(function (x) {
+        var i = SUGG.indexOf(x);
+        var p = pendingFor(x.t);
+        return '<article class="sugg' + (p ? ' edited' : '') + '" data-sugg="' + i + '">' +
+          '<div class="suggart">' + (x.img ? '<img src="' + esc(x.img) + '" alt="" loading="lazy">' :
+            '<div class="phs">' + esc(x.t) + '</div>') + '</div>' +
+          '<div class="suggbody">' +
+            '<div class="suggtop"><h3>' + esc(x.t) + '</h3><span class="forwho ' +
+              x.who.replace(/\s+/g, '').toLowerCase() + '">' + esc(x.who) + '</span></div>' +
+            '<div class="suggmeta">' + [x.y, x.rt ? x.rt + ' min' : ''].filter(Boolean).join(' · ') +
+              (p ? ' · <b class="pendflag">you answered this</b>' : '') + '</div>' +
+            '<p class="why">' + esc(x.why) + '</p>' +
+            '<div class="suggwhere">' + whereBadge(x.sv, x.sc) + '</div>' +
+          '</div></article>';
+      }).join('');
+    $('empty').hidden = true;
+    $('found').textContent = list.length + ' suggestions' +
+      (audience === 'All of it' ? '' : ' for ' + audience.toLowerCase());
+    gridEl.querySelectorAll('[data-aud]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        audience = b.dataset.aud;
+        renderSuggest();
+      });
+    });
+  }
+
+  function openSugg(i) {
+    var x = SUGG[i];
+    var p = pendingFor(x.t) || {};
+    sheetEl.innerHTML =
+      '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
+      '<h2 id="sheetTitle">' + esc(x.t) + '</h2><div class="yr">' +
+      [x.y, x.rt ? x.rt + ' min' : '', 'suggested for ' + x.who].filter(Boolean).map(esc).join(' · ') +
+      '</div></div>' +
+      '<div class="bd">' +
+      '<div class="quote c"><div class="who">Why SAGE picked it</div><div class="q">' + esc(x.why) + '</div></div>' +
+      (x.ov ? '<p class="ov">' + esc(x.ov) + '</p>' : '') +
+      '<div class="suggwhere" style="margin-top:14px">' + whereBadge(x.sv, x.sc) + '</div>' +
+      '<div class="editbox">' +
+        '<div class="eh">What do you want to do with it?</div>' +
+        '<div class="actions">' +
+          '<button class="pbtn primary" data-set="status" data-val="Watchlist">Add to To Watch</button>' +
+          '<button class="pbtn" data-set="context" data-val="Date Night">Date Night</button>' +
+          '<button class="pbtn" data-set="context" data-val="Family">With the boys</button>' +
+          '<button class="pbtn danger" data-set="status" data-val="Not for us">Not for us</button>' +
+        '</div>' +
+        '<div class="eh">Already seen it? Rate it and it moves into the library.</div>' +
+        ratePicker('Chris', 'nC', p.chris) +
+        ratePicker('Pixie', 'nP', p.pixie) +
+        '<textarea class="tsay" id="sayC" rows="2" placeholder="Chris says...">' + esc(p.chrisSays || '') + '</textarea>' +
+        '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
+          ? 'Answered. Open <b>Review</b> at the bottom to send it to SAGE.'
+          : 'Your answer trains the next batch.') + '</div>' +
+      '</div></div>';
+    showSheet();
+    $('closeX').addEventListener('click', closeSheet);
+    wireEditor(x.t, { from: 'suggestion' });
+  }
+
+  /* --------------------------------------------------------- Coming Soon */
+
+  var SOON_VIEWS = ['Everything', 'Upcoming', 'Now streaming', 'In theaters or not here yet'];
+  var soonView = 'Everything';
+
+  function renderSoon() {
+    var list = soonView === 'Everything' ? UPCOMING
+      : UPCOMING.filter(function (x) { return x.status === soonView; });
+    gridEl.className = 'sugglist';
+    gridEl.innerHTML = '<div class="suggintro"><h2>🎬 Coming Soon</h2>' +
+      '<p>' + UPCOMING.length + ' films tracked because of what you already rate highly: Marvel, Star Wars, ' +
+      'Pixar, DreamWorks, Cartoon Saloon and anything Guy Ritchie touches. The useful column is not the ' +
+      'release date, it is whether you can watch it in Costa Rica yet. Tap one and tell me yes or no.</p>' +
+      '<div class="audpills">' + SOON_VIEWS.map(function (v) {
+        var n = v === 'Everything' ? UPCOMING.length
+          : UPCOMING.filter(function (x) { return x.status === v; }).length;
+        return '<button class="tab sm" data-soonview="' + esc(v) + '" aria-selected="' +
+          (v === soonView) + '">' + v + ' (' + n + ')</button>';
+      }).join('') + '</div></div>' +
+      list.map(function (x) {
+        var i = UPCOMING.indexOf(x);
+        var p = pendingFor(x.t);
+        var stat = x.status === 'Now streaming' ? 'statnow'
+          : x.status === 'Upcoming' ? 'statsoon' : 'statwait';
+        return '<article class="sugg' + (p ? ' edited' : '') + '" data-soon="' + i + '">' +
+          '<div class="suggart">' + (x.img ? '<img src="' + esc(x.img) + '" alt="" loading="lazy">' :
+            '<div class="phs">' + esc(x.t) + '</div>') + '</div>' +
+          '<div class="suggbody">' +
+            '<div class="suggtop"><h3>' + esc(x.t) + '</h3>' +
+              '<span class="forwho ' + stat + '">' + esc(x.status) + '</span></div>' +
+            '<div class="suggmeta">' + esc(x.date || 'date TBA') + ' · ' + esc(x.src) +
+              (x.rt ? ' · ' + x.rt + ' min' : '') +
+              (p && p.interest ? ' · <b class="pendflag">you said ' + esc(p.interest) + '</b>'
+                : x.interest ? ' · <b class="pendflag">' + esc(x.interest) + '</b>' : '') +
+            '</div>' +
+            (x.ov ? '<p class="why">' + esc(x.ov.slice(0, 230)) + (x.ov.length > 230 ? '…' : '') + '</p>' : '') +
+            '<div class="suggwhere">' + whereBadge(x.sv, x.sc) + '</div>' +
+          '</div></article>';
+      }).join('');
+    $('empty').hidden = true;
+    $('found').textContent = list.length + ' tracked' + (soonView === 'Everything' ? '' : ', ' + soonView.toLowerCase());
+    gridEl.querySelectorAll('[data-soonview]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        soonView = b.dataset.soonview;
+        renderSoon();
+      });
+    });
+  }
+
+  function openSoon(i) {
+    var x = UPCOMING[i];
+    var p = pendingFor(x.t) || {};
+    var row = function (k, v) {
+      return v ? '<div class="row"><div class="k">' + k + '</div><div class="v">' + esc(v) + '</div></div>' : '';
+    };
+    sheetEl.innerHTML =
+      '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
+      '<h2 id="sheetTitle">' + esc(x.t) + '</h2><div class="yr">' + esc(x.status) + '</div></div>' +
+      '<div class="bd">' +
+      (x.ov ? '<p class="ov">' + esc(x.ov) + '</p>' : '') +
+      '<div class="rows">' + row('Release date', x.date) + row('Costa Rica release', x.crDate) +
+        row('Tracked because', x.src) + row('Runtime', x.rt ? x.rt + ' min' : '') + '</div>' +
+      '<div class="suggwhere" style="margin-top:12px">' + whereBadge(x.sv, x.sc) + '</div>' +
+      '<div class="editbox">' +
+        '<div class="eh">Do you want to see this?</div>' +
+        '<div class="actions">' +
+          '<button class="pbtn primary' + (p.interest === 'yes' ? ' on' : '') + '" data-set="interest" data-val="yes">Yes</button>' +
+          '<button class="pbtn' + (p.interest === 'maybe' ? ' on' : '') + '" data-set="interest" data-val="maybe">Maybe</button>' +
+          '<button class="pbtn danger' + (p.interest === 'no' ? ' on' : '') + '" data-set="interest" data-val="no">No</button>' +
+        '</div>' +
+        '<div class="eh">Already seen it?</div>' +
+        ratePicker('Chris', 'nC', p.chris) +
+        '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
+          ? 'Noted. Open <b>Review</b> at the bottom to send it to SAGE.'
+          : 'Every yes and no sharpens what gets tracked next.') + '</div>' +
+      '</div></div>';
+    showSheet();
+    $('closeX').addEventListener('click', closeSheet);
+    wireEditor(x.t, { from: 'upcoming' });
+  }
+
+  /* --------------------------------------------------------------- wiring */
+
+  ['q', 'fg', 'fl', 'fw', 'fr', 'fs'].forEach(function (id) {
+    $(id).addEventListener(id === 'q' ? 'input' : 'change', render);
+  });
+  $('reset').addEventListener('click', function () {
+    ['fg', 'fl', 'fw', 'fr', 'fs'].forEach(function (id) { $(id).value = ''; });
+    $('q').value = '';
+    render();
+  });
+
+  paintBasket();
+  render();
+})();
