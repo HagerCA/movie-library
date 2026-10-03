@@ -157,6 +157,14 @@ if (fs.existsSync(UP_CSV)) {
     .filter(x => !/moved to the library/i.test(x.status));
 }
 
+/* ------------------------------------------------------------ favorites */
+/* Who they keep watching, ranked by credibility-weighted average. Built by
+   credits.mjs from the real TMDB cast and crew of every rated film.         */
+
+const FAV_JSON = path.join(DIR, 'favorites.json');
+const favorites = fs.existsSync(FAV_JSON)
+  ? JSON.parse(fs.readFileSync(FAV_JSON, 'utf8')) : null;
+
 /* ------------------------------------------------------------------- stats */
 
 const rated = films.filter(f => f.c !== null);
@@ -373,6 +381,7 @@ const html = `<!DOCTYPE html>
 const DATA = ${JSON.stringify(appData)};
 const SUGG = ${JSON.stringify(suggestions)};
 const UPCOMING = ${JSON.stringify(upcoming)};
+const FAVOURITES = ${JSON.stringify(favorites)};
 </script>
 <script src="./app.js"></script>
 </body>
@@ -392,6 +401,10 @@ console.log('  spread: ' + spreadLine);
 console.log('  conflicts: ' + conflicts.length + ' | unconfirmed: ' + carried.length + ' | need a number: ' + seenUnrated.length);
 console.log('  TMDB enrichment: ' + enriched + '/' + films.length + ' have a poster');
 console.log('  Coming Soon: ' + upcoming.length + ' tracked (' + Object.entries(upcoming.reduce((m,x)=>(m[x.status]=(m[x.status]||0)+1,m),{})).map(([k,v])=>k+' '+v).join(', ') + ')');
+console.log('  Our People: ' + (favorites
+  ? favorites.directors.length + ' directors, ' + favorites.actors.length + ' actors, ' +
+    favorites.actresses.length + ' actresses from ' + favorites.films + ' rated films'
+  : 'favorites.json missing, run credits.mjs'));
 console.log('  SAGE Suggests: ' + suggestions.length + ' picks (' + Object.entries(suggestions.reduce((m,x)=>(m[x.who]=(m[x.who]||0)+1,m),{})).map(([k,v])=>k+' '+v).join(', ') + ')');
 console.log('Wrote index.html, movie-library.md, library.json');
 console.log('  app.css and app.js are source files and were not touched.');

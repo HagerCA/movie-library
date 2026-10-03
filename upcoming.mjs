@@ -95,9 +95,22 @@ const COMPANIES = [
   [2,     'Disney'],
   [7505,  'Marvel Entertainment']
 ];
-// Guy Ritchie is the single strongest director signal in the library:
-// 5.0, 4.9, 4.8, 4.6, 4.0.
+// Directors are no longer guessed at. favorites.json ranks them from the real
+// credits of every rated film, so the tracker follows whoever the family's own
+// numbers say they follow. Guy Ritchie stays pinned because he is the clearest
+// signal in the data and TMDB ids are stable.
 const PEOPLE = [[956, 'Guy Ritchie']];
+const FAV = path.join(DIR, 'favorites.json');
+if (fs.existsSync(FAV)) {
+  const fav = JSON.parse(fs.readFileSync(FAV, 'utf8'));
+  for (const d of (fav.directors || []).slice(0, 8)) {
+    const r = await api('/search/person?query=' + encodeURIComponent(d.name));
+    const hit = r && r.results && r.results[0];
+    if (hit && !PEOPLE.some(p => p[0] === hit.id))
+      PEOPLE.push([hit.id, d.name + ' (' + d.n + ' films at ' + d.avg + ')']);
+  }
+  console.log('  following ' + PEOPLE.length + ' directors from favorites.json');
+}
 
 // Named sequels in franchises they have rated 4.0 or better. Searched by title
 // so a film with no company match still lands.

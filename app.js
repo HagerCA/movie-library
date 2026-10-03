@@ -31,6 +31,54 @@
   var pending = {};
   try { pending = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) { pending = {}; }
 
+  /* The basket used to sit at "35 changes" forever because copying them to SAGE
+   * did not clear them, and there was no way for the page to know they had
+   * landed. It knows now: every time this page loads it is carrying freshly
+   * built data, so any pending change the library already agrees with has made
+   * the round trip and gets dropped. Paste, wait for the rebuild, refresh, and
+   * the counter empties itself. */
+  function reconcile() {
+    var lib = {}, up = {};
+    DATA.forEach(function (d) { lib[d.t.toLowerCase()] = d; });
+    if (typeof UPCOMING !== 'undefined')
+      UPCOMING.forEach(function (u) { up[u.t.toLowerCase()] = u; });
+
+    var dropped = 0;
+    Object.keys(pending).forEach(function (k) {
+      var p = pending[k];
+      var d = lib[(p.title || k).toLowerCase()];
+      var u = up[(p.title || k).toLowerCase()];
+      var landed = true;
+
+      // A film added by hand has landed once it exists in the library at all.
+      if (p.isNew) { if (!d) landed = false; }
+      else if (!d && !u) landed = false;
+
+      var same = function (mine, theirs) {
+        if (mine === undefined || mine === '') return true;
+        if (theirs === null || theirs === undefined) return false;
+        return String(mine) === String(theirs);
+      };
+      if (landed && d) {
+        if (!same(p.chris, d.c)) landed = false;
+        if (!same(p.pixie, d.p)) landed = false;
+        if (p.context && d.w !== p.context) landed = false;
+        if (p.chrisSays && d.cs !== p.chrisSays) landed = false;
+        if (p.pixieSays && d.ps !== p.pixieSays) landed = false;
+        if (p.boysSay && d.bs !== p.boysSay) landed = false;
+      }
+      if (landed && p.interest) {
+        // An interest answer has landed if the tracker agrees, or if the film
+        // has since moved into the library, which retires the question.
+        if (!(u && u.interest === p.interest) && !d) landed = false;
+      }
+      if (landed) { delete pending[k]; dropped++; }
+    });
+    if (dropped) localStorage.setItem(LS, JSON.stringify(pending));
+    return dropped;
+  }
+  var reconciled = reconcile();
+
   var esc = function (s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -88,7 +136,18 @@
   function paintBasket() {
     var n = countPending();
     var bar = $('basket');
-    if (!n) { bar.hidden = true; return; }
+    if (!n) {
+      if (reconciled) {
+        bar.hidden = false;
+        bar.className = 'basket done';
+        bar.innerHTML = '<span class="bcount">\u2713</span><span class="btext">' + reconciled +
+          ' change' + (reconciled === 1 ? '' : 's') + ' saved and live </span>' +
+          '<button class="bbtn" id="bdismiss">Nice</button>';
+        $('bdismiss').addEventListener('click', function () { reconciled = 0; paintBasket(); });
+      } else bar.hidden = true;
+      return;
+    }
+    bar.className = 'basket';
     bar.hidden = false;
     bar.innerHTML = '<span class="bcount">' + n + '</span>' +
       '<span class="btext">' + (n === 1 ? 'change' : 'changes') + ' not saved yet </span>' +
@@ -168,7 +227,8 @@
     { k: 'xmas',    label: '\uD83C\uDF84 Christmas',  fn: function (f) { return f.l === 'Christmas'; } },
     { k: 'stream',  label: '\u2705 Watch Tonight',  fn: function (f) { return classify(f.sv).k === 'have'; } },
     { k: 'sagg',    label: '✨ SAGE Suggests', special: true },
-    { k: 'soon',    label: '🎬 Coming Soon', special: true }
+    { k: 'soon',    label: '🎬 Coming Soon', special: true },
+    { k: 'people',  label: '⭐ Our People',   special: true }
   ];
   var tab = 'all';
 
@@ -246,9 +306,58 @@
 
   var gridEl = $('grid');
 
+  /* ----------------------------------------------------------- Our People */
+
+  var PEOPLE_VIEWS = [
+    ['directors', 'Directors'], ['actors', 'Actors'], ['actresses', 'Actresses'],
+    ['writers', 'Writers'], ['composers', 'Composers'],
+    ['prolific', 'Most Appearances'], ['genres', 'Genres'], ['lanes', 'Lanes']
+  ];
+  var peopleView = 'directors';
+
+  function renderPeople() {
+    gridEl.className = 'sugglist';
+    if (!FAVOURITES) {
+      gridEl.innerHTML = '<div class="suggintro"><h2>\u2B50 Our People</h2>' +
+        '<p>Not built yet. Run credits.mjs.</p></div>';
+      return;
+    }
+    var list = FAVOURITES[peopleView] || [];
+    var isPerson = ['directors','actors','actresses','writers','composers','prolific'].indexOf(peopleView) > -1;
+
+    gridEl.innerHTML = '<div class="suggintro"><h2>\u2B50 Our People</h2>' +
+      '<p>Pulled from the real cast and crew of all ' + FAVOURITES.films + ' rated films. ' +
+      'Ranked by a weighted average, not a raw one: somebody with one 5.0 does not outrank ' +
+      'somebody with nine films at 4.6. Your library mean is ' + FAVOURITES.mean + '.</p>' +
+      '<div class="audpills">' + PEOPLE_VIEWS.map(function (v) {
+        return '<button class="tab sm" data-pv="' + v[0] + '" aria-selected="' +
+          (v[0] === peopleView) + '">' + v[1] + '</button>';
+      }).join('') + '</div></div>' +
+      '<ol class="ranklist">' + list.map(function (e, i) {
+        return '<li class="rank">' +
+          '<span class="rnum">' + (i + 1) + '</span>' +
+          '<span class="rname">' + esc(e.name) + '</span>' +
+          '<span class="rbar"><span class="rfill" style="width:' +
+            Math.max(4, Math.round(((e.avg - 3) / 2) * 100)) + '%"></span></span>' +
+          '<span class="ravg">' + e.avg.toFixed(2) + '</span>' +
+          '<span class="rn">' + e.n + ' film' + (e.n === 1 ? '' : 's') + '</span>' +
+          (e.top ? '<span class="rtop">' + esc(e.top.join(' \u00b7 ')) + '</span>' : '') +
+          '</li>';
+      }).join('') + '</ol>';
+    $('empty').hidden = true;
+    $('found').textContent = list.length + ' ' + (isPerson ? 'people' : 'categories') +
+      ', ranked by weighted average';
+    gridEl.querySelectorAll('[data-pv]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation(); peopleView = b.dataset.pv; renderPeople();
+      });
+    });
+  }
+
   function render() {
     if (tab === 'sagg') return renderSuggest();
     if (tab === 'soon') return renderSoon();
+    if (tab === 'people') return renderPeople();
     gridEl.className = 'grid';
     var list = current();
     gridEl.innerHTML = list.map(function (d) {
@@ -333,6 +442,20 @@
     showSheet();
     $('closeX').addEventListener('click', closeSheet);
 
+    // The quick-tap chips in this form were inert: openAdd never called
+    // wireEditor, so only the typed number was ever read. Wire them to the
+    // number input they sit above.
+    sheetEl.querySelectorAll('.picker').forEach(function (pk) {
+      var input = pk.querySelector('.pnum');
+      pk.querySelectorAll('.pc').forEach(function (b) {
+        b.addEventListener('click', function () {
+          pk.querySelectorAll('.pc').forEach(function (x) { x.classList.remove('on'); });
+          b.classList.add('on');
+          input.value = b.dataset.v;
+        });
+      });
+    });
+
     var ctx = null;
     $('newCtx').querySelectorAll('[data-c]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -347,14 +470,20 @@
       var patch = { title: t, isNew: true };
       var y = $('newYear').value.trim(); if (y) patch.year = y;
       if (ctx) patch.context = ctx;
-      var c = sheetEl.querySelectorAll('.pnum')[2], px = sheetEl.querySelectorAll('.pnum')[3];
-      if (c && c.value) patch.chris = c.value;
-      if (px && px.value) patch.pixie = px.value;
+      sheetEl.querySelectorAll('.picker').forEach(function (pk) {
+        var v = pk.querySelector('.pnum').value.trim();
+        if (!v) return;
+        if (pk.dataset.who === 'Chris') patch.chris = v; else patch.pixie = v;
+      });
       var say = $('newSay').value.trim(); if (say) patch.chrisSays = say;
       if (patch.chris || patch.pixie) patch.status = 'Rated';
       edit(t, patch);
       this.textContent = 'Added. Hit Review at the bottom when you are done.';
       this.classList.add('done');
+      var again = document.createElement('button');
+      again.className = 'pbtn'; again.textContent = 'Add another';
+      again.addEventListener('click', function () { openAdd(''); });
+      this.parentNode.appendChild(again);
     });
   }
 

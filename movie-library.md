@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-03** · **398 films** · Chris has rated 363 (avg **4.25**), Pixie 366 (avg 4.25)
+Last built **2026-10-03** · **398 films** · Chris has rated 364 (avg **4.26**), Pixie 367 (avg 4.25)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 311 of 363 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 312 of 364 rated films clear it.
 
 ## Columns
 
@@ -355,6 +355,7 @@ The app is `index.html` in this folder.
 | Dune: Part Two | 2024 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | HBO Max, Universal+ Amazon Channel |  |
 | Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | Star Wars: Episode VI - Return of the Jedi | 1983 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
+| Arrival | 2016 | **4.6** | 4.6 | Date Night | Rated | Mind-Bender | HBO Max, Universal+ Amazon Channel | The closest thing to Interstellar on the queue. |
 | IF | 2024 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies | Also called Imaginary Friends. |
 | Jurassic Park | 1993 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max |  |
 | Back to the Future Part II | 1989 | **4.5** | 4.5 | Household | Seen, unrated | Sci-fi Canon | Amazon Prime Video, Universal+ Amazon Channel |  |
@@ -374,7 +375,6 @@ The app is `index.html` in this folder.
 | Back to the Future Part III | 1990 | **2.5** | 2.5 | Family | Rated | 80s Nostalgia | HBO Max, Universal+ Amazon Channel | The only sub-3 film in the library. "Love them all except for number three of course." |
 | A Quiet Place: Day One | 2024 |  |  | Queue | Watchlist | Mind-Bender | Paramount Plus | Never seen. Confirmed a film, not a series, so it clears the no-series rule. |
 | Annihilation | 2018 |  |  | Queue | Watchlist | Mind-Bender | Rent: Apple TV Store, Google Play Movies |  |
-| Arrival | 2016 |  |  | Queue | Watchlist | Mind-Bender | HBO Max, Universal+ Amazon Channel | The closest thing to Interstellar on the queue. |
 | Coherence | 2013 |  |  | Queue | Watchlist | Mind-Bender | Rent: Apple TV Store, Google Play Movies |  |
 | Ex Machina | 2015 |  |  | Queue | Watchlist | Mind-Bender | HBO Max |  |
 | Source Code | 2011 |  |  | Queue | Watchlist | Time & Second Chances | Universal+ Amazon Channel |  |
@@ -522,10 +522,10 @@ The app is `index.html` in this folder.
 |---|---|---|---|
 | Being Seen | 1 | 1 | 5.00 |
 | Choose Who You Are | 1 | 1 | 5.00 |
-| Mind-Bender | 6 | 1 | 4.80 |
 | Ryan Reynolds | 2 | 2 | 4.75 |
 | Guy Ritchie | 6 | 5 | 4.74 |
 | Spielberg | 8 | 8 | 4.72 |
+| Mind-Bender | 6 | 2 | 4.70 |
 | Documentary | 5 | 5 | 4.60 |
 | Wizarding World | 3 | 3 | 4.60 |
 | Middle-earth | 2 | 2 | 4.60 |
@@ -567,10 +567,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-03
 
-- **398 films.** Rated 226 · Seen, unrated 139 · Watchlist 27 · Owned, unwatched 3 · Seen, Chris partial 1 · Not released 1 · Not watching 1
-- **Chris 363 rated, avg 4.25. Pixie 366 rated, avg 4.25.**
-- Rewatches (4.0+): **311** · enjoyed once (3.5): 35 · below: 17
+- **398 films.** Rated 227 · Seen, unrated 139 · Watchlist 26 · Owned, unwatched 3 · Seen, Chris partial 1 · Not released 1 · Not watching 1
+- **Chris 364 rated, avg 4.26. Pixie 367 rated, avg 4.25.**
+- Rewatches (4.0+): **312** · enjoyed once (3.5): 35 · below: 17
 - Where they differ: **1** (The Sandlot)
-- Spread: 5.0 (13) · 4.9 (14) · 4.8 (27) · 4.7 (17) · 4.6 (20) · 4.5 (71) · 4.4 (14) · 4.3 (22) · 4.2 (22) · 4.1 (7) · 4.0 (84) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (23) · 3.0 (15) · 2.5 (2)
-- Context: Household 142 · Family 125 · Date Night 80 · Queue 39 · Solo 12
+- Spread: 5.0 (13) · 4.9 (14) · 4.8 (27) · 4.7 (17) · 4.6 (21) · 4.5 (71) · 4.4 (14) · 4.3 (22) · 4.2 (22) · 4.1 (7) · 4.0 (84) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (23) · 3.0 (15) · 2.5 (2)
+- Context: Household 142 · Family 125 · Date Night 81 · Queue 38 · Solo 12
 - Retired rows kept in the CSV but hidden: 5
