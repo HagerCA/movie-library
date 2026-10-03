@@ -244,3 +244,22 @@
   .swbadge.swNone{background:var(--bg3);color:var(--fg3);border:1px solid var(--line)}
   .swnote{font-size:11px;color:var(--fg3);line-height:1.4}
   .suggwhere{align-items:center}
+
+  /* ---------- the thread: why this pick, in gold ---------- */
+  .thread{margin:10px 0 0;font-size:13px;line-height:1.6;color:var(--gold);
+    background:rgba(224,178,83,.06);border-left:2px solid var(--gold2);
+    border-radius:0 8px 8px 0;padding:9px 13px}
+  .tlabel{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.09em;
+    color:var(--gold2);font-weight:700;margin-bottom:3px}
+  .sheet .thread{margin-top:12px}
+
+  /* ---------- add a film from the search box ---------- */
+  .addbar{margin-top:12px}
+  .addinner{display:flex;flex-wrap:wrap;gap:11px;align-items:center;
+    background:var(--bg2);border:1px dashed var(--line);border-radius:var(--radius);
+    padding:12px 15px}
+  .addq{color:var(--fg2);font-size:13.5px}
+  .addq b{color:var(--fg)}
+  .addbtn{color:var(--gold);border-color:var(--gold2)}
+  .addbtn:hover{background:rgba(224,178,83,.1);color:var(--gold)}
+  #newTitle,#newYear{margin-bottom:2px}

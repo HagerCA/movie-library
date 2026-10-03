@@ -100,7 +100,10 @@
   function basketText() {
     var lines = ['MOVIE LIBRARY CHANGES ' + new Date().toISOString().slice(0, 10)];
     Object.keys(pending).forEach(function (k) {
-      var p = pending[k], bits = [p.title];
+      var p = pending[k], bits = [];
+      if (p.isNew) bits.push('NEW FILM');
+      bits.push(p.title);
+      if (p.year) bits.push(p.year);
       if (p.chris !== undefined && p.chris !== '') bits.push('Chris ' + p.chris);
       if (p.pixie !== undefined && p.pixie !== '') bits.push('Pixie ' + p.pixie);
       if (p.status) bits.push(p.status);
@@ -157,12 +160,12 @@
 
   var TABS = [
     { k: 'all',     label: 'Everything',          fn: function () { return true; } },
-    { k: 'towatch', label: 'To Watch',            fn: function (f) { return /watchlist|owned|theaters|not released/i.test(f.s); } },
-    { k: 'date',    label: 'Date Night',          fn: function (f) { return f.w === 'Date Night'; } },
+    { k: 'towatch', label: 'Watch List',          fn: function (f) { return /watchlist|owned|theaters|not released/i.test(f.s); } },
+    { k: 'date',    label: 'Date Night \uD83C\uDF77', fn: function (f) { return f.w === 'Date Night'; } },
     { k: 'fam',     label: 'With the Boys',       fn: function (f) { return f.w === 'Family'; } },
     { k: 'best',    label: 'The 5s',              fn: function (f) { return f.c !== null && f.c >= 4.9; } },
     { k: 'need',    label: 'Seen, Needs a Number', fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
-    { k: 'xmas',    label: 'Christmas',           fn: function (f) { return f.l === 'Christmas'; } },
+    { k: 'xmas',    label: '\uD83C\uDF84 Christmas',  fn: function (f) { return f.l === 'Christmas'; } },
     { k: 'stream',  label: '\u2705 Watch Tonight',  fn: function (f) { return classify(f.sv).k === 'have'; } },
     { k: 'sagg',    label: '✨ SAGE Suggests', special: true },
     { k: 'soon',    label: '🎬 Coming Soon', special: true }
@@ -270,12 +273,92 @@
           esc(classify(d.sv).short) + '</span>' +
         '</div></div></button>';
     }).join('');
+    // Nothing matched a real search? Offer to add it rather than dead-end.
+    var q = $('q').value.trim();
+    var addBar = $('addbar');
+    if (q.length > 1 && list.length === 0) {
+      addBar.hidden = false;
+      addBar.innerHTML = '<div class="addinner">' +
+        '<div class="addq">No film called <b>' + esc(q) + '</b> in the library.</div>' +
+        '<button class="pbtn primary" id="addNew">Add \u201c' + esc(q) + '\u201d</button></div>';
+      $('addNew').addEventListener('click', function () { openAdd(q); });
+    } else if (q.length > 1) {
+      addBar.hidden = false;
+      addBar.innerHTML = '<div class="addinner"><div class="addq">Not the film you meant?</div>' +
+        '<button class="pbtn" id="addNew">Add \u201c' + esc(q) + '\u201d as a new film</button></div>';
+      $('addNew').addEventListener('click', function () { openAdd(q); });
+    } else {
+      addBar.hidden = true;
+    }
+
     $('empty').hidden = list.length > 0;
     var rated = list.filter(function (d) { return d.c !== null; });
     $('found').textContent = list.length + ' of ' + DATA.length + ' films' +
       (rated.length ? '  ·  ' + rated.filter(function (d) { return d.c >= 4; }).length +
         ' of them we go back to' : '');
   }
+
+  /* ------------------------------------------------------------ add a film */
+  /* The app has no network and no server, so it cannot look a film up. It
+   * captures what Chris knows, and SAGE does the TMDB lookup when the paste
+   * comes back. Better than making him switch to the sheet mid-film. */
+
+  function openAdd(prefill) {
+    sheetEl.innerHTML =
+      '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
+      '<h2 id="sheetTitle">Add a film</h2>' +
+      '<div class="yr">Not in the library yet</div></div>' +
+      '<div class="bd">' +
+      '<div class="editbox">' +
+        '<div class="eh">Title</div>' +
+        '<input class="pnum" id="newTitle" type="text" value="' + esc(prefill || '') + '" placeholder="Exact title helps me find it">' +
+        '<div class="eh">Year, if you know it</div>' +
+        '<input class="pnum" id="newYear" type="number" min="1900" max="2030" placeholder="e.g. 2019">' +
+        '<div class="eh">Who watched it</div>' +
+        '<div class="actions" id="newCtx">' +
+          '<button class="pbtn" data-c="Date Night">Date Night</button>' +
+          '<button class="pbtn" data-c="Family">With the boys</button>' +
+          '<button class="pbtn" data-c="Solo">On my own</button>' +
+          '<button class="pbtn" data-c="Queue">Not seen yet</button>' +
+        '</div>' +
+        '<div class="eh">Rate it</div>' +
+        ratePicker('Chris', 'nC', null) +
+        ratePicker('Pixie', 'nP', null) +
+        '<div class="eh">Anything to say about it</div>' +
+        '<textarea class="tsay" id="newSay" rows="2" placeholder="Chris says..."></textarea>' +
+        '<div class="brow"><button class="pbtn primary" id="newSave">Add to the list</button></div>' +
+        '<div class="ehint" id="ehint">I will look it up on TMDB and pull the poster, runtime and ' +
+        'Costa Rica streaming when you send this over.</div>' +
+      '</div></div>';
+    showSheet();
+    $('closeX').addEventListener('click', closeSheet);
+
+    var ctx = null;
+    $('newCtx').querySelectorAll('[data-c]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $('newCtx').querySelectorAll('[data-c]').forEach(function (x) { x.classList.remove('on'); });
+        b.classList.add('on'); ctx = b.dataset.c;
+      });
+    });
+    // The pickers write straight into the pending basket, so read them back here.
+    $('newSave').addEventListener('click', function () {
+      var t = $('newTitle').value.trim();
+      if (!t) { $('ehint').innerHTML = '<b>It needs a title.</b>'; return; }
+      var patch = { title: t, isNew: true };
+      var y = $('newYear').value.trim(); if (y) patch.year = y;
+      if (ctx) patch.context = ctx;
+      var c = sheetEl.querySelectorAll('.pnum')[2], px = sheetEl.querySelectorAll('.pnum')[3];
+      if (c && c.value) patch.chris = c.value;
+      if (px && px.value) patch.pixie = px.value;
+      var say = $('newSay').value.trim(); if (say) patch.chrisSays = say;
+      if (patch.chris || patch.pixie) patch.status = 'Rated';
+      edit(t, patch);
+      this.textContent = 'Added. Hit Review at the bottom when you are done.';
+      this.classList.add('done');
+    });
+  }
+
+  $('addNewTop').addEventListener('click', function () { openAdd(''); });
 
   /* --------------------------------------------------------- detail drawer */
 
@@ -459,6 +542,8 @@
             '<div class="suggmeta">' + [x.y, x.rt ? x.rt + ' min' : ''].filter(Boolean).join(' · ') +
               (p ? ' · <b class="pendflag">you answered this</b>' : '') + '</div>' +
             '<p class="why">' + esc(x.why) + '</p>' +
+            (x.thread ? '<p class="thread"><span class="tlabel">The thread</span>' +
+              esc(x.thread) + '</p>' : '') +
             '<div class="suggwhere">' + whereBadge(x.sv, x.sc) + '</div>' +
           '</div></article>';
       }).join('');
@@ -484,6 +569,7 @@
       '</div></div>' +
       '<div class="bd">' +
       '<div class="quote c"><div class="who">Why SAGE picked it</div><div class="q">' + esc(x.why) + '</div></div>' +
+      (x.thread ? '<p class="thread"><span class="tlabel">The thread</span>' + esc(x.thread) + '</p>' : '') +
       (x.ov ? '<p class="ov">' + esc(x.ov) + '</p>' : '') +
       '<div class="suggwhere" style="margin-top:14px">' + whereBadge(x.sv, x.sc) + '</div>' +
       '<div class="editbox">' +

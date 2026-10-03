@@ -119,7 +119,7 @@ if (fs.existsSync(SUGG_CSV)) {
   const g = (r, n) => { const i = sAt(n); return i === -1 ? '' : (r[i] || '').trim(); };
   suggestions = sr.map(r => ({
     t: g(r, 'Title'), y: Number(g(r, 'Year')) || null,
-    who: g(r, 'For') || 'Everyone', why: g(r, 'Why'),
+    who: g(r, 'For') || 'Everyone', why: g(r, 'Why'), thread: g(r, 'Thread'),
     sv: g(r, 'Streaming'), sc: g(r, 'Streaming Checked'),
     img: g(r, 'Poster'), rt: Number(g(r, 'Runtime')) || null, ov: g(r, 'Overview')
   })).filter(x => x.t);
@@ -345,9 +345,12 @@ const html = `<!DOCTYPE html>
       <option value="yo">Sort: oldest</option>
     </select>
     <button class="ghost" id="reset">Reset</button>
+    <button class="ghost addbtn" id="addNewTop">+ Add a film</button>
   </div>
   <p class="found" id="found"></p>
 </div>
+
+<div class="addbar" id="addbar" hidden></div>
 
 <div class="grid" id="grid"></div>
 <div class="empty" id="empty" hidden>Nothing matches that. Try clearing a filter.</div>
