@@ -33,10 +33,15 @@ and never will be.
 | To change | Edit |
 |---|---|
 | Films, ratings, comments, the queue | `movie-library.csv` |
-| How it looks | `app.css`. The build never overwrites it. |
-| Features, tabs, filters | `build.mjs` |
+| How it looks | `app.css`. A source file, never overwritten by the build. |
+| Features, tabs, filters, the editor | `app.js`. Also a source file. |
+| What data reaches the page | `build.mjs` |
 
-Never edit `index.html`. It is generated and the next build will overwrite it.
+Never edit `index.html`. It is a generated shell and the next build overwrites it.
+
+Edits made inside the app are held in your browser and handed back to SAGE as text
+via the **Review** button. A page served as static files cannot write to the library
+by itself, so Review is the save button.
 
 ## Notes
 
