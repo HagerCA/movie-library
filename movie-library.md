@@ -34,9 +34,9 @@ The app is `index.html` in this folder.
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
 | The Notebook | 2004 | **5** | 5 | Date Night | Rated | Love That Costs | Amazon Prime Video, HBO Max | “Might get 6 out of 5. That is the perfect romantic comedy.” |
-| Notting Hill | 1999 | **4.9** | 4.5 | Date Night | Rated | Richard Curtis | Rent: Apple TV Store, Google Play Movies |  |
-| About Time | 2013 | **4.8** | 5 | Date Night | Rated | Time & Second Chances | HBO Max | Confirmed 5. Watched 3 or 4 times. Was briefly given 4.5 earlier in the thread; 5 is the later call. |
-| Pretty Woman | 1990 | **4.7** | 5 | Date Night | Rated | Classic Canon | Disney Plus | “Top three rom-coms for sure.” |
+| Notting Hill | 1999 | **4.9** | 4.9 | Date Night | Rated | Richard Curtis | Rent: Apple TV Store, Google Play Movies |  |
+| About Time | 2013 | **4.8** | 4.8 | Date Night | Rated | Time & Second Chances | HBO Max | Confirmed 5. Watched 3 or 4 times. Was briefly given 4.5 earlier in the thread; 5 is the later call. |
+| Pretty Woman | 1990 | **4.7** | 4.7 | Date Night | Rated | Classic Canon | Disney Plus | “Top three rom-coms for sure.” |
 | 50 First Dates | 2004 | **4.5** | 4.5 | Date Night | Rated | Classic Canon | Amazon Prime Video, Sony One Amazon Channel | “Silly stupid movie but so much heart.” |
 | Crazy Rich Asians | 2018 | **4.5** | 4.5 | Date Night | Rated | Love That Costs | Rent: Google Play Movies | Fun, classic, hilarious. |
 | My Big Fat Greek Wedding | 2002 | **4.5** | 4.5 | Date Night | Rated | Classic Canon |  |  |
@@ -88,7 +88,7 @@ The app is `index.html` in this folder.
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| Me Before You | 2016 | **4.7** | 5 | Date Night | Rated | Love That Costs | Universal+ Amazon Channel | One of Pixie’s favourites. "She’ll kill me if I don’t." |
+| Me Before You | 2016 | **4.7** | 4.7 | Date Night | Rated | Love That Costs | Universal+ Amazon Channel | One of Pixie’s favourites. "She’ll kill me if I don’t." |
 | Midnight in Paris | 2011 | **4.5** | 4.5 | Date Night | Rated | Love That Costs | Rent: Apple TV Store |  |
 | The Fault in Our Stars | 2014 | **4.5** | 4.5 | Date Night | Rated | Love That Costs | Disney Plus | “The Power of Love. We love it.” |
 | The Guernsey Literary and Potato Peel Pie Society | 2018 | **4.5** | 4.5 | Date Night | Rated | Irish Lane | Netflix | Watched and confirmed 2026-10-03. "Pixie and I loved it." Earlier unseen notes predate the watch. |
@@ -215,30 +215,30 @@ The app is `index.html` in this folder.
 | Guardians of the Galaxy Vol. 2 | 2017 | **4.9** | 4.9 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Guardians of the Galaxy Vol. 3 | 2023 | **4.9** | 4.9 | Family | Rated | Marvel | Disney Plus | Highest-rated Marvel film in the library. Rocket’s origin. |
 | Sherlock Holmes: A Game of Shadows | 2011 | **4.9** | 4.9 | Date Night | Rated | Guy Ritchie | HBO Max | Added 2026-10-03. Chris called it "Sherlock Holmes in the Shadows". Was missing from the library entirely. |
-| The Gentlemen | 2019 | **4.9** | 5 | Date Night | Rated | Guy Ritchie | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel | Listed among films they love. The 2019 film. Needs a number. |
-| Avengers: Endgame | 2019 | **4.8** | 5 | Family | Rated | Marvel | Disney Plus |  |
-| Black Panther | 2018 | **4.8** | 4.5 | Family | Rated | Marvel | Disney Plus |  |
+| The Gentlemen | 2019 | **4.9** | 4.9 | Date Night | Rated | Guy Ritchie | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel | Listed among films they love. The 2019 film. Needs a number. |
+| Avengers: Endgame | 2019 | **4.8** | 4.8 | Family | Rated | Marvel | Disney Plus |  |
+| Black Panther | 2018 | **4.8** | 4.8 | Family | Rated | Marvel | Disney Plus |  |
 | Deadpool & Wolverine | 2024 | **4.8** | 4.8 | Household | Seen, unrated | Marvel | Disney Plus | The Deadpool voice Chris writes in. |
 | Sherlock Holmes | 2009 | **4.8** | 4.8 | Date Night | Rated | Guy Ritchie | Apple TV, HBO Max | Guy Ritchie. |
 | Spider-Man: Far From Home | 2019 | **4.8** | 4.8 | Household | Seen, unrated | Marvel | Netflix, Amazon Prime Video, Apple TV, Universal+ Amazon Channel |  |
 | Spider-Man: No Way Home | 2021 | **4.8** | 4.8 | Household | Seen, unrated | Marvel | Universal+ Amazon Channel |  |
-| Thor: Ragnarok | 2017 | **4.8** | 4.5 | Family | Rated | Marvel | Disney Plus |  |
+| Thor: Ragnarok | 2017 | **4.8** | 4.8 | Family | Rated | Marvel | Disney Plus |  |
 | Captain America: Civil War | 2016 | **4.7** | 4.7 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Guardians of the Galaxy Vol. 1 | 2014 | **4.7** | 4.7 | Family | Rated | Marvel | Disney Plus | Second-highest Marvel score after Vol. 3 at 4.9. |
 | Spider-Man: Homecoming | 2017 | **4.7** | 4.7 | Household | Seen, unrated | Marvel | HBO Max |  |
 | Spider-Man: Into the Spider-Verse | 2018 | **4.7** | 4.7 | Household | Seen, unrated | Marvel | Amazon Prime Video, Universal+ Amazon Channel |  |
-| Avengers: Infinity War | 2018 | **4.6** | 4 | Family | Rated | Marvel | Disney Plus |  |
+| Avengers: Infinity War | 2018 | **4.6** | 4.6 | Family | Rated | Marvel | Disney Plus |  |
 | Captain America: The First Avenger | 2011 | **4.6** | 4.6 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Deadpool 2 | 2018 | **4.6** | 4.6 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Iron Man | 2008 | **4.6** | 4.6 | Household | Seen, unrated | Marvel | Disney Plus |  |
-| The Avengers | 2012 | **4.6** | 4 | Family | Rated | Marvel | Disney Plus |  |
+| The Avengers | 2012 | **4.6** | 4.6 | Family | Rated | Marvel | Disney Plus |  |
 | The Man from U.N.C.L.E. | 2015 | **4.6** | 4.6 | Date Night | Rated | Guy Ritchie | HBO Max | Guy Ritchie. |
-| Thor: Love and Thunder | 2022 | **4.6** | 4 | Family | Rated | Marvel | Disney Plus |  |
+| Thor: Love and Thunder | 2022 | **4.6** | 4.6 | Family | Rated | Marvel | Disney Plus |  |
 | Deadpool | 2016 | **4.5** | 4.5 | Household | Seen, unrated | Marvel | Disney Plus |  |
 | Doctor Strange in the Multiverse of Madness | 2022 | **4.5** | 4.5 | Family | Rated | Marvel | Disney Plus |  |
 | Free Guy | 2021 | **4.5** | 4.5 | Family | Rated | Ryan Reynolds | Disney Plus |  |
 | In the Grey | 2026 | **4.5** | 4.5 | Date Night | Rated | Guy Ritchie | Amazon Prime Video | Tracked in Coming Soon, then watched and rated 2026-10-03. |
-| Ant-Man | 2015 | **4.4** | 4 | Family | Rated | Marvel | Disney Plus |  |
+| Ant-Man | 2015 | **4.4** | 4.4 | Family | Rated | Marvel | Disney Plus |  |
 | The Amazing Spider-Man | 2012 | **4.4** | 4.4 | Household | Seen, unrated | Marvel | HBO Max, VIX |  |
 | Doctor Strange | 2016 | **4.3** | 4.3 | Family | Rated | Marvel | Disney Plus |  |
 | The Amazing Spider-Man 2 | 2014 | **4.3** | 4.3 | Household | Seen, unrated | Marvel | Amazon Prime Video, HBO Max, VIX , Sony One Amazon Channel |  |
@@ -263,14 +263,14 @@ The app is `index.html` in this folder.
 |---|---|---|---|---|---|---|---|---|
 | Batman: The Dark Knight Returns | 2012 | **4.8** | 4.8 | Household | Seen, unrated | Superhero | HBO Max | Chris listed this as a documentary; it is the two-part animated film. Worth confirming which he means. |
 | Die Hard | 1988 | **4.8** | 4.8 | Household | Seen, unrated | Blockbuster | Disney Plus |  |
-| A Knight's Tale | 2001 | **4.7** | 4 | Family | Rated | Blockbuster | HBO Max |  |
+| A Knight's Tale | 2001 | **4.7** | 4.7 | Family | Rated | Blockbuster | HBO Max |  |
 | Wonder Woman | 2017 | **4.7** | 4.7 | Household | Seen, unrated | Superhero | Rent: Apple TV Store, Google Play Movies |  |
 | 1917 | 2019 | **4.6** | 4.6 | Household | Seen, unrated | Blockbuster | Amazon Prime Video |  |
 | Heat | 1995 | **4.6** | 4.6 | Household | Seen, unrated | Blockbuster | Disney Plus |  |
 | The Hunger Games | 2012 | **4.6** | 4.6 | Household | Seen, unrated | Blockbuster | Rent: Apple TV Store, Google Play Movies |  |
 | Avatar | 2009 | **4.5** | 4.5 | Family | Rated | Blockbuster | Disney Plus |  |
 | Gran Turismo | 2023 | **4.5** | 4.5 | Household | Seen, unrated | Blockbuster | Netflix |  |
-| King Arthur: Legend of the Sword | 2017 | **4.5** | 4 | Family | Rated | Blockbuster | HBO Max | Guy Ritchie. |
+| King Arthur: Legend of the Sword | 2017 | **4.5** | 4.5 | Family | Rated | Blockbuster | HBO Max | Guy Ritchie. |
 | Kingsman: The Secret Service | 2014 | **4.5** | 4.5 | Date Night | Rated | Action | Disney Plus | “Great action movie. Really enjoyed that one.” First one only. |
 | Mission: Impossible - Dead Reckoning Part One | 2023 | **4.5** | 4.5 | Household | Seen, unrated | Blockbuster | Paramount Plus |  |
 | Mission: Impossible - Rogue Nation | 2015 | **4.5** | 4.5 | Household | Seen, unrated | Blockbuster | Paramount Plus, Universal+ Amazon Channel |  |
@@ -343,17 +343,17 @@ The app is `index.html` in this folder.
 |---|---|---|---|---|---|---|---|---|
 | Interstellar | 2014 | **5** | 5 | Family | Rated | Space & Science | Amazon Prime Video, HBO Max | Confirmed 2026-10-03: 5, watched with the boys, "slightly over their heads" and they still enjoyed it. An earlier pass in the thread said 4.5. |
 | Rogue One: A Star Wars Story | 2016 | **4.9** | 4.9 | Family | Rated | Star Wars | Disney Plus |  |
-| Star Wars: Episode V - The Empire Strikes Back | 1980 | **4.9** | 5 | Family | Rated | Star Wars | Disney Plus |  |
+| Star Wars: Episode V - The Empire Strikes Back | 1980 | **4.9** | 4.9 | Family | Rated | Star Wars | Disney Plus |  |
 | The Fifth Element | 1997 | **4.9** | 4.9 | Household | Seen, unrated | Sci-fi Canon |  |  |
 | The Matrix | 1999 | **4.9** | 4.9 | Household | Seen, unrated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies |  |
 | Dune | 2021 | **4.8** | 4.8 | Household | Seen, unrated | Sci-fi Canon | HBO Max, Universal+ Amazon Channel |  |
 | Edge of Tomorrow | 2014 | **4.8** | 4.8 | Household | Rated | Time & Second Chances | Netflix, Amazon Prime Video, HBO Max | Was recorded as unseen; Chris rated it 2026-10-03, so the library had it wrong. |
-| Inception | 2010 | **4.8** | 4.5 | Date Night | Rated | Mind-Bender | HBO Max |  |
+| Inception | 2010 | **4.8** | 4.8 | Date Night | Rated | Mind-Bender | HBO Max |  |
 | Project Hail Mary | 2026 | **4.8** | 4.8 | Queue | Rated | Space & Science | Amazon Prime Video | Loves the book. Film in theatres. Listed among films he loves, which is the book talking. Was on the queue as unseen. Rated in the sheet 2026-10-03, so it has been watched. |
-| The Martian | 2015 | **4.8** | 4 | Family | Rated | Space & Science | Disney Plus | “That movie was fantastic. The boys really loved it.” The gateway film. |
+| The Martian | 2015 | **4.8** | 4.8 | Family | Rated | Space & Science | Disney Plus | “That movie was fantastic. The boys really loved it.” The gateway film. |
 | Avatar: The Way of Water | 2022 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | Disney Plus |  |
 | Dune: Part Two | 2024 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | HBO Max, Universal+ Amazon Channel |  |
-| Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.9 | Family | Rated | Star Wars | Disney Plus |  |
+| Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | Star Wars: Episode VI - Return of the Jedi | 1983 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | IF | 2024 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies | Also called Imaginary Friends. |
 | Jurassic Park | 1993 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max |  |
@@ -388,12 +388,12 @@ The app is `index.html` in this folder.
 | Puss in Boots: The Last Wish | 2022 | **5** | 5 | Family | Rated | Animated Family | Universal+ Amazon Channel |  |
 | Soul | 2020 | **5** | 5 | Family | Rated | Animated Family | Disney Plus |  |
 | The Iron Giant | 1999 | **5** | 5 | Family | Rated | Choose Who You Are | Rent: Apple TV Store, Google Play Movies | “You are who you choose to be.” |
-| Encanto | 2021 | **4.8** | 5 | Family | Rated | Animated Family | Disney Plus |  |
-| Paddington 2 | 2017 | **4.8** | 5 | Family | Rated | Animated Family | Amazon Prime Video, Universal+ Amazon Channel |  |
-| The Boy, the Mole, the Fox and the Horse | 2022 | **4.8** | 5 | Family | Rated | Animated Family | Apple TV |  |
+| Encanto | 2021 | **4.8** | 4.8 | Family | Rated | Animated Family | Disney Plus |  |
+| Paddington 2 | 2017 | **4.8** | 4.8 | Family | Rated | Animated Family | Amazon Prime Video, Universal+ Amazon Channel |  |
+| The Boy, the Mole, the Fox and the Horse | 2022 | **4.8** | 4.8 | Family | Rated | Animated Family | Apple TV |  |
 | Up | 2009 | **4.8** | 4.8 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Charlie and the Chocolate Factory | 2005 | **4.7** | 4.7 | Household | Seen, unrated | Animated Family | Netflix, HBO Max |  |
-| Paddington | 2014 | **4.7** | 5 | Family | Rated | Animated Family | Rent: Apple TV Store, Google Play Movies |  |
+| Paddington | 2014 | **4.7** | 4.7 | Family | Rated | Animated Family | Rent: Apple TV Store, Google Play Movies |  |
 | Big Hero 6 | 2014 | **4.5** | 4.5 | Family | Rated | Animated Family | Disney Plus |  |
 | Coco | 2017 | **4.5** | 4.5 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Elemental | 2023 | **4.5** | 4.5 | Family | Rated | Animated Family | Disney Plus |  |
@@ -411,7 +411,7 @@ The app is `index.html` in this folder.
 | Cars | 2006 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Frozen II | 2019 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Inside Out 2 | 2024 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Disney Plus |  |
-| Luca | 2021 | **4.3** | 5 | Family | Rated | Animated Family | Disney Plus |  |
+| Luca | 2021 | **4.3** | 4.3 | Family | Rated | Animated Family | Disney Plus |  |
 | Onward | 2020 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Disney Plus |  |
 | Sing | 2016 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Amazon Prime Video, HBO Max, Universal+ Amazon Channel |  |
 | The Croods | 2013 | **4.3** | 4.3 | Household | Seen, unrated | Animated Family | Amazon Prime Video, HBO Max, Universal+ Amazon Channel |  |
@@ -570,7 +570,7 @@ The app is `index.html` in this folder.
 - **398 films.** Rated 226 · Seen, unrated 139 · Watchlist 27 · Owned, unwatched 3 · Seen, Chris partial 1 · Not released 1 · Not watching 1
 - **Chris 363 rated, avg 4.25. Pixie 366 rated, avg 4.25.**
 - Rewatches (4.0+): **311** · enjoyed once (3.5): 35 · below: 17
-- Where they differ: **24** (The Martian, Luca, A Knight's Tale, Thor: Love and Thunder, The Avengers, Avengers: Infinity War, King Arthur: Legend of the Sword, Notting Hill)
+- Where they differ: **1** (The Sandlot)
 - Spread: 5.0 (13) · 4.9 (14) · 4.8 (27) · 4.7 (17) · 4.6 (20) · 4.5 (71) · 4.4 (14) · 4.3 (22) · 4.2 (22) · 4.1 (7) · 4.0 (84) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (23) · 3.0 (15) · 2.5 (2)
 - Context: Household 142 · Family 125 · Date Night 80 · Queue 39 · Solo 12
 - Retired rows kept in the CSV but hidden: 5
