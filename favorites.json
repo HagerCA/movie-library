@@ -1,43 +1,15 @@
 {
  "built": "2026-10-04",
- "films": 390,
- "mean": 4.256,
+ "films": 558,
+ "mean": 4.111,
  "directors": [
   {
-   "name": "James Gunn",
-   "n": 4,
-   "leads": 0,
-   "avg": 4.75,
-   "wavg": 4.75,
-   "weighted": 4.503,
-   "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Superman 4.5"
-   ]
-  },
-  {
-   "name": "David Yates",
-   "n": 6,
-   "leads": 0,
-   "avg": 4.65,
-   "wavg": 4.65,
-   "weighted": 4.492,
-   "top": [
-    "Harry Potter and the Order of the Phoenix 4.7",
-    "Harry Potter and the Half-Blood Prince 4.7",
-    "Harry Potter and the Deathly Hallows: Part 1 4.7",
-    "Harry Potter and the Deathly Hallows: Part 2 4.7"
-   ]
-  },
-  {
    "name": "Steven Spielberg",
-   "n": 9,
+   "n": 10,
    "leads": 0,
-   "avg": 4.59,
-   "wavg": 4.59,
-   "weighted": 4.486,
+   "avg": 4.61,
+   "wavg": 4.61,
+   "weighted": 4.468,
    "top": [
     "Jaws 5.0",
     "E.T. the Extra-Terrestrial 4.9",
@@ -46,12 +18,26 @@
    ]
   },
   {
+   "name": "David Yates",
+   "n": 6,
+   "leads": 0,
+   "avg": 4.65,
+   "wavg": 4.65,
+   "weighted": 4.435,
+   "top": [
+    "Harry Potter and the Order of the Phoenix 4.7",
+    "Harry Potter and the Half-Blood Prince 4.7",
+    "Harry Potter and the Deathly Hallows: Part 1 4.7",
+    "Harry Potter and the Deathly Hallows: Part 2 4.7"
+   ]
+  },
+  {
    "name": "Guy Ritchie",
    "n": 9,
    "leads": 0,
    "avg": 4.58,
    "wavg": 4.58,
-   "weighted": 4.479,
+   "weighted": 4.434,
    "top": [
     "The Gentlemen 4.9",
     "Sherlock Holmes: A Game of Shadows 4.9",
@@ -60,29 +46,30 @@
    ]
   },
   {
+   "name": "James Gunn",
+   "n": 4,
+   "leads": 0,
+   "avg": 4.75,
+   "wavg": 4.75,
+   "weighted": 4.431,
+   "top": [
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Guardians of the Galaxy Vol. 2 4.9",
+    "Guardians of the Galaxy Vol. 1 4.7",
+    "Superman 4.5"
+   ]
+  },
+  {
    "name": "Jon Watts",
    "n": 3,
    "leads": 0,
    "avg": 4.77,
    "wavg": 4.77,
-   "weighted": 4.475,
+   "weighted": 4.392,
    "top": [
     "Spider-Man: Far From Home 4.8",
     "Spider-Man: No Way Home 4.8",
     "Spider-Man: Homecoming 4.7"
-   ]
-  },
-  {
-   "name": "Taika Waititi",
-   "n": 3,
-   "leads": 0,
-   "avg": 4.73,
-   "wavg": 4.73,
-   "weighted": 4.461,
-   "top": [
-    "Thor: Ragnarok 4.8",
-    "Jojo Rabbit 4.8",
-    "Thor: Love and Thunder 4.6"
    ]
   },
   {
@@ -91,7 +78,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "Interstellar 4.8",
     "Inception 4.8",
@@ -104,7 +91,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "The Adam Project 4.8",
     "Deadpool & Wolverine 4.8",
@@ -117,7 +104,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: Civil War 4.7",
@@ -130,7 +117,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: Civil War 4.7",
@@ -143,7 +130,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -156,11 +143,25 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.432,
+   "weighted": 4.349,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
     "Wonka 4.5"
+   ]
+  },
+  {
+   "name": "Chris Columbus",
+   "n": 4,
+   "leads": 0,
+   "avg": 4.58,
+   "wavg": 4.58,
+   "weighted": 4.343,
+   "top": [
+    "Harry Potter and the Sorcerer's Stone 4.7",
+    "Harry Potter and the Chamber of Secrets 4.7",
+    "Home Alone 4.5",
+    "Home Alone 2: Lost in New York 4.4"
    ]
   }
  ],
@@ -171,7 +172,7 @@
    "leads": 0,
    "avg": 4.66,
    "wavg": 4.66,
-   "weighted": 4.527,
+   "weighted": 4.479,
    "top": [
     "Harry Potter and the Sorcerer's Stone 4.7",
     "Harry Potter and the Chamber of Secrets 4.7",
@@ -185,7 +186,7 @@
    "leads": 0,
    "avg": 4.75,
    "wavg": 4.75,
-   "weighted": 4.503,
+   "weighted": 4.431,
    "top": [
     "Guardians of the Galaxy Vol. 3 4.9",
     "Guardians of the Galaxy Vol. 2 4.9",
@@ -199,7 +200,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.465,
+   "weighted": 4.393,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: Civil War 4.7",
@@ -213,7 +214,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.465,
+   "weighted": 4.393,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: Civil War 4.7",
@@ -227,7 +228,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "Interstellar 4.8",
     "Inception 4.8",
@@ -235,39 +236,17 @@
    ]
   },
   {
-   "name": "Eric Roth",
-   "n": 2,
+   "name": "Guy Ritchie",
+   "n": 7,
    "leads": 0,
-   "avg": 4.8,
-   "wavg": 4.8,
-   "weighted": 4.437,
+   "avg": 4.5,
+   "wavg": 4.5,
+   "weighted": 4.359,
    "top": [
-    "Dune 4.8",
-    "Forrest Gump 4.8"
-   ]
-  },
-  {
-   "name": "Drew Goddard",
-   "n": 2,
-   "leads": 0,
-   "avg": 4.8,
-   "wavg": 4.8,
-   "weighted": 4.437,
-   "top": [
-    "The Martian 4.8",
-    "Project Hail Mary 4.8"
-   ]
-  },
-  {
-   "name": "Jon Croker",
-   "n": 2,
-   "leads": 0,
-   "avg": 4.8,
-   "wavg": 4.8,
-   "weighted": 4.437,
-   "top": [
-    "The Boy, the Mole, the Fox and the Horse 4.8",
-    "Paddington 2 4.8"
+    "The Gentlemen 4.9",
+    "The Man from U.N.C.L.E. 4.6",
+    "King Arthur: Legend of the Sword 4.5",
+    "In the Grey 4.5"
    ]
   },
   {
@@ -276,7 +255,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.432,
+   "weighted": 4.349,
    "top": [
     "Soul 5.0",
     "Up 4.8",
@@ -289,36 +268,50 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.432,
+   "weighted": 4.349,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
     "Wonka 4.5"
    ]
+  },
+  {
+   "name": "Lawrence Kasdan",
+   "n": 4,
+   "leads": 0,
+   "avg": 4.58,
+   "wavg": 4.58,
+   "weighted": 4.343,
+   "top": [
+    "Star Wars: Episode V - The Empire Strikes Back 4.9",
+    "Star Wars: Episode VI - Return of the Jedi 4.7",
+    "Raiders of the Lost Ark 4.5",
+    "Star Wars: Episode VII - The Force Awakens 4.2"
+   ]
+  },
+  {
+   "name": "Christopher McQuarrie",
+   "n": 4,
+   "leads": 0,
+   "avg": 4.58,
+   "wavg": 4.58,
+   "weighted": 4.343,
+   "top": [
+    "Edge of Tomorrow 4.8",
+    "Top Gun: Maverick 4.5",
+    "Mission: Impossible - Rogue Nation 4.5",
+    "Mission: Impossible - Dead Reckoning Part One 4.5"
+   ]
   }
  ],
  "actors": [
-  {
-   "name": "Daniel Radcliffe",
-   "n": 8,
-   "leads": 8,
-   "avg": 4.7,
-   "wavg": 4.7,
-   "weighted": 4.637,
-   "top": [
-    "Harry Potter and the Sorcerer's Stone 4.7",
-    "Harry Potter and the Chamber of Secrets 4.7",
-    "Harry Potter and the Prisoner of Azkaban 4.7",
-    "Harry Potter and the Goblet of Fire 4.7"
-   ]
-  },
   {
    "name": "Rupert Grint",
    "n": 8,
    "leads": 8,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.637,
+   "weighted": 4.616,
    "top": [
     "Harry Potter and the Sorcerer's Stone 4.7",
     "Harry Potter and the Chamber of Secrets 4.7",
@@ -332,7 +325,7 @@
    "leads": 9,
    "avg": 4.65,
    "wavg": 4.66,
-   "weighted": 4.61,
+   "weighted": 4.592,
    "top": [
     "Sherlock Holmes: A Game of Shadows 4.9",
     "Avengers: Endgame 4.8",
@@ -341,12 +334,26 @@
    ]
   },
   {
+   "name": "Daniel Radcliffe",
+   "n": 9,
+   "leads": 9,
+   "avg": 4.62,
+   "wavg": 4.62,
+   "weighted": 4.556,
+   "top": [
+    "Harry Potter and the Sorcerer's Stone 4.7",
+    "Harry Potter and the Chamber of Secrets 4.7",
+    "Harry Potter and the Prisoner of Azkaban 4.7",
+    "Harry Potter and the Goblet of Fire 4.7"
+   ]
+  },
+  {
    "name": "Dave Bautista",
    "n": 4,
    "leads": 3,
    "avg": 4.5,
    "wavg": 4.7,
-   "weighted": 4.573,
+   "weighted": 4.532,
    "top": [
     "Guardians of the Galaxy Vol. 3 4.9",
     "Guardians of the Galaxy Vol. 2 4.9",
@@ -355,45 +362,17 @@
    ]
   },
   {
-   "name": "Jude Law",
-   "n": 5,
-   "leads": 4,
-   "avg": 4.66,
-   "wavg": 4.67,
-   "weighted": 4.572,
-   "top": [
-    "Sherlock Holmes: A Game of Shadows 4.9",
-    "Sherlock Holmes 4.8",
-    "The Holiday 4.5",
-    "King Arthur: Legend of the Sword 4.5"
-   ]
-  },
-  {
-   "name": "Chris Hemsworth",
-   "n": 5,
-   "leads": 3,
-   "avg": 4.68,
-   "wavg": 4.67,
-   "weighted": 4.562,
+   "name": "Mark Ruffalo",
+   "n": 7,
+   "leads": 5,
+   "avg": 4.59,
+   "wavg": 4.59,
+   "weighted": 4.502,
    "top": [
     "Thor: Ragnarok 4.8",
-    "Thor: Love and Thunder 4.6",
-    "Avengers: Infinity War 4.6",
-    "Avengers: Endgame 4.8 (supporting)"
-   ]
-  },
-  {
-   "name": "Tom Holland",
-   "n": 4,
-   "leads": 4,
-   "avg": 4.65,
-   "wavg": 4.65,
-   "weighted": 4.551,
-   "top": [
-    "Spider-Man: Far From Home 4.8",
-    "Spider-Man: No Way Home 4.8",
-    "Spider-Man: Homecoming 4.7",
-    "Onward 4.3"
+    "Avengers: Endgame 4.8",
+    "The Adam Project 4.8",
+    "The Avengers 4.6"
    ]
   },
   {
@@ -402,7 +381,7 @@
    "leads": 2,
    "avg": 4.68,
    "wavg": 4.65,
-   "weighted": 4.537,
+   "weighted": 4.496,
    "top": [
     "The Goonies 4.6",
     "Deadpool 2 4.6",
@@ -416,7 +395,7 @@
    "leads": 3,
    "avg": 4.6,
    "wavg": 4.64,
-   "weighted": 4.53,
+   "weighted": 4.489,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -425,26 +404,12 @@
    ]
   },
   {
-   "name": "Mark Ruffalo",
-   "n": 7,
-   "leads": 5,
-   "avg": 4.59,
-   "wavg": 4.59,
-   "weighted": 4.53,
-   "top": [
-    "Thor: Ragnarok 4.8",
-    "Avengers: Endgame 4.8",
-    "The Adam Project 4.8",
-    "The Avengers 4.6"
-   ]
-  },
-  {
    "name": "Diego Luna",
    "n": 3,
    "leads": 2,
    "avg": 4.67,
    "wavg": 4.69,
-   "weighted": 4.529,
+   "weighted": 4.477,
    "top": [
     "Rogue One: A Star Wars Story 4.9",
     "The Book of Life 4.5",
@@ -452,17 +417,56 @@
    ]
   },
   {
-   "name": "Samuel L. Jackson",
-   "n": 6,
-   "leads": 4,
-   "avg": 4.55,
-   "wavg": 4.61,
-   "weighted": 4.529,
+   "name": "Charlie Hunnam",
+   "n": 3,
+   "leads": 3,
+   "avg": 4.63,
+   "wavg": 4.63,
+   "weighted": 4.473,
    "top": [
-    "Spider-Man: Far From Home 4.8",
-    "Pulp Fiction 4.8",
-    "Kingsman: The Secret Service 4.5",
-    "The Hitman’s Bodyguard 4.5"
+    "The Gentlemen 4.9",
+    "King Arthur: Legend of the Sword 4.5",
+    "Pacific Rim 4.5"
+   ]
+  },
+  {
+   "name": "Ian McKellen",
+   "n": 3,
+   "leads": 3,
+   "avg": 4.63,
+   "wavg": 4.63,
+   "weighted": 4.473,
+   "top": [
+    "The Lord of the Rings: The Return of the King 4.8",
+    "The Lord of the Rings: The Two Towers 4.6",
+    "The Lord of the Rings: The Fellowship of the Ring 4.5"
+   ]
+  },
+  {
+   "name": "Matt Damon",
+   "n": 4,
+   "leads": 4,
+   "avg": 4.58,
+   "wavg": 4.58,
+   "weighted": 4.459,
+   "top": [
+    "Good Will Hunting 5.0",
+    "The Martian 4.8",
+    "Oppenheimer 4.5",
+    "Ford v Ferrari 4.0"
+   ]
+  },
+  {
+   "name": "Hugh Jackman",
+   "n": 3,
+   "leads": 2,
+   "avg": 4.47,
+   "wavg": 4.66,
+   "weighted": 4.459,
+   "top": [
+    "The Greatest Showman 4.8",
+    "Deadpool & Wolverine 4.8",
+    "Happy Feet 3.8 (supporting)"
    ]
   }
  ],
@@ -473,7 +477,7 @@
    "leads": 8,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.637,
+   "weighted": 4.616,
    "top": [
     "Harry Potter and the Sorcerer's Stone 4.7",
     "Harry Potter and the Chamber of Secrets 4.7",
@@ -482,40 +486,12 @@
    ]
   },
   {
-   "name": "Zoe Saldaña",
-   "n": 8,
-   "leads": 6,
-   "avg": 4.69,
-   "wavg": 4.7,
-   "weighted": 4.622,
-   "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Avatar: The Way of Water 4.7"
-   ]
-  },
-  {
-   "name": "Zendaya",
-   "n": 5,
-   "leads": 2,
-   "avg": 4.76,
-   "wavg": 4.76,
-   "weighted": 4.602,
-   "top": [
-    "Spider-Man: No Way Home 4.8",
-    "Dune: Part Two 4.7",
-    "The Greatest Showman 4.8 (supporting)",
-    "Spider-Man: Far From Home 4.8 (supporting)"
-   ]
-  },
-  {
    "name": "Robin Wright",
    "n": 4,
    "leads": 2,
    "avg": 4.63,
    "wavg": 4.76,
-   "weighted": 4.594,
+   "weighted": 4.545,
    "top": [
     "The Princess Bride 5.0",
     "Forrest Gump 4.8",
@@ -529,7 +505,7 @@
    "leads": 2,
    "avg": 4.66,
    "wavg": 4.7,
-   "weighted": 4.563,
+   "weighted": 4.519,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -538,12 +514,26 @@
    ]
   },
   {
+   "name": "Zoe Saldaña",
+   "n": 9,
+   "leads": 7,
+   "avg": 4.59,
+   "wavg": 4.58,
+   "weighted": 4.509,
+   "top": [
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Guardians of the Galaxy Vol. 2 4.9",
+    "Guardians of the Galaxy Vol. 1 4.7",
+    "Avatar: The Way of Water 4.7"
+   ]
+  },
+  {
    "name": "Rachel McAdams",
    "n": 10,
    "leads": 7,
    "avg": 4.58,
    "wavg": 4.57,
-   "weighted": 4.522,
+   "weighted": 4.502,
    "top": [
     "The Notebook 5.0",
     "About Time 4.8",
@@ -552,38 +542,12 @@
    ]
   },
   {
-   "name": "Margot Robbie",
-   "n": 3,
-   "leads": 2,
-   "avg": 4.7,
-   "wavg": 4.67,
-   "weighted": 4.52,
-   "top": [
-    "Amsterdam 4.9",
-    "Once Upon a Time in Hollywood 4.4",
-    "About Time 4.8 (supporting)"
-   ]
-  },
-  {
-   "name": "Felicity Jones",
-   "n": 3,
-   "leads": 2,
-   "avg": 4.57,
-   "wavg": 4.64,
-   "weighted": 4.502,
-   "top": [
-    "Rogue One: A Star Wars Story 4.9",
-    "A Monster Calls 4.5",
-    "The Amazing Spider-Man 2 4.3 (supporting)"
-   ]
-  },
-  {
    "name": "Carrie Fisher",
    "n": 7,
    "leads": 6,
    "avg": 4.51,
    "wavg": 4.55,
-   "weighted": 4.497,
+   "weighted": 4.472,
    "top": [
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
     "Star Wars: Episode IV - A New Hope 4.7",
@@ -592,30 +556,30 @@
    ]
   },
   {
-   "name": "Morena Baccarin",
+   "name": "Felicity Jones",
    "n": 3,
    "leads": 2,
-   "avg": 4.63,
-   "wavg": 4.59,
-   "weighted": 4.466,
+   "avg": 4.57,
+   "wavg": 4.64,
+   "weighted": 4.45,
    "top": [
-    "Deadpool 2 4.6",
-    "Deadpool 4.5",
-    "Deadpool & Wolverine 4.8 (supporting)"
+    "Rogue One: A Star Wars Story 4.9",
+    "A Monster Calls 4.5",
+    "The Amazing Spider-Man 2 4.3 (supporting)"
    ]
   },
   {
-   "name": "Scarlett Johansson",
-   "n": 8,
-   "leads": 3,
-   "avg": 4.51,
-   "wavg": 4.51,
-   "weighted": 4.451,
+   "name": "Morena Baccarin",
+   "n": 4,
+   "leads": 2,
+   "avg": 4.57,
+   "wavg": 4.56,
+   "weighted": 4.412,
    "top": [
-    "Jojo Rabbit 4.8",
-    "Captain America: Civil War 4.7",
-    "Sing 2 4.0",
-    "Avengers: Endgame 4.8 (supporting)"
+    "Deadpool 2 4.6",
+    "Deadpool 4.5",
+    "Deadpool & Wolverine 4.8 (supporting)",
+    "Serenity 4.4 (supporting)"
    ]
   },
   {
@@ -624,22 +588,62 @@
    "leads": 3,
    "avg": 4.5,
    "wavg": 4.5,
-   "weighted": 4.425,
+   "weighted": 4.38,
    "top": [
     "Sleepless in Seattle 4.5",
     "You've Got Mail 4.5",
     "When Harry Met Sally 4.5"
+   ]
+  },
+  {
+   "name": "Zendaya",
+   "n": 6,
+   "leads": 3,
+   "avg": 4.57,
+   "wavg": 4.47,
+   "weighted": 4.378,
+   "top": [
+    "Spider-Man: No Way Home 4.8",
+    "Dune: Part Two 4.7",
+    "Smallfoot 3.6",
+    "The Greatest Showman 4.8 (supporting)"
+   ]
+  },
+  {
+   "name": "Diane Keaton",
+   "n": 3,
+   "leads": 2,
+   "avg": 4.5,
+   "wavg": 4.5,
+   "weighted": 4.359,
+   "top": [
+    "Something's Gotta Give 4.5",
+    "The Family Stone 4.5",
+    "Finding Dory 4.5 (supporting)"
+   ]
+  },
+  {
+   "name": "Drew Barrymore",
+   "n": 3,
+   "leads": 3,
+   "avg": 4.47,
+   "wavg": 4.47,
+   "weighted": 4.357,
+   "top": [
+    "E.T. the Extra-Terrestrial 4.9",
+    "50 First Dates 4.5",
+    "Music and Lyrics 4.0"
    ]
   }
  ],
  "composers": [
   {
    "name": "John Williams",
-   "n": 20,
+   "n": 21,
    "leads": 0,
-   "avg": 4.57,
-   "wavg": 4.57,
-   "weighted": 4.518,
+   "avg": 4.54,
+   "wavg": 4.54,
+   "weighted": 4.47,
    "top": [
     "Jaws 5.0",
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
@@ -653,7 +657,7 @@
    "leads": 0,
    "avg": 4.6,
    "wavg": 4.6,
-   "weighted": 4.462,
+   "weighted": 4.405,
    "top": [
     "The Shawshank Redemption 5.0",
     "1917 4.6",
@@ -662,39 +666,12 @@
    ]
   },
   {
-   "name": "Tyler Bates",
-   "n": 3,
-   "leads": 0,
-   "avg": 4.73,
-   "wavg": 4.73,
-   "weighted": 4.461,
-   "top": [
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Deadpool 2 4.6"
-   ]
-  },
-  {
-   "name": "Michael Giacchino",
-   "n": 19,
-   "leads": 0,
-   "avg": 4.49,
-   "wavg": 4.49,
-   "weighted": 4.453,
-   "top": [
-    "Rogue One: A Star Wars Story 4.9",
-    "Spider-Man: Far From Home 4.8",
-    "Spider-Man: No Way Home 4.8",
-    "Jojo Rabbit 4.8"
-   ]
-  },
-  {
    "name": "Michael Kamen",
    "n": 3,
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.446,
+   "weighted": 4.364,
    "top": [
     "The Iron Giant 4.8",
     "Die Hard 4.8",
@@ -707,7 +684,7 @@
    "leads": 0,
    "avg": 4.6,
    "wavg": 4.6,
-   "weighted": 4.428,
+   "weighted": 4.356,
    "top": [
     "The Lord of the Rings: The Return of the King 4.8",
     "The Lord of the Rings: The Two Towers 4.6",
@@ -716,42 +693,69 @@
    ]
   },
   {
-   "name": "Alexandre Desplat",
-   "n": 4,
-   "leads": 0,
-   "avg": 4.58,
-   "wavg": 4.58,
-   "weighted": 4.415,
-   "top": [
-    "Harry Potter and the Deathly Hallows: Part 1 4.7",
-    "Harry Potter and the Deathly Hallows: Part 2 4.7",
-    "The Grand Budapest Hotel 4.5",
-    "The French Dispatch 4.4"
-   ]
-  },
-  {
    "name": "John Murphy",
    "n": 4,
    "leads": 0,
    "avg": 4.55,
    "wavg": 4.55,
-   "weighted": 4.403,
+   "weighted": 4.331,
    "top": [
     "Guardians of the Galaxy Vol. 3 4.9",
     "Superman 4.5",
     "Snatch 4.5",
     "Lock, Stock and Two Smoking Barrels 4.3"
    ]
+  },
+  {
+   "name": "Michael Giacchino",
+   "n": 23,
+   "leads": 0,
+   "avg": 4.37,
+   "wavg": 4.37,
+   "weighted": 4.328,
+   "top": [
+    "Rogue One: A Star Wars Story 4.9",
+    "Spider-Man: Far From Home 4.8",
+    "Spider-Man: No Way Home 4.8",
+    "Jojo Rabbit 4.8"
+   ]
+  },
+  {
+   "name": "Hans Zimmer",
+   "n": 21,
+   "leads": 0,
+   "avg": 4.33,
+   "wavg": 4.33,
+   "weighted": 4.294,
+   "top": [
+    "Sherlock Holmes: A Game of Shadows 4.9",
+    "Interstellar 4.8",
+    "Inception 4.8",
+    "Dune 4.8"
+   ]
+  },
+  {
+   "name": "Jon Brion",
+   "n": 3,
+   "leads": 0,
+   "avg": 4.53,
+   "wavg": 4.53,
+   "weighted": 4.292,
+   "top": [
+    "Step Brothers 4.6",
+    "The Other Guys 4.5",
+    "Eternal Sunshine of the Spotless Mind 4.5"
+   ]
   }
  ],
  "prolific": [
   {
    "name": "Tom Hanks",
-   "n": 14,
-   "leads": 14,
-   "avg": 4.43,
-   "wavg": 4.43,
-   "weighted": 4.414,
+   "n": 16,
+   "leads": 16,
+   "avg": 4.29,
+   "wavg": 4.29,
+   "weighted": 4.28,
    "top": [
     "Saving Private Ryan 4.8",
     "Forrest Gump 4.8",
@@ -761,11 +765,11 @@
   },
   {
    "name": "Jack Black",
-   "n": 11,
-   "leads": 8,
-   "avg": 4.05,
-   "wavg": 4.03,
-   "weighted": 4.056,
+   "n": 16,
+   "leads": 12,
+   "avg": 3.98,
+   "wavg": 3.96,
+   "weighted": 3.976,
    "top": [
     "Tropic Thunder 4.3",
     "Nacho Libre 4.2",
@@ -774,12 +778,40 @@
    ]
   },
   {
+   "name": "Ryan Reynolds",
+   "n": 12,
+   "leads": 12,
+   "avg": 4.33,
+   "wavg": 4.33,
+   "weighted": 4.311,
+   "top": [
+    "The Adam Project 4.8",
+    "Deadpool & Wolverine 4.8",
+    "Deadpool 2 4.6",
+    "Free Guy 4.5"
+   ]
+  },
+  {
+   "name": "Hugh Grant",
+   "n": 11,
+   "leads": 6,
+   "avg": 4.29,
+   "wavg": 4.24,
+   "weighted": 4.224,
+   "top": [
+    "Notting Hill 4.9",
+    "Love Actually 4.3",
+    "Four Weddings and a Funeral 4.0",
+    "Bridget Jones's Diary 4.0"
+   ]
+  },
+  {
    "name": "Robert Downey Jr.",
    "n": 10,
    "leads": 9,
    "avg": 4.65,
    "wavg": 4.66,
-   "weighted": 4.61,
+   "weighted": 4.592,
    "top": [
     "Sherlock Holmes: A Game of Shadows 4.9",
     "Avengers: Endgame 4.8",
@@ -793,7 +825,7 @@
    "leads": 7,
    "avg": 4.58,
    "wavg": 4.57,
-   "weighted": 4.522,
+   "weighted": 4.502,
    "top": [
     "The Notebook 5.0",
     "About Time 4.8",
@@ -802,40 +834,12 @@
    ]
   },
   {
-   "name": "Hugh Grant",
-   "n": 10,
-   "leads": 6,
-   "avg": 4.31,
-   "wavg": 4.25,
-   "weighted": 4.251,
-   "top": [
-    "Notting Hill 4.9",
-    "Love Actually 4.3",
-    "Four Weddings and a Funeral 4.0",
-    "Bridget Jones's Diary 4.0"
-   ]
-  },
-  {
-   "name": "Ryan Reynolds",
-   "n": 9,
-   "leads": 9,
-   "avg": 4.44,
-   "wavg": 4.44,
-   "weighted": 4.42,
-   "top": [
-    "The Adam Project 4.8",
-    "Deadpool & Wolverine 4.8",
-    "Deadpool 2 4.6",
-    "Free Guy 4.5"
-   ]
-  },
-  {
    "name": "Harrison Ford",
-   "n": 9,
-   "leads": 8,
-   "avg": 4.37,
-   "wavg": 4.38,
-   "weighted": 4.363,
+   "n": 10,
+   "leads": 9,
+   "avg": 4.32,
+   "wavg": 4.33,
+   "weighted": 4.301,
    "top": [
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
     "Indiana Jones and the Last Crusade 4.8",
@@ -845,11 +849,11 @@
   },
   {
    "name": "Chris Pratt",
-   "n": 9,
-   "leads": 9,
-   "avg": 4.37,
-   "wavg": 4.37,
-   "weighted": 4.352,
+   "n": 10,
+   "leads": 10,
+   "avg": 4.32,
+   "wavg": 4.32,
+   "weighted": 4.295,
    "top": [
     "Guardians of the Galaxy Vol. 3 4.9",
     "Guardians of the Galaxy Vol. 2 4.9",
@@ -858,31 +862,31 @@
    ]
   },
   {
-   "name": "Alan Rickman",
-   "n": 9,
-   "leads": 4,
-   "avg": 4.44,
-   "wavg": 4.34,
-   "weighted": 4.325,
+   "name": "Samuel L. Jackson",
+   "n": 10,
+   "leads": 6,
+   "avg": 4.22,
+   "wavg": 4.29,
+   "weighted": 4.263,
    "top": [
-    "Die Hard 4.8",
-    "Love Actually 4.3",
-    "Sense and Sensibility 4.0",
-    "Galaxy Quest 3.8"
+    "Spider-Man: Far From Home 4.8",
+    "Pulp Fiction 4.8",
+    "Kingsman: The Secret Service 4.5",
+    "The Hitman’s Bodyguard 4.5"
    ]
   },
   {
-   "name": "Daniel Radcliffe",
-   "n": 8,
-   "leads": 8,
-   "avg": 4.7,
-   "wavg": 4.7,
-   "weighted": 4.637,
+   "name": "Scarlett Johansson",
+   "n": 10,
+   "leads": 5,
+   "avg": 4.33,
+   "wavg": 4.23,
+   "weighted": 4.214,
    "top": [
-    "Harry Potter and the Sorcerer's Stone 4.7",
-    "Harry Potter and the Chamber of Secrets 4.7",
-    "Harry Potter and the Prisoner of Azkaban 4.7",
-    "Harry Potter and the Goblet of Fire 4.7"
+    "Jojo Rabbit 4.8",
+    "Captain America: Civil War 4.7",
+    "Sing 2 4.0",
+    "Fly Me To The Moon 3.9"
    ]
   }
  ],
@@ -891,67 +895,67 @@
    "name": "Action-comedy",
    "n": 40,
    "avg": 4.51,
-   "weighted": 4.489
+   "weighted": 4.476
   },
   {
    "name": "Sci-fi",
    "n": 32,
    "avg": 4.49,
-   "weighted": 4.465
+   "weighted": 4.448
   },
   {
    "name": "Drama",
    "n": 29,
    "avg": 4.41,
-   "weighted": 4.392
+   "weighted": 4.374
   },
   {
    "name": "Action",
    "n": 28,
    "avg": 4.34,
-   "weighted": 4.329
-  },
-  {
-   "name": "Unsorted",
-   "n": 19,
-   "avg": 4.29,
-   "weighted": 4.288
-  },
-  {
-   "name": "Period drama",
-   "n": 2,
-   "avg": 4.25,
-   "weighted": 4.254
+   "weighted": 4.311
   },
   {
    "name": "Comedy",
    "n": 52,
    "avg": 4.23,
-   "weighted": 4.234
+   "weighted": 4.224
   },
   {
    "name": "Romance",
    "n": 14,
-   "avg": 4.19,
-   "weighted": 4.201
+   "avg": 4.21,
+   "weighted": 4.186
+  },
+  {
+   "name": "Period drama",
+   "n": 2,
+   "avg": 4.25,
+   "weighted": 4.158
   },
   {
    "name": "Adventure",
    "n": 45,
    "avg": 4.16,
-   "weighted": 4.17
+   "weighted": 4.158
   },
   {
    "name": "Animated / family",
    "n": 89,
    "avg": 4.16,
-   "weighted": 4.159
+   "weighted": 4.153
   },
   {
    "name": "Rom-com",
-   "n": 40,
+   "n": 42,
    "avg": 4.01,
-   "weighted": 4.03
+   "weighted": 4.023
+  },
+  {
+   "name": "Unsorted",
+   "n": 185,
+   "avg": 3.82,
+   "weighted": 3.829
   }
  ],
  "lanes": [
@@ -959,205 +963,205 @@
    "name": "Spielberg",
    "n": 8,
    "avg": 4.72,
-   "weighted": 4.569
+   "weighted": 4.52
   },
   {
    "name": "Marvel",
    "n": 27,
    "avg": 4.57,
-   "weighted": 4.527
-  },
-  {
-   "name": "Guy Ritchie",
-   "n": 5,
-   "avg": 4.74,
-   "weighted": 4.525
+   "weighted": 4.508
   },
   {
    "name": "Sci-fi Canon",
    "n": 14,
    "avg": 4.59,
-   "weighted": 4.512
+   "weighted": 4.48
   },
   {
-   "name": "Documentary",
+   "name": "Guy Ritchie",
    "n": 5,
-   "avg": 4.6,
-   "weighted": 4.447
+   "avg": 4.74,
+   "weighted": 4.461
   },
   {
    "name": "Star Wars",
    "n": 8,
    "avg": 4.54,
-   "weighted": 4.444
+   "weighted": 4.395
   },
   {
-   "name": "Middle-earth",
-   "n": 3,
-   "avg": 4.63,
-   "weighted": 4.418
-  },
-  {
-   "name": "Mind-Bender",
-   "n": 2,
-   "avg": 4.7,
-   "weighted": 4.404
-  },
-  {
-   "name": "Ryan Reynolds",
-   "n": 2,
-   "avg": 4.65,
-   "weighted": 4.387
+   "name": "Documentary",
+   "n": 5,
+   "avg": 4.6,
+   "weighted": 4.383
   },
   {
    "name": "Prestige",
    "n": 14,
    "avg": 4.42,
-   "weighted": 4.385
+   "weighted": 4.353
   },
   {
-   "name": "Nora Ephron",
+   "name": "Middle-earth",
    "n": 3,
-   "avg": 4.5,
-   "weighted": 4.361
-  },
-  {
-   "name": "Space & Science",
-   "n": 7,
-   "avg": 4.41,
-   "weighted": 4.357
-  },
-  {
-   "name": "Wizarding World",
-   "n": 2,
-   "avg": 4.55,
-   "weighted": 4.354
-  },
-  {
-   "name": "Irish Lane",
-   "n": 3,
-   "avg": 4.47,
-   "weighted": 4.346
+   "avg": 4.63,
+   "weighted": 4.335
   },
   {
    "name": "Christmas",
    "n": 36,
    "avg": 4.35,
-   "weighted": 4.343
+   "weighted": 4.329
+  },
+  {
+   "name": "Mind-Bender",
+   "n": 2,
+   "avg": 4.7,
+   "weighted": 4.308
+  },
+  {
+   "name": "Space & Science",
+   "n": 7,
+   "avg": 4.41,
+   "weighted": 4.304
   },
   {
    "name": "Blockbuster",
    "n": 20,
    "avg": 4.33,
-   "weighted": 4.322
+   "weighted": 4.298
   },
   {
-   "name": "Time & Second Chances",
-   "n": 5,
-   "avg": 4.34,
-   "weighted": 4.303
+   "name": "Ryan Reynolds",
+   "n": 2,
+   "avg": 4.65,
+   "weighted": 4.291
+  },
+  {
+   "name": "Nora Ephron",
+   "n": 3,
+   "avg": 4.5,
+   "weighted": 4.278
+  },
+  {
+   "name": "Irish Lane",
+   "n": 3,
+   "avg": 4.47,
+   "weighted": 4.264
   },
   {
    "name": "Love That Costs",
    "n": 10,
    "avg": 4.32,
-   "weighted": 4.302
+   "weighted": 4.26
   },
   {
-   "name": "Unsorted",
-   "n": 20,
-   "avg": 4.3,
-   "weighted": 4.293
+   "name": "Wizarding World",
+   "n": 2,
+   "avg": 4.55,
+   "weighted": 4.258
   },
   {
-   "name": "Richard Curtis",
-   "n": 3,
-   "avg": 4.3,
-   "weighted": 4.275
+   "name": "Time & Second Chances",
+   "n": 5,
+   "avg": 4.34,
+   "weighted": 4.238
   },
   {
    "name": "Classic Canon",
-   "n": 9,
-   "avg": 4.26,
-   "weighted": 4.256
-  },
-  {
-   "name": "Austen",
-   "n": 2,
+   "n": 10,
    "avg": 4.25,
-   "weighted": 4.254
-  },
-  {
-   "name": "Superhero",
-   "n": 6,
-   "avg": 4.25,
-   "weighted": 4.252
+   "weighted": 4.21
   },
   {
    "name": "Frat Pack",
    "n": 24,
    "avg": 4.22,
-   "weighted": 4.226
+   "weighted": 4.205
   },
   {
-   "name": "Classic Comedy",
+   "name": "Superhero",
+   "n": 6,
+   "avg": 4.25,
+   "weighted": 4.195
+  },
+  {
+   "name": "Richard Curtis",
    "n": 4,
-   "avg": 4.13,
-   "weighted": 4.19
+   "avg": 4.25,
+   "weighted": 4.181
   },
   {
-   "name": "British Absurd",
+   "name": "Austen",
    "n": 2,
-   "avg": 4.05,
-   "weighted": 4.187
+   "avg": 4.25,
+   "weighted": 4.158
   },
   {
    "name": "Animated Family",
    "n": 86,
    "avg": 4.16,
-   "weighted": 4.161
+   "weighted": 4.155
+  },
+  {
+   "name": "Classic Comedy",
+   "n": 4,
+   "avg": 4.13,
+   "weighted": 4.118
+  },
+  {
+   "name": "British Absurd",
+   "n": 2,
+   "avg": 4.05,
+   "weighted": 4.091
   },
   {
    "name": "Cornetto",
    "n": 3,
    "avg": 4,
-   "weighted": 4.146
+   "weighted": 4.064
   },
   {
    "name": "Whodunnit",
    "n": 2,
    "avg": 3.75,
-   "weighted": 4.087
+   "weighted": 3.991
   },
   {
    "name": "Family Adventure",
    "n": 8,
    "avg": 3.84,
-   "weighted": 3.977
+   "weighted": 3.929
   },
   {
    "name": "80s Nostalgia",
    "n": 12,
    "avg": 3.82,
-   "weighted": 3.926
+   "weighted": 3.89
   },
   {
    "name": "Modern Rom-com",
    "n": 19,
-   "avg": 3.77,
-   "weighted": 3.853
+   "avg": 3.78,
+   "weighted": 3.841
+  },
+  {
+   "name": "Unsorted",
+   "n": 186,
+   "avg": 3.83,
+   "weighted": 3.832
   },
   {
    "name": "Streaming-Era",
    "n": 3,
    "avg": 3,
-   "weighted": 3.718
+   "weighted": 3.635
   },
   {
    "name": "Kid Sport",
    "n": 7,
    "avg": 3.36,
-   "weighted": 3.684
+   "weighted": 3.631
   }
  ]
 }
