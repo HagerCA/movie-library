@@ -110,9 +110,19 @@ for (const line of lines) {
 
   const rated = chris || pixie;
 
-  if (!lRow && rated) {
-    // Not in the library yet. Pull its data across from wherever it was.
-    if (sRow) {
+  /* Not in the library yet. Pull its data across from wherever it was.
+   *
+   * This used to read `if (!lRow && rated)`, which meant a NEW FILM line with no
+   * rating on it fell straight through to notFound and was silently discarded,
+   * even though the header of this file promises NEW FILM creates a row. The
+   * Queue and Pass buttons in Our People emit exactly that shape, so every one
+   * of them would have been thrown away. Found by running a real button click
+   * through this tool on 2026-10-04 rather than assuming it worked.
+   *
+   * The Suggests and Coming Soon branches stay gated on `rated`, because both of
+   * them write "and was watched" into the Note, which is only true of a rating. */
+  if (!lRow && (rated || isNew)) {
+    if (sRow && rated) {
       lRow = newRow(sRow[sug.at('Title')], sRow[sug.at('Year')]);
       for (const [from, to] of [['Streaming','Streaming'],['Streaming Checked','Streaming Checked'],
                                 ['TMDB ID','TMDB ID'],['Poster','Poster'],['Runtime','Runtime'],['Overview','Overview']])
@@ -124,7 +134,7 @@ for (const line of lines) {
       sRow[sug.at('Status')] = 'Watched, moved to the library';
       lib.rows.push(lRow); stat.fromSuggest++; stat.added++;
       scorecard.push({ t: title, who, r: Number(chris || pixie) });
-    } else if (uRow) {
+    } else if (uRow && rated) {
       lRow = newRow(uRow[up.at('Title')], uRow[up.at('Year')]);
       for (const f of ['Streaming','Streaming Checked','TMDB ID','Poster','Runtime','Overview'])
         if (up.at(f) !== undefined) lRow[lib.at(f)] = uRow[up.at(f)];
@@ -136,8 +146,11 @@ for (const line of lines) {
       promoted.push(title);
     } else if (isNew) {
       lRow = newRow(title, year);
-      lRow[lib.at('Note')] = 'Added from the app ' + today + '. Needs genre, lane and a TMDB pass.';
-      lRow[lib.at('Flag')] = 'carry';
+      if (uRow) for (const f of ['Streaming','Streaming Checked','TMDB ID','Poster','Runtime','Overview'])
+        if (up.at(f) !== undefined) lRow[lib.at(f)] = uRow[up.at(f)];
+      lRow[lib.at('Note')] = 'Added from the app ' + today +
+        (rated ? '. ' : ', unrated. ') + 'Needs genre, lane and a TMDB pass.';
+      if (!rated) lRow[lib.at('Flag')] = ''; else lRow[lib.at('Flag')] = 'carry';
       lib.rows.push(lRow); stat.added++;
     } else {
       notFound.push(title); continue;
