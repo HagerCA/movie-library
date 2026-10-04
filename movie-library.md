@@ -137,7 +137,7 @@ The app is `index.html` in this folder.
 | Piece by Piece | 2024 | **4.8** | 4.8 | Family | Rated | Documentary | Rent: Apple TV Store, Google Play Movies | Pharrell, in Lego. |
 | Pulp Fiction | 1994 | **4.8** | 4.8 | Household | Seen, unrated | Prestige | Rent: Apple TV Store |  |
 | The Greatest Showman | 2017 | **4.8** | 4.8 | Family | Rated | Prestige | Disney Plus |  |
-| The Invisible Pilot | 2022 | **4.8** ⚠ | 4.8 | Date Night | Rated | Documentary |  | Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; "Donnie Yen" and "Memory Saves" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right. |
+| The Invisible Pilot | 2022 | **4.8** | 4.8 | Date Night | Rated | Documentary |  | Chris decided on 2026-10-04 to keep it: "I’ve talked to a lot of people about it." TMDB lists it only as a three-part docuseries (tv 195099), so it is the one deliberate exception to the movies-not-series rule, kept on his explicit call. Chris Says is his verbatim dictation; "Donnie Yen" and "Memory Saves" read as transcription artifacts and are left as spoken. The Tom Cruise film he meant is American Made (2017), now in the library at 4.4. |
 | Young Woman and the Sea | 2024 | **4.6** | 4.6 | Family | Rated | Family Adventure | Disney Plus | Identified 2026-10-03: the 2024 film, Daisy Ridley as Trudy Ederle, the first woman to swim the English Channel. Chris: all of us loved it, amazing film. |
 | Everything Everywhere All at Once | 2022 | **4.5** | 4.5 | Date Night | Rated | Prestige | Amazon Prime Video, HBO Max |  |
 | Goodfellas | 1990 | **4.5** | 4.5 | Household | Seen, unrated | Prestige | HBO Max |  |
@@ -706,9 +706,7 @@ The app is `index.html` in this folder.
 
 ## Needs your input
 
-**1 conflict(s):**
-
-- **The Invisible Pilot** — Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; "Donnie Yen" and "Memory Saves" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right.
+**No open conflicts.** ✓
 
 **7 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers.
 

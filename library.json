@@ -8942,8 +8942,8 @@
   "img": "",
   "rt": null,
   "ov": "",
-  "n": "Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; \"Donnie Yen\" and \"Memory Saves\" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right.",
-  "f": "conflict"
+  "n": "Chris decided on 2026-10-04 to keep it: \"I’ve talked to a lot of people about it.\" TMDB lists it only as a three-part docuseries (tv 195099), so it is the one deliberate exception to the movies-not-series rule, kept on his explicit call. Chris Says is his verbatim dictation; \"Donnie Yen\" and \"Memory Saves\" read as transcription artifacts and are left as spoken. The Tom Cruise film he meant is American Made (2017), now in the library at 4.4.",
+  "f": ""
  },
  {
   "t": "American Made",
