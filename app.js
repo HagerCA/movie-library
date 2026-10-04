@@ -560,7 +560,9 @@
         (d.sc ? ' (Costa Rica, checked ' + d.sc + ')' : ''));
     }
     L.push('');
-    L.push('From the Hager Movie Library \u2192 ' + APP_URL);
+    // Chris, 2026-10-04: leave the URL off. The site is public and a forwarded
+    // message should not be how a stranger finds it.
+    L.push('\u2014 from the Hager family movie library');
     return L.join('\n');
   }
 
@@ -570,6 +572,22 @@
       '<a class="pbtn wa" target="_blank" rel="noopener" data-wa="1">WhatsApp</a>' +
       '<button class="pbtn" data-copy="1">Copy</button>' +
       '</div>';
+  }
+
+  /* Fetch the poster as a File so the share sheet can carry the image with the
+   * text. Phones handle this; most desktop browsers do not, and canShare is how
+   * we find out before trying. A missing poster just sends the text. */
+  function posterFile(d) {
+    if (!d.img) return Promise.resolve(null);
+    return fetch(d.img)
+      .then(function (r) { return r.ok ? r.blob() : null; })
+      .then(function (b) {
+        if (!b) return null;
+        var name = d.t.replace(/[^a-z0-9]+/gi, '-').toLowerCase() + '.jpg';
+        var file = new File([b], name, { type: b.type || 'image/jpeg' });
+        return (navigator.canShare && navigator.canShare({ files: [file] })) ? file : null;
+      })
+      .catch(function () { return null; });
   }
 
   function wireShare(d, opts) {
@@ -585,7 +603,14 @@
     if (!navigator.share) btn.textContent = '\uD83D\uDCCB Copy to share';
     btn.addEventListener('click', function () {
       if (navigator.share) {
-        navigator.share({ title: d.t, text: txt }).catch(function () {});
+        var label = btn.textContent;
+        btn.textContent = 'Getting the poster...';
+        posterFile(d).then(function (file) {
+          var payload = { title: d.t, text: txt };
+          if (file) payload.files = [file];
+          btn.textContent = label;
+          return navigator.share(payload);
+        }).catch(function () { btn.textContent = label; });
       } else {
         navigator.clipboard.writeText(txt).then(function () {
           btn.textContent = 'Copied. Paste it anywhere.'; btn.classList.add('done');
