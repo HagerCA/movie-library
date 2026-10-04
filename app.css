@@ -288,10 +288,38 @@
   .ravg{font-size:14px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;text-align:right}
   .rn{font-size:11.5px;color:var(--fg3);text-align:right;white-space:nowrap}
   .rtop{grid-column:2/-1;font-size:11.5px;color:var(--fg3);line-height:1.5;margin-top:-2px}
+
+  /* "10 you have not seen" under each person. Chris asked for this 2026-10-04:
+     Our People confirms the taste, this turns it into the next watch. */
+  .unwbtn{grid-column:2/-1;justify-self:start;appearance:none;cursor:pointer;
+    background:none;border:0;padding:3px 0 0;margin:0;font:inherit;font-size:11.5px;
+    color:var(--lafc);text-align:left;border-bottom:1px dotted var(--gold2)}
+  .unwbtn:hover{color:var(--lafc-hi)}
+  .unwbtn b{color:var(--green);font-weight:650}
+  .unwbtn:before{content:"\25B8 ";color:var(--gold2)}
+  .unwbtn[aria-expanded=true]:before{content:"\25BE "}
+  .unwlist{grid-column:2/-1;list-style:none;margin:7px 0 1px;padding:8px 10px;
+    background:var(--bg);border:1px solid var(--line);border-radius:9px;
+    display:flex;flex-direction:column;gap:1px}
+  .unw{display:grid;grid-template-columns:12px 1fr 38px minmax(64px,auto);
+    gap:8px;align-items:center;font-size:12px;padding:3px 0}
+  .unwdot{font-size:8px;line-height:1}
+  .unwdot.swHave{color:var(--green)} .unwdot.swRent{color:var(--gold)}
+  .unwdot.swNeed{color:var(--rose)}  .unwdot.swNone{color:var(--fg3)}
+  .unwt{color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .unwy{color:var(--fg3);font-variant-numeric:tabular-nums;text-align:right}
+  .unwsw{font-size:10.5px;text-align:right;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis}
+  .unwsw.swHave{color:var(--green)} .unwsw.swRent{color:var(--gold)}
+  .unwsw.swNeed{color:var(--rose)}  .unwsw.swNone{color:var(--fg3)}
+
   @media(max-width:620px){
     .rank{grid-template-columns:24px 1fr 46px;gap:8px;padding:10px 12px}
     .rbar,.rn{display:none}
     .rtop{grid-column:2/-1}
+    .unwbtn,.unwlist{grid-column:1/-1}
+    .unw{grid-template-columns:12px 1fr minmax(58px,auto);gap:6px}
+    .unwy{display:none}
   }
 
   /* ---------- share ---------- */

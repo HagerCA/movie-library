@@ -352,6 +352,31 @@
   ];
   var peopleView = 'directors';
 
+  /* The best films by this person that are NOT in the library. Chris's idea,
+   * 2026-10-04: Our People should generate the next watch, not just confirm the
+   * taste. Availability is whatever discover.mjs checked for Costa Rica on the
+   * date in FAVOURITES.unwatchedChecked, and it is dated on screen for exactly
+   * the reason every streaming claim in this app is dated. */
+  function unwatchedBlock(e, idx) {
+    if (!e.unwatched || !e.unwatched.length) return '';
+    var have = 0;
+    var rows = e.unwatched.map(function (f) {
+      var c = classify(f.sw);
+      if (c.k === 'have') have++;
+      return '<li class="unw">' +
+        '<span class="unwdot ' + c.cls + '">●</span>' +
+        '<span class="unwt">' + esc(f.t) + '</span>' +
+        '<span class="unwy">' + esc(f.y || '') + '</span>' +
+        '<span class="unwsw ' + c.cls + '">' + esc(c.short) + '</span>' +
+        '</li>';
+    }).join('');
+    return '<button class="unwbtn" data-unw="' + idx + '" aria-expanded="false">' +
+      e.unwatched.length + ' you have not seen' +
+      (have ? ' · <b>' + have + ' on a service you pay for</b>' : '') +
+      '</button>' +
+      '<ol class="unwlist" id="unw' + idx + '" hidden>' + rows + '</ol>';
+  }
+
   function renderPeople() {
     gridEl.className = 'sugglist';
     if (!FAVOURITES) {
@@ -365,7 +390,12 @@
     gridEl.innerHTML = '<div class="suggintro"><h2>\u2B50 Our People</h2>' +
       '<p>Pulled from the real cast and crew of all ' + FAVOURITES.films + ' rated films. ' +
       'Ranked by a weighted average, not a raw one: somebody with one 5.0 does not outrank ' +
-      'somebody with nine films at 4.6. Your library mean is ' + FAVOURITES.mean + '.</p>' +
+      'somebody with nine films at 4.6. Your library mean is ' + FAVOURITES.mean + '.' +
+      (FAVOURITES.unwatchedChecked
+        ? ' Tap the line under anyone to see their best films you have <b>not</b> seen, with ' +
+          'where each one is streaming in ' + (FAVOURITES.unwatchedRegion || 'CR') +
+          ' as of ' + FAVOURITES.unwatchedChecked + '.'
+        : '') + '</p>' +
       '<div class="audpills">' + PEOPLE_VIEWS.map(function (v) {
         return '<button class="tab sm" data-pv="' + v[0] + '" aria-selected="' +
           (v[0] === peopleView) + '">' + v[1] + '</button>';
@@ -379,6 +409,7 @@
           '<span class="ravg">' + e.avg.toFixed(2) + '</span>' +
           '<span class="rn">' + e.n + ' film' + (e.n === 1 ? '' : 's') + '</span>' +
           (e.top ? '<span class="rtop">' + esc(e.top.join(' \u00b7 ')) + '</span>' : '') +
+          (isPerson ? unwatchedBlock(e, i) : '') +
           '</li>';
       }).join('') + '</ol>';
     $('empty').hidden = true;
@@ -387,6 +418,16 @@
     gridEl.querySelectorAll('[data-pv]').forEach(function (b) {
       b.addEventListener('click', function (e) {
         e.stopPropagation(); peopleView = b.dataset.pv; renderPeople();
+      });
+    });
+    gridEl.querySelectorAll('[data-unw]').forEach(function (b) {
+      b.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+        var l = $('unw' + b.dataset.unw);
+        if (!l) return;
+        var open = !l.hidden;
+        l.hidden = open;
+        b.setAttribute('aria-expanded', String(!open));
       });
     });
   }

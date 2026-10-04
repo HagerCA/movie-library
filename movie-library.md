@@ -5,7 +5,7 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-04** · **1154 films** · Chris has rated 795 (avg **4.08**), Pixie 393 (avg 4.25)
+Last built **2026-10-04** · **1157 films** · Chris has rated 795 (avg **4.08**), Pixie 393 (avg 4.25)
 The app is `index.html` in this folder.
 
 ## The scale
@@ -887,7 +887,7 @@ The app is `index.html` in this folder.
 
 ## ADVENTURE
 
-*67 films · avg 4.10*
+*70 films · avg 4.10*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -957,6 +957,9 @@ The app is `index.html` in this folder.
 | Death Note | 2017 |  |  | Household | Seen, unrated | Horror | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 8/26/17. Netflix listed it as "Death Note"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (horror), not Chris’s own call. Worth a glance. |
 | Don't Be Afraid of the Dark | 2010 |  |  | Household | Seen, unrated | Horror | Rent: Apple TV Store, Google Play Movies | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 7/12/12. Netflix listed it as "Don't Be Afraid of the Dark"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (horror), not Chris’s own call. Worth a glance. |
 | Nightbooks | 2021 |  |  | Household | Seen, unrated | Family Adventure | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 8/22/26. Netflix listed it as "Nightbooks"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (family adventure), not Chris’s own call. Worth a glance. |
+| The Hobbit: An Unexpected Journey | 2012 |  |  | Family | Watchlist | Middle-earth | Amazon Prime Video | Added 2026-10-04 on Chris's own instruction in his Day One entry: "Sage, if you want to add those, all three of the Hobbit movies, in order." Queued straight after the LOTR trilogy, which the boys finished the same day. TMDB id verified live before the row was written. No rating invented. |
+| The Hobbit: The Battle of the Five Armies | 2014 |  |  | Family | Watchlist | Middle-earth | Amazon Prime Video | Added 2026-10-04 on Chris's own instruction in his Day One entry: "Sage, if you want to add those, all three of the Hobbit movies, in order." Queued straight after the LOTR trilogy, which the boys finished the same day. TMDB id verified live before the row was written. No rating invented. |
+| The Hobbit: The Desolation of Smaug | 2013 |  |  | Family | Watchlist | Middle-earth | Amazon Prime Video | Added 2026-10-04 on Chris's own instruction in his Day One entry: "Sage, if you want to add those, all three of the Hobbit movies, in order." Queued straight after the LOTR trilogy, which the boys finished the same day. TMDB id verified live before the row was written. No rating invented. |
 | The Secret Garden | 2020 |  |  | Queue | Watchlist | Family Adventure | Rent: Apple TV Store, Google Play Movies |  |
 
 ## SCI-FI
@@ -1268,7 +1271,7 @@ The app is `index.html` in this folder.
 
 **325 watched but never rated.**
 
-**TMDB enrichment: 1145 of 1154 films have a poster.**
+**TMDB enrichment: 1148 of 1157 films have a poster.**
 
 ---
 
@@ -1280,7 +1283,7 @@ The app is `index.html` in this folder.
 | Choose Who You Are | 1 | 1 | 4.80 |
 | Spielberg | 11 | 11 | 4.65 |
 | Guy Ritchie | 8 | 7 | 4.64 |
-| Middle-earth | 3 | 3 | 4.63 |
+| Middle-earth | 6 | 3 | 4.63 |
 | Mind-Bender | 8 | 3 | 4.63 |
 | Ryan Reynolds | 4 | 4 | 4.63 |
 | Wizarding World | 2 | 2 | 4.55 |
@@ -1326,10 +1329,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-04
 
-- **1154 films.** Rated 662 · Seen, unrated 458 · Watchlist 27 · Owned, unwatched 3 · Seen, Chris partial 2 · Not released 1 · Not watching 1
+- **1157 films.** Rated 662 · Seen, unrated 458 · Watchlist 30 · Owned, unwatched 3 · Seen, Chris partial 2 · Not released 1 · Not watching 1
 - **Chris 795 rated, avg 4.08. Pixie 393 rated, avg 4.25.**
 - Rewatches (4.0+): **513** · enjoyed once (3.5): 226 · below: 56
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
 - Spread: 5.0 (8) · 4.9 (14) · 4.8 (39) · 4.7 (21) · 4.6 (38) · 4.5 (93) · 4.4 (21) · 4.3 (63) · 4.2 (51) · 4.1 (42) · 4.0 (123) · 3.9 (86) · 3.8 (53) · 3.7 (21) · 3.6 (25) · 3.5 (41) · 3.4 (6) · 3.3 (3) · 3.2 (3) · 3.1 (4) · 3.0 (31) · 2.5 (6) · 2.0 (1) · 1.0 (2)
-- Context: Household 868 · Family 149 · Date Night 84 · Queue 40 · Solo 13
+- Context: Household 868 · Family 152 · Date Night 84 · Queue 40 · Solo 13
 - Retired rows kept in the CSV but hidden: 18
