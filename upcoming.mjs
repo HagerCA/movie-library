@@ -71,6 +71,9 @@ const lh = libRows.shift().map(h => h.trim().toLowerCase());
 const seen = new Set(libRows.map(r => norm(r[lh.indexOf('title')])));
 
 /* --------------------------------- keep any Interest answers from before */
+/* A Dropped status is carried across too. Discovery will keep re-finding a
+   title Chris has already retired, and a refresh that quietly resurrects it
+   makes the drop meaningless. Nothing is deleted; the row stays, hidden.    */
 const prior = {};
 if (fs.existsSync(OUT)) {
   const pr = parseCSV(fs.readFileSync(OUT, 'utf8'));
@@ -79,7 +82,8 @@ if (fs.existsSync(OUT)) {
     const id = r[ph.indexOf('tmdb id')];
     if (id) prior[id] = {
       interest: r[ph.indexOf('interest')] || '',
-      note: ph.indexOf('note') > -1 ? (r[ph.indexOf('note')] || '') : ''
+      note: ph.indexOf('note') > -1 ? (r[ph.indexOf('note')] || '') : '',
+      dropped: /^Dropped$/i.test((r[ph.indexOf('status')] || '').trim())
     };
   });
 }
@@ -235,6 +239,7 @@ await Promise.all(Array.from({ length: LIMIT }, async () => {
     else if (sv && !/^Rent:/.test(sv)) status = 'Now streaming';
     else if (sv) status = 'Rent or buy';
     else status = 'In theaters or not here yet';
+    if ((prior[d.id] || {}).dropped) status = 'Dropped';
 
     // Several tracked titles share a name with a film the family already loves.
     // Disambiguate by year in the title so nobody mistakes one for the other.

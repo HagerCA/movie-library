@@ -156,7 +156,10 @@ if (fs.existsSync(UP_CSV)) {
   })).filter(x => x.t)
     // A tracked film that got watched now lives in the library. Keep the row in
     // upcoming.csv as the record, but stop showing it in Coming Soon.
-    .filter(x => !/moved to the library/i.test(x.status));
+    .filter(x => !/moved to the library/i.test(x.status))
+    // Same rule as the library: Dropped is how a mistake retires. The row stays
+    // in upcoming.csv forever and disappears from the tab. Nothing is deleted.
+    .filter(x => !/^Dropped$/i.test(x.status));
 }
 
 /* ------------------------------------------------------------ favorites */
