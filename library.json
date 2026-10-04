@@ -3867,8 +3867,8 @@
   "t": "The Lord of the Rings: The Return of the King",
   "y": 2003,
   "g": "Adventure",
-  "c": 4.5,
-  "p": 4.5,
+  "c": 4.8,
+  "p": 4.8,
   "w": "Family",
   "s": "Rated",
   "l": "Middle-earth",
@@ -3881,7 +3881,7 @@
   "img": "posters/122.jpg",
   "rt": 201,
   "ov": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
-  "n": "Rewatched 2026-10-04 with the boys, third of the trilogy day. The 4.5 predates it and Chris may want to revise.",
+  "n": "Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.8 in his own words that evening, replacing the earlier unconfirmed figure.",
   "f": ""
  },
  {
@@ -4980,10 +4980,10 @@
   "t": "IF",
   "y": 2024,
   "g": "Sci-fi",
-  "c": 4.6,
-  "p": 4.6,
+  "c": 4.5,
+  "p": 4.5,
   "w": "Household",
-  "s": "Seen, unrated",
+  "s": "Rated",
   "l": "Sci-fi Canon",
   "sv": "Rent: Apple TV Store, Google Play Movies",
   "sc": "2026-10-03",
@@ -4994,7 +4994,7 @@
   "img": "posters/639720.jpg",
   "rt": 104,
   "ov": "After discovering she can see everyone's imaginary friends, a girl embarks on a magical adventure to reconnect forgotten imaginary friends with their kids.",
-  "n": "Also called Imaginary Friends.",
+  "n": "Was carried at 4.6 as seen but unrated. Chris gave 4.5 in his own words on 2026-10-04, which supersedes it.",
   "f": ""
  },
  {
@@ -6681,8 +6681,8 @@
   "t": "The Lord of the Rings: The Fellowship of the Ring",
   "y": 2001,
   "g": "Adventure",
-  "c": 4.7,
-  "p": 4.7,
+  "c": 4.5,
+  "p": 4.5,
   "w": "Family",
   "s": "Rated",
   "l": "Middle-earth",
@@ -6695,8 +6695,8 @@
   "img": "posters/120.jpg",
   "rt": 179,
   "ov": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
-  "n": "Rewatched 2026-10-04 with Hudson and Hendrix, start of a full-trilogy day. The 4.7 predates that watch and came from Chris listing \"The Lord of the Rings\" without a number, so it stays flagged carry until he gives one.",
-  "f": "carry"
+  "n": "Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.5 in his own words that evening, replacing the earlier unconfirmed figure.",
+  "f": ""
  },
  {
   "t": "Aladdin",
@@ -8865,10 +8865,10 @@
   "t": "The Lord of the Rings: The Two Towers",
   "y": 2002,
   "g": "Adventure",
-  "c": null,
-  "p": null,
+  "c": 4.6,
+  "p": 4.6,
   "w": "Family",
-  "s": "Seen, unrated",
+  "s": "Rated",
   "l": "Middle-earth",
   "sv": "Disney Plus, HBO Max",
   "sc": "2026-10-04",
@@ -8879,8 +8879,8 @@
   "img": "posters/121.jpg",
   "rt": 179,
   "ov": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor.",
-  "n": "Watched 2026-10-04 with the boys, second of the trilogy day. Needs a number from Chris and a TMDB pass.",
-  "f": "carry"
+  "n": "Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.6 in his own words that evening, replacing the earlier unconfirmed figure.",
+  "f": ""
  },
  {
   "t": "Past Lives",
@@ -8923,5 +8923,26 @@
   "ov": "A look at the Apollo 11 mission to land on the moon led by commander Neil Armstrong and pilot Buzz Aldrin.",
   "n": "Came from SAGE Suggests and was watched 2026-10-04 on Date Night. No rating given yet.",
   "f": ""
+ },
+ {
+  "t": "The Invisible Pilot",
+  "y": 2022,
+  "g": "Drama",
+  "c": 4.8,
+  "p": 4.8,
+  "w": "Date Night",
+  "s": "Rated",
+  "l": "Documentary",
+  "sv": "",
+  "sc": "",
+  "cs": "Documentary film about a pilot who ended up working for the CIA and running drugs for Donnie Yen. Eventually they took that documentary and made a movie out of it with Tom Cruise (or maybe it happened in reverse order), but it was incredible. It was on HBO Max and Memory Saves",
+  "ps": "",
+  "bs": "",
+  "id": "",
+  "img": "",
+  "rt": null,
+  "ov": "",
+  "n": "Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; \"Donnie Yen\" and \"Memory Saves\" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right.",
+  "f": "conflict"
  }
 ]

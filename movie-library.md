@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-04** · **425 films** · Chris has rated 388 (avg **4.25**), Pixie 390 (avg 4.25)
+Last built **2026-10-04** · **426 films** · Chris has rated 390 (avg **4.26**), Pixie 392 (avg 4.26)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 335 of 388 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 337 of 390 rated films clear it.
 
 ## Columns
 
@@ -125,7 +125,7 @@ The app is `index.html` in this folder.
 
 ## DRAMA
 
-*28 films · avg 4.41*
+*29 films · avg 4.42*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -137,6 +137,7 @@ The app is `index.html` in this folder.
 | Piece by Piece | 2024 | **4.8** | 4.8 | Family | Rated | Documentary | Rent: Apple TV Store, Google Play Movies | Pharrell, in Lego. |
 | Pulp Fiction | 1994 | **4.8** | 4.8 | Household | Seen, unrated | Prestige | Rent: Apple TV Store |  |
 | The Greatest Showman | 2017 | **4.8** | 4.8 | Family | Rated | Prestige | Disney Plus |  |
+| The Invisible Pilot | 2022 | **4.8** ⚠ | 4.8 | Date Night | Rated | Documentary |  | Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; "Donnie Yen" and "Memory Saves" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right. |
 | Young Woman and the Sea | 2024 | **4.6** | 4.6 | Family | Rated | Family Adventure | Disney Plus | Identified 2026-10-03: the 2024 film, Daisy Ridley as Trudy Ederle, the first woman to swim the English Channel. Chris: all of us loved it, amazing film. |
 | Everything Everywhere All at Once | 2022 | **4.5** | 4.5 | Date Night | Rated | Prestige | Amazon Prime Video, HBO Max |  |
 | Goodfellas | 1990 | **4.5** | 4.5 | Household | Seen, unrated | Prestige | HBO Max |  |
@@ -305,7 +306,7 @@ The app is `index.html` in this folder.
 
 ## ADVENTURE
 
-*46 films · avg 4.15*
+*46 films · avg 4.16*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -314,6 +315,7 @@ The app is `index.html` in this folder.
 | E.T. the Extra-Terrestrial | 1982 | **4.9** | 4.9 | Household | Seen, unrated | Spielberg | HBO Max |  |
 | Indiana Jones and the Last Crusade | 1989 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | Saving Private Ryan | 1998 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus, VIX , ViX Premium Amazon Channel |  |
+| The Lord of the Rings: The Return of the King | 2003 | **4.8** | 4.8 | Family | Rated | Middle-earth | Disney Plus, HBO Max | Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.8 in his own words that evening, replacing the earlier unconfirmed figure. |
 | The Sandlot | 1993 | **4.8** | 4.8 | Family | Rated | 80s Nostalgia | Disney Plus |  |
 | Harry Potter and the Chamber of Secrets | 2002 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Deathly Hallows: Part 1 | 2010 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
@@ -323,16 +325,16 @@ The app is `index.html` in this folder.
 | Harry Potter and the Order of the Phoenix | 2007 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Prisoner of Azkaban | 2004 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Sorcerer's Stone | 2001 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Same film, different release title. |
-| The Lord of the Rings: The Fellowship of the Ring | 2001 | **4.7** † | 4.7 | Family | Rated | Middle-earth | Netflix, Disney Plus, HBO Max | Rewatched 2026-10-04 with Hudson and Hendrix, start of a full-trilogy day. The 4.7 predates that watch and came from Chris listing "The Lord of the Rings" without a number, so it stays flagged carry until he gives one. |
 | Catch Me If You Can | 2002 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | Fantastic Beasts: The Crimes of Grindelwald | 2018 | **4.6** | 4.6 | Household | Seen, unrated | Wizarding World | HBO Max |  |
 | The Goonies | 1985 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Rent: Apple TV Store, Google Play Movies |  |
+| The Lord of the Rings: The Two Towers | 2002 | **4.6** | 4.6 | Family | Rated | Middle-earth | Disney Plus, HBO Max | Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.6 in his own words that evening, replacing the earlier unconfirmed figure. |
 | The Terminal | 2004 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | A Monster Calls | 2016 | **4.5** | 4.5 | Family | Rated | Family Adventure | Rent: Apple TV Store, Google Play Movies |  |
 | Big | 1988 | **4.5** | 4.5 | Family | Rated | 80s Nostalgia |  |  |
 | Fantastic Beasts and Where to Find Them | 2016 | **4.5** | 4.5 | Family | Rated | Wizarding World | HBO Max |  |
 | Raiders of the Lost Ark | 1981 | **4.5** | 4.5 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
-| The Lord of the Rings: The Return of the King | 2003 | **4.5** | 4.5 | Family | Rated | Middle-earth | Disney Plus, HBO Max | Rewatched 2026-10-04 with the boys, third of the trilogy day. The 4.5 predates it and Chris may want to revise. |
+| The Lord of the Rings: The Fellowship of the Ring | 2001 | **4.5** | 4.5 | Family | Rated | Middle-earth | Netflix, Disney Plus, HBO Max | Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.5 in his own words that evening, replacing the earlier unconfirmed figure. |
 | The NeverEnding Story | 1984 | **4.5** | 4.5 | Family | Rated | 80s Nostalgia | Rent: Apple TV Store |  |
 | The Spiderwick Chronicles | 2008 | **4.5** | 4.5 | Family | Rated | Family Adventure | Netflix |  |
 | Stardust | 2007 | **4.1** | 4.1 | Family | Rated | Family Adventure | Rent: Apple TV Store, Google Play Movies | The 2007 film with Robert De Niro. "Pixie and I love it. So did the boys." |
@@ -353,7 +355,6 @@ The app is `index.html` in this folder.
 | Spy Kids | 2001 | **3** | 3 | Family | Rated | Kid Sport | Rent: Apple TV Store |  |
 | Swiss Family Robinson | 1960 | **3** | 3 | Solo | Rated | Family Adventure | Disney Plus | Chris has seen it, the family has not. |
 | Willow | 1988 | **3** | 3 | Family | Rated | 80s Nostalgia | Disney Plus |  |
-| The Lord of the Rings: The Two Towers | 2002 |  |  | Family | Seen, unrated | Middle-earth | Disney Plus, HBO Max | Watched 2026-10-04 with the boys, second of the trilogy day. Needs a number from Chris and a TMDB pass. |
 | The Secret Garden | 2020 |  |  | Queue | Watchlist | Family Adventure | Rent: Apple TV Store, Google Play Movies |  |
 
 ## SCI-FI
@@ -377,9 +378,9 @@ The app is `index.html` in this folder.
 | Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | Star Wars: Episode VI - Return of the Jedi | 1983 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | Arrival | 2016 | **4.6** | 4.6 | Date Night | Rated | Mind-Bender | HBO Max, Universal+ Amazon Channel | The closest thing to Interstellar on the queue. |
-| IF | 2024 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies | Also called Imaginary Friends. |
 | Jurassic Park | 1993 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max |  |
 | Back to the Future Part II | 1989 | **4.5** | 4.5 | Household | Seen, unrated | Sci-fi Canon | Amazon Prime Video, Universal+ Amazon Channel |  |
+| IF | 2024 | **4.5** | 4.5 | Household | Rated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies | Was carried at 4.6 as seen but unrated. Chris gave 4.5 in his own words on 2026-10-04, which supersedes it. |
 | Jurassic World | 2015 | **4.5** | 4.5 | Household | Seen, unrated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max |  |
 | Oppenheimer | 2023 | **4.5** | 4.5 | Household | Seen, unrated | Sci-fi Canon | Universal+ Amazon Channel |  |
 | Pacific Rim | 2013 | **4.5** | 4.5 | Household | Seen, unrated | Sci-fi Canon | Amazon Prime Video, HBO Max |  |
@@ -533,13 +534,15 @@ The app is `index.html` in this folder.
 
 ## Needs your input
 
-**No open conflicts.** ✓
+**1 conflict(s):**
 
-**3 unconfirmed second-hand ratings:** Flight of the Navigator, The Lord of the Rings: The Fellowship of the Ring, The Lord of the Rings: The Two Towers.
+- **The Invisible Pilot** — Added 2026-10-04 from the app at 4.8. TMDB has it only as a three-part TV docuseries (tv id 195099, 2022-04-04), zero movie matches, so by the movies-not-series rule this row needs Chris to decide whether it belongs. Kept, not dropped, pending that. Chris Says is his verbatim dictation; "Donnie Yen" and "Memory Saves" read as transcription artifacts and are left as spoken. The Tom Cruise film he means is most likely American Made (2017), which predates this, so his hunch about the reverse order is right.
 
-**3 watched but never rated.**
+**1 unconfirmed second-hand ratings:** Flight of the Navigator.
 
-**TMDB enrichment: 424 of 425 films have a poster.**
+**2 watched but never rated.**
+
+**TMDB enrichment: 424 of 426 films have a poster.**
 
 ---
 
@@ -553,8 +556,8 @@ The app is `index.html` in this folder.
 | Spielberg | 8 | 8 | 4.72 |
 | Mind-Bender | 6 | 2 | 4.70 |
 | Ryan Reynolds | 2 | 2 | 4.65 |
-| Documentary | 5 | 5 | 4.60 |
-| Middle-earth | 3 | 2 | 4.60 |
+| Documentary | 6 | 6 | 4.63 |
+| Middle-earth | 3 | 3 | 4.63 |
 | Sci-fi Canon | 14 | 14 | 4.59 |
 | Marvel | 27 | 27 | 4.57 |
 | Wizarding World | 2 | 2 | 4.55 |
@@ -594,10 +597,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-04
 
-- **425 films.** Rated 255 · Seen, unrated 138 · Watchlist 27 · Owned, unwatched 3 · Not released 1 · Not watching 1
-- **Chris 388 rated, avg 4.25. Pixie 390 rated, avg 4.25.**
-- Rewatches (4.0+): **335** · enjoyed once (3.5): 36 · below: 17
+- **426 films.** Rated 258 · Seen, unrated 136 · Watchlist 27 · Owned, unwatched 3 · Not released 1 · Not watching 1
+- **Chris 390 rated, avg 4.26. Pixie 392 rated, avg 4.26.**
+- Rewatches (4.0+): **337** · enjoyed once (3.5): 36 · below: 17
 - Where they differ: **1** (Amélie)
-- Spread: 5.0 (8) · 4.9 (14) · 4.8 (31) · 4.7 (24) · 4.6 (21) · 4.5 (74) · 4.4 (14) · 4.3 (28) · 4.2 (22) · 4.1 (7) · 4.0 (92) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (24) · 3.0 (15) · 2.5 (2)
-- Context: Family 149 · Household 140 · Date Night 85 · Queue 38 · Solo 13
+- Spread: 5.0 (8) · 4.9 (14) · 4.8 (33) · 4.7 (23) · 4.6 (21) · 4.5 (75) · 4.4 (14) · 4.3 (28) · 4.2 (22) · 4.1 (7) · 4.0 (92) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (24) · 3.0 (15) · 2.5 (2)
+- Context: Family 149 · Household 140 · Date Night 86 · Queue 38 · Solo 13
 - Retired rows kept in the CSV but hidden: 6
