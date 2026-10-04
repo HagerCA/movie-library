@@ -1,7 +1,7 @@
 {
  "built": "2026-10-04",
- "films": 819,
- "mean": 4.079,
+ "films": 831,
+ "mean": 4.078,
  "directors": [
   {
    "name": "Steven Spielberg",
@@ -9,7 +9,7 @@
    "leads": 0,
    "avg": 4.61,
    "wavg": 4.61,
-   "weighted": 4.468,
+   "weighted": 4.467,
    "top": [
     "Jaws 5.0",
     "E.T. the Extra-Terrestrial 4.9",
@@ -95,7 +95,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.432,
+   "weighted": 4.431,
    "top": [
     "Harry Potter and the Order of the Phoenix 4.8",
     "Harry Potter and the Half-Blood Prince 4.7",
@@ -255,7 +255,7 @@
    "leads": 0,
    "avg": 4.77,
    "wavg": 4.77,
-   "weighted": 4.374,
+   "weighted": 4.373,
    "top": [
     "Spider-Man: Far From Home 4.8",
     "Spider-Man: No Way Home 4.8",
@@ -291,7 +291,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.345,
+   "weighted": 4.344,
    "top": [
     "Interstellar 4.8",
     "Inception 4.8",
@@ -376,7 +376,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.345,
+   "weighted": 4.344,
    "top": [
     "The Adam Project 4.8",
     "Deadpool & Wolverine 4.8",
@@ -461,7 +461,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.345,
+   "weighted": 4.344,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -532,7 +532,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.331,
+   "weighted": 4.33,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
@@ -545,7 +545,7 @@
    "leads": 0,
    "avg": 4.63,
    "wavg": 4.63,
-   "weighted": 4.317,
+   "weighted": 4.316,
    "top": [
     "The Lord of the Rings: The Return of the King 4.8",
     "The Lord of the Rings: The Two Towers 4.6",
@@ -667,7 +667,7 @@
    "leads": 0,
    "avg": 4.75,
    "wavg": 4.75,
-   "weighted": 4.303,
+   "weighted": 4.302,
    "top": [
     "The Princess Bride 5.0",
     "When Harry Met Sally 4.5"
@@ -876,7 +876,7 @@
    "leads": 0,
    "avg": 4.5,
    "wavg": 4.5,
-   "weighted": 4.347,
+   "weighted": 4.346,
    "top": [
     "The Gentlemen 4.9",
     "The Man from U.N.C.L.E. 4.6",
@@ -948,7 +948,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.345,
+   "weighted": 4.344,
    "top": [
     "Interstellar 4.8",
     "Inception 4.8",
@@ -1033,7 +1033,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.331,
+   "weighted": 4.33,
    "top": [
     "Soul 5.0",
     "Up 4.8",
@@ -1062,7 +1062,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.331,
+   "weighted": 4.33,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
@@ -1075,7 +1075,7 @@
    "leads": 0,
    "avg": 4.58,
    "wavg": 4.58,
-   "weighted": 4.327,
+   "weighted": 4.326,
    "top": [
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
     "Star Wars: Episode VI - Return of the Jedi 4.7",
@@ -1461,7 +1461,7 @@
    "leads": 3,
    "avg": 4.5,
    "wavg": 4.64,
-   "weighted": 4.48,
+   "weighted": 4.479,
    "top": [
     "The Greatest Showman 4.8",
     "Deadpool & Wolverine 4.8",
@@ -1547,7 +1547,7 @@
    "leads": 3,
    "avg": 4.63,
    "wavg": 4.63,
-   "weighted": 4.463,
+   "weighted": 4.462,
    "top": [
     "The Lord of the Rings: The Return of the King 4.8",
     "The Lord of the Rings: The Two Towers 4.6",
@@ -1718,7 +1718,7 @@
    "leads": 12,
    "avg": 4.49,
    "wavg": 4.49,
-   "weighted": 4.452,
+   "weighted": 4.451,
    "top": [
     "Sherlock Holmes: A Game of Shadows 4.9",
     "Avengers: Endgame 4.8",
@@ -1976,7 +1976,7 @@
    "leads": 2,
    "avg": 4.64,
    "wavg": 4.6,
-   "weighted": 4.44,
+   "weighted": 4.439,
    "top": [
     "Arrival 4.6",
     "Mission: Impossible - Rogue Nation 4.5",
@@ -2234,7 +2234,7 @@
    "leads": 7,
    "avg": 4.48,
    "wavg": 4.48,
-   "weighted": 4.426,
+   "weighted": 4.425,
    "top": [
     "Thor: Ragnarok 4.8",
     "Avengers: Endgame 4.8",
@@ -2745,7 +2745,7 @@
    "leads": 2,
    "avg": 4.57,
    "wavg": 4.64,
-   "weighted": 4.438,
+   "weighted": 4.437,
    "top": [
     "Rogue One: A Star Wars Story 4.9",
     "A Monster Calls 4.5",
@@ -2881,7 +2881,7 @@
    "leads": 5,
    "avg": 4.48,
    "wavg": 4.48,
-   "weighted": 4.396,
+   "weighted": 4.395,
    "top": [
     "Kate & Leopold 4.6",
     "Sleepless in Seattle 4.5",
@@ -2967,7 +2967,7 @@
    "leads": 3,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.394,
+   "weighted": 4.393,
    "top": [
     "Captain America: The First Avenger 4.6",
     "Mission: Impossible - Dead Reckoning Part One 4.5",
@@ -3040,12 +3040,98 @@
    ]
   },
   {
+   "name": "Amy Adams",
+   "n": 5,
+   "leads": 3,
+   "avg": 4.46,
+   "wavg": 4.46,
+   "weighted": 4.361,
+   "top": [
+    "Arrival 4.6",
+    "The Fighter 4.5",
+    "Leap Year 4.3",
+    "Catch Me If You Can 4.6 (supporting)"
+   ],
+   "unwatched": [
+    {
+     "t": "Nocturnal Animals",
+     "y": "2016",
+     "va": 7.4,
+     "vc": 8499,
+     "sw": "Netflix"
+    },
+    {
+     "t": "The Master",
+     "y": "2012",
+     "va": 7.1,
+     "vc": 3432,
+     "sw": "Rent: Google Play Movies"
+    },
+    {
+     "t": "Doubt",
+     "y": "2008",
+     "va": 7.2,
+     "vc": 1990,
+     "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "Vice",
+     "y": "2018",
+     "va": 7,
+     "vc": 3702,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Big Eyes",
+     "y": "2014",
+     "va": 7,
+     "vc": 3676,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "American Hustle",
+     "y": "2013",
+     "va": 6.9,
+     "vc": 7929,
+     "sw": "Sony One Amazon Channel"
+    },
+    {
+     "t": "Enchanted",
+     "y": "2007",
+     "va": 6.9,
+     "vc": 5834,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Trouble with the Curve",
+     "y": "2012",
+     "va": 7,
+     "vc": 1740,
+     "sw": "Netflix"
+    },
+    {
+     "t": "Man of Steel",
+     "y": "2013",
+     "va": 6.7,
+     "vc": 16652,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Julie & Julia",
+     "y": "2009",
+     "va": 6.7,
+     "vc": 2263,
+     "sw": "Sony One Amazon Channel"
+    }
+   ]
+  },
+  {
    "name": "Diane Keaton",
    "n": 3,
    "leads": 2,
    "avg": 4.5,
    "wavg": 4.5,
-   "weighted": 4.347,
+   "weighted": 4.346,
    "top": [
     "Something's Gotta Give 4.5",
     "The Family Stone 4.5",
@@ -3125,98 +3211,12 @@
    ]
   },
   {
-   "name": "Amy Adams",
-   "n": 4,
-   "leads": 2,
-   "avg": 4.45,
-   "wavg": 4.45,
-   "weighted": 4.326,
-   "top": [
-    "Arrival 4.6",
-    "Leap Year 4.3",
-    "Catch Me If You Can 4.6 (supporting)",
-    "Batman v Superman: Dawn of Justice 4.3 (supporting)"
-   ],
-   "unwatched": [
-    {
-     "t": "Nocturnal Animals",
-     "y": "2016",
-     "va": 7.4,
-     "vc": 8499,
-     "sw": "Netflix"
-    },
-    {
-     "t": "The Master",
-     "y": "2012",
-     "va": 7.1,
-     "vc": 3432,
-     "sw": "Rent: Google Play Movies"
-    },
-    {
-     "t": "Doubt",
-     "y": "2008",
-     "va": 7.2,
-     "vc": 1990,
-     "sw": "Rent: Apple TV Store"
-    },
-    {
-     "t": "Vice",
-     "y": "2018",
-     "va": 7,
-     "vc": 3702,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "Big Eyes",
-     "y": "2014",
-     "va": 7,
-     "vc": 3676,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "American Hustle",
-     "y": "2013",
-     "va": 6.9,
-     "vc": 7929,
-     "sw": "Sony One Amazon Channel"
-    },
-    {
-     "t": "Enchanted",
-     "y": "2007",
-     "va": 6.9,
-     "vc": 5834,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Trouble with the Curve",
-     "y": "2012",
-     "va": 7,
-     "vc": 1740,
-     "sw": "Netflix"
-    },
-    {
-     "t": "Man of Steel",
-     "y": "2013",
-     "va": 6.7,
-     "vc": 16652,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Julie & Julia",
-     "y": "2009",
-     "va": 6.7,
-     "vc": 2263,
-     "sw": "Sony One Amazon Channel"
-    }
-   ]
-  },
-  {
    "name": "Juliette Lewis",
    "n": 3,
    "leads": 2,
    "avg": 4.37,
    "wavg": 4.44,
-   "weighted": 4.311,
+   "weighted": 4.31,
    "top": [
     "National Lampoon’s Christmas Vacation 4.5",
     "What's Eating Gilbert Grape 4.5",
@@ -3303,7 +3303,7 @@
    "leads": 0,
    "avg": 4.5,
    "wavg": 4.5,
-   "weighted": 4.438,
+   "weighted": 4.437,
    "top": [
     "Jaws 5.0",
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
@@ -3380,92 +3380,6 @@
      "va": 7.5,
      "vc": 3528,
      "sw": "Rent: Apple TV Store"
-    }
-   ]
-  },
-  {
-   "name": "Thomas Newman",
-   "n": 7,
-   "leads": 0,
-   "avg": 4.53,
-   "wavg": 4.53,
-   "weighted": 4.365,
-   "top": [
-    "The Shawshank Redemption 5.0",
-    "1917 4.6",
-    "Elemental 4.5",
-    "Finding Nemo 4.5"
-   ],
-   "unwatched": [
-    {
-     "t": "The Green Mile",
-     "y": "1999",
-     "va": 8.5,
-     "vc": 19896,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "The Help",
-     "y": "2011",
-     "va": 8.2,
-     "vc": 9309,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "American Beauty",
-     "y": "1999",
-     "va": 8,
-     "vc": 13405,
-     "sw": "Paramount Plus"
-    },
-    {
-     "t": "Scent of a Woman",
-     "y": "1992",
-     "va": 7.8,
-     "vc": 4109,
-     "sw": "Rent: Google Play Movies"
-    },
-    {
-     "t": "Skyfall",
-     "y": "2012",
-     "va": 7.3,
-     "vc": 16450,
-     "sw": "Amazon Prime Video, Universal+ Amazon Channel"
-    },
-    {
-     "t": "Meet Joe Black",
-     "y": "1998",
-     "va": 7.4,
-     "vc": 5974,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Cinderella Man",
-     "y": "2005",
-     "va": 7.6,
-     "vc": 2502,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Erin Brockovich",
-     "y": "2000",
-     "va": 7.4,
-     "vc": 3782,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Road to Perdition",
-     "y": "2002",
-     "va": 7.4,
-     "vc": 4134,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "The Judge",
-     "y": "2014",
-     "va": 7.3,
-     "vc": 4568,
-     "sw": "HBO Max"
     }
    ]
   },
@@ -3551,6 +3465,92 @@
      "y": "2007",
      "va": 7.3,
      "vc": 3860,
+     "sw": "HBO Max"
+    }
+   ]
+  },
+  {
+   "name": "Thomas Newman",
+   "n": 8,
+   "leads": 0,
+   "avg": 4.46,
+   "wavg": 4.46,
+   "weighted": 4.334,
+   "top": [
+    "The Shawshank Redemption 5.0",
+    "1917 4.6",
+    "Elemental 4.5",
+    "Finding Nemo 4.5"
+   ],
+   "unwatched": [
+    {
+     "t": "The Green Mile",
+     "y": "1999",
+     "va": 8.5,
+     "vc": 19896,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "The Help",
+     "y": "2011",
+     "va": 8.2,
+     "vc": 9309,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "American Beauty",
+     "y": "1999",
+     "va": 8,
+     "vc": 13405,
+     "sw": "Paramount Plus"
+    },
+    {
+     "t": "Scent of a Woman",
+     "y": "1992",
+     "va": 7.8,
+     "vc": 4109,
+     "sw": "Rent: Google Play Movies"
+    },
+    {
+     "t": "Skyfall",
+     "y": "2012",
+     "va": 7.3,
+     "vc": 16450,
+     "sw": "Amazon Prime Video, Universal+ Amazon Channel"
+    },
+    {
+     "t": "Meet Joe Black",
+     "y": "1998",
+     "va": 7.4,
+     "vc": 5974,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Cinderella Man",
+     "y": "2005",
+     "va": 7.6,
+     "vc": 2502,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Erin Brockovich",
+     "y": "2000",
+     "va": 7.4,
+     "vc": 3782,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Road to Perdition",
+     "y": "2002",
+     "va": 7.4,
+     "vc": 4134,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "The Judge",
+     "y": "2014",
+     "va": 7.3,
+     "vc": 4568,
      "sw": "HBO Max"
     }
    ]
@@ -3647,7 +3647,7 @@
    "leads": 0,
    "avg": 4.34,
    "wavg": 4.34,
-   "weighted": 4.301,
+   "weighted": 4.3,
    "top": [
     "Rogue One: A Star Wars Story 4.9",
     "Spider-Man: Far From Home 4.8",
@@ -3733,7 +3733,7 @@
    "leads": 0,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.274,
+   "weighted": 4.273,
    "top": [
     "Step Brothers 4.6",
     "The Other Guys 4.5",
@@ -3818,7 +3818,7 @@
    "leads": 0,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.274,
+   "weighted": 4.273,
    "top": [
     "Anchorman: The Legend of Ron Burgundy 4.7",
     "Talladega Nights: The Ballad of Ricky Bobby 4.6",
@@ -4421,7 +4421,7 @@
    "leads": 12,
    "avg": 4.49,
    "wavg": 4.49,
-   "weighted": 4.452,
+   "weighted": 4.451,
    "top": [
     "Sherlock Holmes: A Game of Shadows 4.9",
     "Avengers: Endgame 4.8",
@@ -4498,6 +4498,92 @@
      "va": 6.6,
      "vc": 3965,
      "sw": "Amazon Prime Video, Universal+ Amazon Channel"
+    }
+   ]
+  },
+  {
+   "name": "Chris Pratt",
+   "n": 12,
+   "leads": 12,
+   "avg": 4.27,
+   "wavg": 4.27,
+   "weighted": 4.255,
+   "top": [
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Guardians of the Galaxy Vol. 2 4.9",
+    "Guardians of the Galaxy Vol. 1 4.7",
+    "Jurassic World 4.5"
+   ],
+   "unwatched": [
+    {
+     "t": "Her",
+     "y": "2013",
+     "va": 7.8,
+     "vc": 15690,
+     "sw": "Rent: Google Play Movies, Apple TV Store"
+    },
+    {
+     "t": "The Tomorrow War",
+     "y": "2021",
+     "va": 7.5,
+     "vc": 4492,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Moneyball",
+     "y": "2011",
+     "va": 7.3,
+     "vc": 6027,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "The Guardians of the Galaxy Holiday Special",
+     "y": "2022",
+     "va": 7.1,
+     "vc": 2494,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Mercy",
+     "y": "2026",
+     "va": 7.1,
+     "vc": 1738,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "The Garfield Movie",
+     "y": "2024",
+     "va": 6.9,
+     "vc": 1514,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Jurassic World Dominion",
+     "y": "2022",
+     "va": 6.6,
+     "vc": 7314,
+     "sw": "Universal+ Amazon Channel"
+    },
+    {
+     "t": "The Magnificent Seven",
+     "y": "2016",
+     "va": 6.5,
+     "vc": 6587,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Delivery Man",
+     "y": "2013",
+     "va": 6.3,
+     "vc": 1622,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Bride Wars",
+     "y": "2009",
+     "va": 6.2,
+     "vc": 3246,
+     "sw": "Disney Plus, Paramount Plus, Universal+ Amazon Channel"
     }
    ]
   },
@@ -4758,100 +4844,14 @@
      "sw": "Netflix"
     }
    ]
-  },
-  {
-   "name": "Chris Pratt",
-   "n": 11,
-   "leads": 11,
-   "avg": 4.3,
-   "wavg": 4.3,
-   "weighted": 4.276,
-   "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Jurassic World 4.5"
-   ],
-   "unwatched": [
-    {
-     "t": "Her",
-     "y": "2013",
-     "va": 7.8,
-     "vc": 15690,
-     "sw": "Rent: Google Play Movies, Apple TV Store"
-    },
-    {
-     "t": "The Tomorrow War",
-     "y": "2021",
-     "va": 7.5,
-     "vc": 4492,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "Moneyball",
-     "y": "2011",
-     "va": 7.3,
-     "vc": 6027,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "The Guardians of the Galaxy Holiday Special",
-     "y": "2022",
-     "va": 7.1,
-     "vc": 2494,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Mercy",
-     "y": "2026",
-     "va": 7.1,
-     "vc": 1738,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "The Garfield Movie",
-     "y": "2024",
-     "va": 6.9,
-     "vc": 1514,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "Jurassic World Dominion",
-     "y": "2022",
-     "va": 6.6,
-     "vc": 7314,
-     "sw": "Universal+ Amazon Channel"
-    },
-    {
-     "t": "The Magnificent Seven",
-     "y": "2016",
-     "va": 6.5,
-     "vc": 6587,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Delivery Man",
-     "y": "2013",
-     "va": 6.3,
-     "vc": 1622,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Bride Wars",
-     "y": "2009",
-     "va": 6.2,
-     "vc": 3246,
-     "sw": "Disney Plus, Paramount Plus, Universal+ Amazon Channel"
-    }
-   ]
   }
  ],
  "genres": [
   {
    "name": "Drama",
-   "n": 114,
-   "avg": 4.23,
-   "weighted": 4.22
+   "n": 118,
+   "avg": 4.24,
+   "weighted": 4.231
   },
   {
    "name": "Sci-fi",
@@ -4867,9 +4867,9 @@
   },
   {
    "name": "Romance",
-   "n": 28,
-   "avg": 4.13,
-   "weighted": 4.119
+   "n": 30,
+   "avg": 4.12,
+   "weighted": 4.112
   },
   {
    "name": "Action",
@@ -4887,13 +4887,13 @@
    "name": "Period drama",
    "n": 3,
    "avg": 4,
-   "weighted": 4.045
+   "weighted": 4.044
   },
   {
    "name": "Comedy",
-   "n": 139,
-   "avg": 4.03,
-   "weighted": 4.034
+   "n": 142,
+   "avg": 4.02,
+   "weighted": 4.019
   },
   {
    "name": "Animated / family",
@@ -4903,7 +4903,7 @@
   },
   {
    "name": "Rom-com",
-   "n": 90,
+   "n": 93,
    "avg": 3.96,
    "weighted": 3.961
   }
@@ -4919,7 +4919,7 @@
    "name": "Guy Ritchie",
    "n": 7,
    "avg": 4.64,
-   "weighted": 4.438
+   "weighted": 4.437
   },
   {
    "name": "Marvel",
@@ -4931,43 +4931,49 @@
    "name": "Star Wars",
    "n": 8,
    "avg": 4.54,
-   "weighted": 4.385
+   "weighted": 4.384
   },
   {
    "name": "Ryan Reynolds",
    "n": 4,
    "avg": 4.63,
-   "weighted": 4.352
-  },
-  {
-   "name": "Mind-Bender",
-   "n": 3,
-   "avg": 4.63,
-   "weighted": 4.317
+   "weighted": 4.351
   },
   {
    "name": "Prestige",
    "n": 21,
    "avg": 4.36,
-   "weighted": 4.317
+   "weighted": 4.316
   },
   {
    "name": "Middle-earth",
    "n": 3,
    "avg": 4.63,
-   "weighted": 4.317
+   "weighted": 4.316
+  },
+  {
+   "name": "Mind-Bender",
+   "n": 4,
+   "avg": 4.47,
+   "weighted": 4.276
   },
   {
    "name": "Space & Science",
    "n": 13,
    "avg": 4.33,
-   "weighted": 4.272
+   "weighted": 4.271
   },
   {
    "name": "Nora Ephron",
    "n": 3,
    "avg": 4.5,
    "weighted": 4.259
+  },
+  {
+   "name": "Documentary",
+   "n": 60,
+   "avg": 4.26,
+   "weighted": 4.253
   },
   {
    "name": "Love That Costs",
@@ -4979,25 +4985,19 @@
    "name": "Irish Lane",
    "n": 3,
    "avg": 4.47,
-   "weighted": 4.245
-  },
-  {
-   "name": "Documentary",
-   "n": 58,
-   "avg": 4.26,
    "weighted": 4.244
   },
   {
    "name": "Wizarding World",
    "n": 2,
    "avg": 4.55,
-   "weighted": 4.236
+   "weighted": 4.235
   },
   {
    "name": "Time & Second Chances",
-   "n": 12,
-   "avg": 4.27,
-   "weighted": 4.226
+   "n": 13,
+   "avg": 4.25,
+   "weighted": 4.212
   },
   {
    "name": "Blockbuster",
@@ -5027,13 +5027,13 @@
    "name": "Christmas",
    "n": 55,
    "avg": 4.14,
-   "weighted": 4.138
+   "weighted": 4.137
   },
   {
    "name": "Austen",
    "n": 2,
    "avg": 4.25,
-   "weighted": 4.136
+   "weighted": 4.135
   },
   {
    "name": "Classic Canon",
@@ -5042,34 +5042,34 @@
    "weighted": 4.132
   },
   {
+   "name": "Period",
+   "n": 12,
+   "avg": 4.09,
+   "weighted": 4.088
+  },
+  {
    "name": "British Absurd",
    "n": 2,
    "avg": 4.05,
    "weighted": 4.069
   },
   {
-   "name": "Period",
-   "n": 11,
-   "avg": 4.05,
-   "weighted": 4.054
-  },
-  {
    "name": "Cornetto",
    "n": 3,
    "avg": 4,
-   "weighted": 4.045
+   "weighted": 4.044
+  },
+  {
+   "name": "Unsorted",
+   "n": 18,
+   "avg": 4.03,
+   "weighted": 4.037
   },
   {
    "name": "Frat Pack",
    "n": 46,
    "avg": 4.02,
    "weighted": 4.028
-  },
-  {
-   "name": "Unsorted",
-   "n": 17,
-   "avg": 4,
-   "weighted": 4.015
   },
   {
    "name": "Music & Musicals",
@@ -5090,22 +5090,22 @@
    "weighted": 3.914
   },
   {
-   "name": "Modern Comedy",
-   "n": 77,
-   "avg": 3.88,
-   "weighted": 3.885
-  },
-  {
    "name": "80s Nostalgia",
    "n": 13,
    "avg": 3.81,
-   "weighted": 3.872
+   "weighted": 3.871
+  },
+  {
+   "name": "Modern Comedy",
+   "n": 79,
+   "avg": 3.86,
+   "weighted": 3.87
   },
   {
    "name": "Action",
    "n": 12,
    "avg": 3.8,
-   "weighted": 3.87
+   "weighted": 3.869
   },
   {
    "name": "Whodunnit",
@@ -5115,9 +5115,9 @@
   },
   {
    "name": "Modern Rom-com",
-   "n": 51,
-   "avg": 3.84,
-   "weighted": 3.857
+   "n": 54,
+   "avg": 3.85,
+   "weighted": 3.862
   },
   {
    "name": "Family Adventure",
@@ -5133,15 +5133,15 @@
   },
   {
    "name": "Kid Sport",
-   "n": 13,
-   "avg": 3.71,
-   "weighted": 3.795
+   "n": 14,
+   "avg": 3.69,
+   "weighted": 3.778
   },
   {
    "name": "Streaming-Era",
    "n": 3,
    "avg": 3,
-   "weighted": 3.617
+   "weighted": 3.616
   }
  ],
  "unwatchedChecked": "2026-10-04",

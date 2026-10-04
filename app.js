@@ -363,11 +363,20 @@
     var rows = e.unwatched.map(function (f) {
       var c = classify(f.sw);
       if (c.k === 'have') have++;
+      var at = ' data-ut="' + esc(f.t) + '" data-uy="' + esc(f.y || '') + '"';
       return '<li class="unw">' +
         '<span class="unwdot ' + c.cls + '">●</span>' +
         '<span class="unwt">' + esc(f.t) + '</span>' +
         '<span class="unwy">' + esc(f.y || '') + '</span>' +
         '<span class="unwsw ' + c.cls + '">' + esc(c.short) + '</span>' +
+        '<span class="unwact">' +
+          '<button class="ub uq" data-ua="queue"' + at +
+            ' title="Add to the watchlist">Queue</button>' +
+          '<button class="ub un" data-ua="pass"' + at +
+            ' title="Not for us, and stop suggesting it">Pass</button>' +
+          '<button class="ub ur" data-ua="rate"' + at +
+            ' title="We have seen this, let me rate it">Rate</button>' +
+        '</span>' +
         '</li>';
     }).join('');
     return '<button class="unwbtn" data-unw="' + idx + '" aria-expanded="false">' +
@@ -428,6 +437,26 @@
         var open = !l.hidden;
         l.hidden = open;
         b.setAttribute('aria-expanded', String(!open));
+      });
+    });
+
+    /* Queue / Pass / Rate on a film that is not in the library yet. These go into
+     * the same pending basket as every other edit, as NEW FILM lines, so Review
+     * then Copy for SAGE hands them over with everything else. Chris asked for
+     * this on 2026-10-04: a list of things he has not seen is only useful if he
+     * can act on it from the same screen. */
+    gridEl.querySelectorAll('[data-ua]').forEach(function (b) {
+      b.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+        var t = b.dataset.ut, y = b.dataset.uy, a = b.dataset.ua;
+        if (a === 'rate') { openAdd(t, y); return; }
+        var patch = { title: t, isNew: true, status: a === 'queue' ? 'Watchlist' : 'Not for us' };
+        if (y) patch.year = y;
+        edit(t, patch);
+        var row = b.parentNode;
+        row.innerHTML = '<span class="unwok">' +
+          (a === 'queue' ? 'queued ✓' : 'passed ✓') + '</span>';
+        row.parentNode.classList.add('unwdone');
       });
     });
   }
@@ -491,7 +520,9 @@
    * captures what Chris knows, and SAGE does the TMDB lookup when the paste
    * comes back. Better than making him switch to the sheet mid-film. */
 
-  function openAdd(prefill) {
+  /* prefillYear arrives from the Our People "Rate" buttons, where the year is
+     already known, so Chris is not asked to retype what the app can see. */
+  function openAdd(prefill, prefillYear) {
     sheetEl.innerHTML =
       '<div class="hd"><button class="x" id="closeX" aria-label="Close">&times;</button>' +
       '<h2 id="sheetTitle">Add a film</h2>' +
@@ -501,7 +532,8 @@
         '<div class="eh">Title</div>' +
         '<input class="pnum" id="newTitle" type="text" value="' + esc(prefill || '') + '" placeholder="Exact title helps me find it">' +
         '<div class="eh">Year, if you know it</div>' +
-        '<input class="pnum" id="newYear" type="number" min="1900" max="2030" placeholder="e.g. 2019">' +
+        '<input class="pnum" id="newYear" type="number" min="1900" max="2030" placeholder="e.g. 2019"' +
+          (prefillYear ? ' value="' + esc(prefillYear) + '"' : '') + '>' +
         '<div class="eh">Who watched it</div>' +
         '<div class="actions" id="newCtx">' +
           '<button class="pbtn" data-c="Date Night">Date Night</button>' +

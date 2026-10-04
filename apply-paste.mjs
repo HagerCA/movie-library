@@ -95,7 +95,7 @@ for (const line of lines) {
     else if ((m = b.match(/^Chris says:\s*(.+)$/i)))    says.chris = m[1];
     else if ((m = b.match(/^Pixie says:\s*(.+)$/i)))    says.pixie = m[1];
     else if ((m = b.match(/^Boys say:\s*(.+)$/i)))      says.boys = m[1];
-    else if (/^(Rated|Watchlist|Not for us)$/i.test(b)) status = b;
+    else if (/^(Rated|Watchlist|Not for us|Not watching|Dropped|Owned, unwatched)$/i.test(b)) status = b;
     else if (/^(19|20)\d\d$/.test(b))                   year = b;
   }
 
@@ -157,9 +157,16 @@ for (const line of lines) {
   if (says.pixie) set('Pixie Says', says.pixie);
   if (says.boys)  set('Boys Say', says.boys);
   if (chris && !(lRow[lib.at('Pixie')] || '').trim()) set('Pixie', chris);
-  if (status === 'Not for us') set('Status', 'Not for us');
-  else if (rated || status === 'Rated') set('Status', 'Rated');
-  else if (status === 'Watchlist' && !(lRow[lib.at('Chris')] || '').trim()) set('Status', 'Watchlist');
+  /* "Not for us" is what the app's buttons and the older pastes say; the schema's
+   * word is "Not watching", so normalise rather than inventing a tenth status.
+   * Dropped used to fall through here unrecognised, which made a Dropped line
+   * report itself as "already applied" while changing nothing. */
+  const S = status ? String(status) : '';
+  if (/^Dropped$/i.test(S)) set('Status', 'Dropped');
+  else if (/^(Not for us|Not watching)$/i.test(S)) set('Status', 'Not watching');
+  else if (rated || /^Rated$/i.test(S)) set('Status', 'Rated');
+  else if (/^Owned, unwatched$/i.test(S)) set('Status', 'Owned, unwatched');
+  else if (/^Watchlist$/i.test(S) && !(lRow[lib.at('Chris')] || '').trim()) set('Status', 'Watchlist');
 
   if (changed) stat.rating++; else stat.unchanged++;
 }
