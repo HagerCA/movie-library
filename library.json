@@ -25305,7 +25305,7 @@
   "g": "Drama",
   "c": 4.8,
   "p": null,
-  "w": "Queue",
+  "w": "Household",
   "s": "Rated",
   "l": "Prestige",
   "sv": "HBO Max",
@@ -25317,7 +25317,7 @@
   "img": "posters/424.jpg",
   "rt": 195,
   "ov": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
-  "n": "Arrived in the Google Sheet from the app’s live-save endpoint and was pulled into the vault 2026-10-04. Needs a TMDB pass for runtime, poster and streaming. Rated in the Google Sheet and pulled into the vault 2026-10-04: Chris 4.8. A rating on a queued film means it was watched, so Status moved to Rated. Pixie left blank; not invented.",
+  "n": "Arrived in the Google Sheet from the app’s live-save endpoint and was pulled into the vault 2026-10-04. Needs a TMDB pass for runtime, poster and streaming. Rated in the Google Sheet and pulled into the vault 2026-10-04: Chris 4.8. A rating on a queued film means it was watched, so Status moved to Rated. Pixie left blank; not invented. Context moved off Queue: a rated film is not still queued. Audience not recorded, so Household rather than an invented one.",
   "cert": "R",
   "f": ""
  },
