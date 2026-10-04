@@ -32,7 +32,7 @@
    * writes straight to the Google Sheet instead of waiting for a copy-paste.
    * Empty means the copy-for-SAGE loop stays, which always works.
    * ---------------------------------------------------------------------- */
-  var SAVE_ENDPOINT = '';
+  var SAVE_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzDtZVfIDXuo9SVlUiLRq-n6k9dQ7rgc7BVqP5STeP89YNJsfzGV61zG8ZqpGTEbBAo/exec';
 
   var APP_URL = 'https://hagerca.github.io/movie-library/';
   var LS = 'hager-movie-pending-v1';
