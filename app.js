@@ -257,7 +257,7 @@
     { k: 'towatch', label: 'Watch List',          fn: function (f) { return /watchlist|owned|theaters|not released/i.test(f.s); } },
     { k: 'date',    label: 'Date Night \uD83C\uDF77', fn: function (f) { return f.w === 'Date Night'; } },
     { k: 'fam',     label: 'With the Boys',       fn: function (f) { return f.w === 'Family'; } },
-    { k: 'need',    label: 'Seen, Needs a Number', fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
+    { k: 'need',    label: 'Needs a Rating',      fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
     { k: 'xmas',    label: '\uD83C\uDF84 Christmas',  fn: function (f) { return f.l === 'Christmas'; } },
     /* The 5s and Watch Tonight came out on 2026-10-04 at Chris's request, to
      * streamline this row. The Picker replaced them: its "only what we already
