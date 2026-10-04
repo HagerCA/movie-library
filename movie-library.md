@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-04** · **598 films** · Chris has rated 391 (avg **4.26**), Pixie 392 (avg 4.26)
+Last built **2026-10-04** · **598 films** · Chris has rated 393 (avg **4.26**), Pixie 392 (avg 4.26)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 338 of 391 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 340 of 393 rated films clear it.
 
 ## Columns
 
@@ -47,6 +47,8 @@ The app is `index.html` in this folder.
 | You've Got Mail | 1998 | **4.5** | 4.5 | Date Night | Rated | Nora Ephron | Rent: Apple TV Store, Google Play Movies | “I could watch that a million times over.” |
 | Amélie | 2001 | **4.3** | 4.5 | Date Night | Rated | Whimsy |  | Watched 2026-10-03. Chris fell asleep about halfway after travelling and declined to rate it that night. He gave it 4.3 on 2026-10-04 from the app. Pixie 4.5 stands on its own. |
 | Leap Year | 2010 | **4.3** | 4.3 | Queue | Rated | Modern Rom-com | Rent: Apple TV Store, Google Play Movies | Was on the queue as unseen. Rated in the sheet 2026-10-03, so it has been watched. |
+| Letters to Juliet | 2010 | **4.2** |  | Queue | Rated | Classic Canon | Netflix, Universal+ Amazon Channel | Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4.2. Was on the Watchlist; a rating means it was watched, so Status moved to Rated. |
+| Bridget Jones: Mad About the Boy | 2025 | **4.1** |  | Queue | Rated | Richard Curtis | Disney Plus | Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4.1. Was on the Watchlist; a rating means it was watched, so Status moved to Rated. |
 | 10 Things I Hate About You | 1999 | **4** | 4 | Date Night | Rated | Modern Rom-com | Disney Plus |  |
 | Bridget Jones's Diary | 2001 | **4** | 4 | Date Night | Rated | Richard Curtis | Netflix, Disney Plus, Universal+ Amazon Channel | “She's hilarious.” |
 | Crazy, Stupid, Love | 2011 | **4** | 4 | Date Night | Rated | Modern Rom-com | HBO Max |  |
@@ -74,17 +76,15 @@ The app is `index.html` in this folder.
 | The Idea of You | 2024 | **3** | 3 | Date Night | Rated | Streaming-Era | Amazon Prime Video | Solid rom-com, still only a 3. |
 | Your Place or Mine | 2023 | **3** | 3 | Date Night | Rated | Streaming-Era | Netflix | Solid rom-com, still only a 3. |
 | An Affair to Remember | 1957 |  |  | Queue | Watchlist | Classic Canon | Disney Plus | The film When Harry Met Sally is built around. |
-| Bridget Jones: Mad About the Boy | 2025 |  |  | Queue | Watchlist | Richard Curtis | Disney Plus |  |
 | Confessions of a Shopaholic | 2009 |  |  | Queue | Watchlist | Modern Rom-com |  |  |
 | Holidate | 2020 |  |  | Queue | Watchlist | Modern Rom-com | Netflix |  |
-| Letters to Juliet | 2010 |  |  | Queue | Watchlist | Classic Canon | Netflix, Universal+ Amazon Channel |  |
 | Love, Rosie | 2014 |  |  | Queue | Watchlist | Modern Rom-com |  |  |
 | Return to Me | 2000 |  |  | Queue | Watchlist | Classic Canon | Rent: Apple TV Store, Google Play Movies |  |
 | The Half of It | 2020 |  |  | Queue | Watchlist | Modern Rom-com | Netflix |  |
 
 ## ROMANCE
 
-*21 films · avg 4.19*
+*21 films · avg 4.21*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -94,9 +94,9 @@ The app is `index.html` in this folder.
 | The Guernsey Literary and Potato Peel Pie Society | 2018 | **4.5** | 4.5 | Date Night | Rated | Irish Lane | Netflix | Watched and confirmed 2026-10-03. "Pixie and I loved it." Earlier unseen notes predate the watch. |
 | The Time Traveler's Wife | 2009 | **4.5** | 4.5 | Date Night | Rated | Time & Second Chances | Universal+ Amazon Channel |  |
 | Brooklyn | 2015 | **4.4** | 4.4 | Date Night | Rated | Irish Lane | Amazon Prime Video | Resolved 2026-10-03: seen by both, both give it 4.4. The earlier "unseen" readings are retired. |
+| Fifty Shades of Grey | 2015 | **4.3** | 4 | Date Night | Rated | Modern Rom-com | HBO Max | Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4 -> 4.3. |
 | A Walk to Remember | 2002 | **4** | 4 | Date Night | Rated | Love That Costs | Netflix, Amazon Prime Video, Universal+ Amazon Channel |  |
 | Begin Again | 2013 | **4** | 4 | Date Night | Rated | Love That Costs |  |  |
-| Fifty Shades of Grey | 2015 | **4** | 4 | Date Night | Rated | Modern Rom-com | HBO Max |  |
 | La La Land | 2016 | **4** | 4 | Date Night | Rated | Love That Costs | Rent: Apple TV Store |  |
 | P.S. I Love You | 2007 | **4** | 4 | Date Night | Rated | Love That Costs | Netflix, Universal+ Amazon Channel |  |
 | The Age of Adaline | 2015 | **4** | 4 | Date Night | Rated | Love That Costs | Rent: Apple TV Store, Google Play Movies |  |
@@ -376,7 +376,7 @@ The app is `index.html` in this folder.
 | The Martian | 2015 | **4.8** | 4.8 | Family | Rated | Space & Science | Disney Plus | “That movie was fantastic. The boys really loved it.” The gateway film. |
 | Avatar: The Way of Water | 2022 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | Disney Plus |  |
 | Dune: Part Two | 2024 | **4.7** | 4.7 | Household | Seen, unrated | Sci-fi Canon | HBO Max, Universal+ Amazon Channel |  |
-| Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
+| Star Wars: Episode IV - A New Hope | 1977 | **4.7** | 4.9 | Family | Rated | Star Wars | Disney Plus | Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Pixie 4.7 -> 4.9. |
 | Star Wars: Episode VI - Return of the Jedi | 1983 | **4.7** | 4.7 | Family | Rated | Star Wars | Disney Plus |  |
 | Arrival | 2016 | **4.6** | 4.6 | Date Night | Rated | Mind-Bender | HBO Max, Universal+ Amazon Channel | The closest thing to Interstellar on the queue. |
 | Jurassic Park | 1993 | **4.6** | 4.6 | Household | Seen, unrated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max |  |
@@ -745,11 +745,11 @@ The app is `index.html` in this folder.
 | Blockbuster | 20 | 20 | 4.33 |
 | Love That Costs | 12 | 10 | 4.32 |
 | Unsorted | 193 | 20 | 4.30 |
-| Richard Curtis | 4 | 3 | 4.30 |
 | Whimsy | 1 | 1 | 4.30 |
-| Classic Canon | 12 | 9 | 4.26 |
+| Classic Canon | 12 | 10 | 4.25 |
 | Superhero | 6 | 6 | 4.25 |
 | Austen | 5 | 2 | 4.25 |
+| Richard Curtis | 4 | 4 | 4.25 |
 | Frat Pack | 24 | 24 | 4.22 |
 | Animated Family | 88 | 86 | 4.16 |
 | Classic Comedy | 4 | 4 | 4.13 |
@@ -758,7 +758,7 @@ The app is `index.html` in this folder.
 | Rebuild & Relocate | 1 | 1 | 4.00 |
 | Family Adventure | 9 | 8 | 3.84 |
 | 80s Nostalgia | 12 | 12 | 3.82 |
-| Modern Rom-com | 23 | 19 | 3.77 |
+| Modern Rom-com | 23 | 19 | 3.78 |
 | Whodunnit | 2 | 2 | 3.75 |
 | Kid Sport | 7 | 7 | 3.36 |
 | Streaming-Era | 3 | 3 | 3.00 |
@@ -769,10 +769,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-04
 
-- **598 films.** Seen, unrated 305 · Rated 259 · Watchlist 29 · Owned, unwatched 3 · Not released 1 · Not watching 1
-- **Chris 391 rated, avg 4.26. Pixie 392 rated, avg 4.26.**
-- Rewatches (4.0+): **338** · enjoyed once (3.5): 36 · below: 17
-- Where they differ: **1** (Amélie)
-- Spread: 5.0 (8) · 4.9 (14) · 4.8 (33) · 4.7 (23) · 4.6 (21) · 4.5 (75) · 4.4 (15) · 4.3 (28) · 4.2 (22) · 4.1 (7) · 4.0 (92) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (24) · 3.0 (15) · 2.5 (2)
+- **598 films.** Seen, unrated 305 · Rated 261 · Watchlist 27 · Owned, unwatched 3 · Not released 1 · Not watching 1
+- **Chris 393 rated, avg 4.26. Pixie 392 rated, avg 4.26.**
+- Rewatches (4.0+): **340** · enjoyed once (3.5): 36 · below: 17
+- Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
+- Spread: 5.0 (8) · 4.9 (14) · 4.8 (33) · 4.7 (23) · 4.6 (21) · 4.5 (75) · 4.4 (15) · 4.3 (29) · 4.2 (23) · 4.1 (8) · 4.0 (91) · 3.9 (4) · 3.8 (7) · 3.7 (1) · 3.5 (24) · 3.0 (15) · 2.5 (2)
 - Context: Household 312 · Family 149 · Date Night 84 · Queue 40 · Solo 13
 - Retired rows kept in the CSV but hidden: 17

@@ -486,10 +486,10 @@
   "t": "Letters to Juliet",
   "y": 2010,
   "g": "Rom-com",
-  "c": null,
+  "c": 4.2,
   "p": null,
   "w": "Queue",
-  "s": "Watchlist",
+  "s": "Rated",
   "l": "Classic Canon",
   "sv": "Netflix, Universal+ Amazon Channel",
   "sc": "2026-10-03",
@@ -500,7 +500,7 @@
   "img": "posters/37056.jpg",
   "rt": 105,
   "ov": "An American girl on vacation in Italy finds an unanswered \"letter to Juliet\" -- one of thousands of missives left at the fictional lover's Verona courtyard, which are typically answered by the \"secretaries of Juliet\" -- and she goes on a quest to find the lovers referenced in the letter.",
-  "n": "",
+  "n": "Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4.2. Was on the Watchlist; a rating means it was watched, so Status moved to Rated.",
   "f": ""
  },
  {
@@ -528,10 +528,10 @@
   "t": "Bridget Jones: Mad About the Boy",
   "y": 2025,
   "g": "Rom-com",
-  "c": null,
+  "c": 4.1,
   "p": null,
   "w": "Queue",
-  "s": "Watchlist",
+  "s": "Rated",
   "l": "Richard Curtis",
   "sv": "Disney Plus",
   "sc": "2026-10-03",
@@ -542,7 +542,7 @@
   "img": "posters/1272149.jpg",
   "rt": 124,
   "ov": "Bridget Jones navigates life as a widow and single mum with the help of her family, friends, and former lover, Daniel. Back to work and on the apps, she's pursued by a younger man and maybe – just maybe – her son's science teacher.",
-  "n": "",
+  "n": "Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4.1. Was on the Watchlist; a rating means it was watched, so Status moved to Rated.",
   "f": ""
  },
  {
@@ -4350,7 +4350,7 @@
   "t": "Fifty Shades of Grey",
   "y": 2015,
   "g": "Romance",
-  "c": 4,
+  "c": 4.3,
   "p": 4,
   "w": "Date Night",
   "s": "Rated",
@@ -4364,7 +4364,7 @@
   "img": "posters/216015.jpg",
   "rt": 125,
   "ov": "When college senior Anastasia Steele steps in for her sick roommate to interview prominent businessman Christian Grey for their campus paper, little does she realize the path her life will take. Christian, as enigmatic as he is rich and powerful, finds himself strangely drawn to Ana, and she to him. Though sexually inexperienced, Ana plunges headlong into an affair -- and learns that Christian's true sexual proclivities push the boundaries of pain and pleasure.",
-  "n": "",
+  "n": "Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Chris 4 -> 4.3.",
   "f": ""
  },
  {
@@ -4582,7 +4582,7 @@
   "y": 1977,
   "g": "Sci-fi",
   "c": 4.7,
-  "p": 4.7,
+  "p": 4.9,
   "w": "Family",
   "s": "Rated",
   "l": "Star Wars",
@@ -4595,7 +4595,7 @@
   "img": "posters/11.jpg",
   "rt": 121,
   "ov": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
-  "n": "",
+  "n": "Rating typed into the Google Sheet by hand and pulled into the vault 2026-10-04. Pixie 4.7 -> 4.9.",
   "f": ""
  },
  {
