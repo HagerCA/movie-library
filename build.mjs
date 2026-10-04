@@ -18,6 +18,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
 const CSV = path.join(DIR, 'movie-library.csv');
@@ -309,6 +310,15 @@ for (const need of ['app.css', 'app.js']) {
   }
 }
 
+/* Cache busting. GitHub Pages serves app.js with a long cache life, so on
+   2026-10-04 Chris loaded a freshly deployed app and could not see a new tab
+   that was demonstrably live. A content hash in the query string means the
+   browser can never serve a stale script against fresh data again. */
+const stamp = f => crypto.createHash('sha1')
+  .update(fs.readFileSync(path.join(DIR, f))).digest('hex').slice(0, 10);
+const CSS_V = stamp('app.css');
+const JS_V = stamp('app.js');
+
 const inQueue = films.filter(f => /watchlist|owned|theaters|not released/i.test(f.s)).length;
 
 const html = `<!DOCTYPE html>
@@ -318,7 +328,7 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0b0d11">
 <title>The Hager Movie Library</title>
-<link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="./app.css?v=${CSS_V}">
 </head>
 <body>
 <div class="wrap">
@@ -388,7 +398,7 @@ const SUGG = ${JSON.stringify(suggestions)};
 const UPCOMING = ${JSON.stringify(upcoming)};
 const FAVOURITES = ${JSON.stringify(favorites)};
 </script>
-<script src="./app.js"></script>
+<script src="./app.js?v=${JS_V}"></script>
 </body>
 </html>
 `;
