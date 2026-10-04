@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-04** · **598 films** · Chris has rated 562 (avg **4.11**), Pixie 392 (avg 4.26)
+Last built **2026-10-04** · **597 films** · Chris has rated 563 (avg **4.11**), Pixie 393 (avg 4.25)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 381 of 562 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 382 of 563 rated films clear it.
 
 ## Columns
 
@@ -162,7 +162,7 @@ The app is `index.html` in this folder.
 
 ## COMEDY
 
-*53 films · avg 4.23*
+*53 films · avg 4.24*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -184,6 +184,7 @@ The app is `index.html` in this folder.
 | The Other Guys | 2010 | **4.5** | 4.5 | Date Night | Rated | Classic Comedy | HBO Max, Sony One Amazon Channel |  |
 | Home Alone 2: Lost in New York | 1992 | **4.4** | 4.4 | Family | Rated | Christmas | Disney Plus |  |
 | The French Dispatch | 2021 | **4.4** | 4.4 | Household | Seen, unrated | Frat Pack | Disney Plus |  |
+| A Christmas Story | 1983 | **4.3** | 4.3 | Family | Rated | Christmas | Rent: Apple TV Store, Google Play Movies | Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
 | Four Christmases | 2008 | **4.3** | 4.3 | Family | Rated | Christmas | Universal+ Amazon Channel |  |
 | Last Christmas | 2019 | **4.3** | 4.3 | Family | Rated | Christmas | HBO Max | Added 2026-10-04 from the family Christmas list. Needs a number. |
 | Love Actually | 2003 | **4.3** | 4.3 | Family | Rated | Christmas | Universal+ Amazon Channel | Added 2026-10-04 from the family Christmas list. Needs a number. |
@@ -195,7 +196,6 @@ The app is `index.html` in this folder.
 | Zoolander | 2001 | **4.2** | 4.2 | Household | Seen, unrated | Frat Pack | Rent: Apple TV Store, Google Play Movies |  |
 | Good Boys | 2019 | **4.1** | 4.1 | Household | Seen, unrated | Frat Pack | Rent: Apple TV Store, Google Play Movies |  |
 | School of Rock | 2003 | **4.1** | 4.1 | Household | Seen, unrated | Frat Pack | Paramount Plus |  |
-| A Christmas Story | 1983 | **4** | 4 | Family | Rated | Christmas | Rent: Apple TV Store, Google Play Movies |  |
 | Arthur Christmas | 2011 | **4** | 4 | Family | Rated | Christmas | Universal+ Amazon Channel | Added 2026-10-04 from the family Christmas list. Needs a number. |
 | Beetlejuice | 1988 | **4** | 4 | Family | Rated | 80s Nostalgia | HBO Max |  |
 | Booksmart | 2019 | **4** | 4 | Household | Seen, unrated | Frat Pack | Universal+ Amazon Channel |  |
@@ -272,11 +272,10 @@ The app is `index.html` in this folder.
 
 ## ACTION
 
-*28 films · avg 4.34*
+*28 films · avg 4.32*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
-| Die Hard | 1988 | **4.8** | 4.8 | Household | Seen, unrated | Christmas | Disney Plus | Moved into the Christmas lane 2026-10-04 from "Blockbuster": it is on the list the family actually watches every December. |
 | A Knight's Tale | 2001 | **4.7** | 4.7 | Family | Rated | Blockbuster | HBO Max |  |
 | Wonder Woman | 2017 | **4.7** | 4.7 | Household | Seen, unrated | Superhero | Rent: Apple TV Store, Google Play Movies |  |
 | 1917 | 2019 | **4.6** | 4.6 | Household | Seen, unrated | Blockbuster | Amazon Prime Video |  |
@@ -296,6 +295,7 @@ The app is `index.html` in this folder.
 | The Mummy Returns | 2001 | **4.4** | 4.4 | Household | Seen, unrated | Blockbuster | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel |  |
 | Batman v Superman: Dawn of Justice | 2016 | **4.3** | 4.3 | Household | Seen, unrated | Superhero | HBO Max |  |
 | Batman: The Dark Knight Returns | 2012 | **4.3** | 4.3 | Household | Rated | Superhero | HBO Max | Chris listed this as a documentary; it is the two-part animated film. Worth confirming which he means. |
+| Die Hard | 1988 | **4.3** | 4.3 | Household | Rated | Christmas | Disney Plus | Moved into the Christmas lane 2026-10-04 from "Blockbuster": it is on the list the family actually watches every December. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
 | Aquaman | 2018 | **4.2** | 4.2 | Household | Seen, unrated | Superhero | HBO Max, Universal+ Amazon Channel |  |
 | Argylle | 2024 | **4** | 4 | Family | Rated | Blockbuster | Apple TV |  |
 | Armageddon | 1998 | **4** | 4 | Family | Rated | Blockbuster | Disney Plus |  |
@@ -307,25 +307,22 @@ The app is `index.html` in this folder.
 
 ## ADVENTURE
 
-*46 films · avg 4.16*
+*46 films · avg 4.15*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
 | Jaws | 1975 | **5** | 5 | Household | Seen, unrated | Spielberg | HBO Max |  |
 | The Princess Bride | 1987 | **5** | 5 | Family | Rated | 80s Nostalgia | Rent: Apple TV Store |  |
 | E.T. the Extra-Terrestrial | 1982 | **4.9** | 4.9 | Household | Seen, unrated | Spielberg | HBO Max |  |
+| Harry Potter and the Order of the Phoenix | 2007 | **4.8** | 4.8 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
 | Indiana Jones and the Last Crusade | 1989 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | Saving Private Ryan | 1998 | **4.8** | 4.8 | Household | Seen, unrated | Spielberg | Paramount Plus, VIX , ViX Premium Amazon Channel |  |
 | The Lord of the Rings: The Return of the King | 2003 | **4.8** | 4.8 | Family | Rated | Middle-earth | Disney Plus, HBO Max | Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.8 in his own words that evening, replacing the earlier unconfirmed figure. |
 | The Sandlot | 1993 | **4.8** | 4.8 | Family | Rated | 80s Nostalgia | Disney Plus |  |
-| Harry Potter and the Chamber of Secrets | 2002 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Deathly Hallows: Part 1 | 2010 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Deathly Hallows: Part 2 | 2011 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Goblet of Fire | 2005 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
 | Harry Potter and the Half-Blood Prince | 2009 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
-| Harry Potter and the Order of the Phoenix | 2007 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
-| Harry Potter and the Prisoner of Azkaban | 2004 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. |
-| Harry Potter and the Sorcerer's Stone | 2001 | **4.7** | 4.7 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Same film, different release title. |
 | Catch Me If You Can | 2002 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | Fantastic Beasts: The Crimes of Grindelwald | 2018 | **4.6** | 4.6 | Household | Seen, unrated | Wizarding World | HBO Max |  |
 | The Goonies | 1985 | **4.6** | 4.6 | Household | Seen, unrated | Spielberg | Rent: Apple TV Store, Google Play Movies |  |
@@ -334,6 +331,9 @@ The app is `index.html` in this folder.
 | A Monster Calls | 2016 | **4.5** | 4.5 | Family | Rated | Family Adventure | Rent: Apple TV Store, Google Play Movies |  |
 | Big | 1988 | **4.5** | 4.5 | Family | Rated | 80s Nostalgia |  |  |
 | Fantastic Beasts and Where to Find Them | 2016 | **4.5** | 4.5 | Family | Rated | Wizarding World | HBO Max |  |
+| Harry Potter and the Chamber of Secrets | 2002 | **4.5** | 4.5 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
+| Harry Potter and the Prisoner of Azkaban | 2004 | **4.5** | 4.5 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
+| Harry Potter and the Sorcerer's Stone | 2001 | **4.5** | 4.5 | Family | Rated | Christmas | HBO Max | Split out of the collapsed "Harry Potter (complete series)" row 2026-10-04. Seeded from that row’s 4.7 so nothing was lost. Revise it: Chris wants to rank them individually. Same film, different release title. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
 | Raiders of the Lost Ark | 1981 | **4.5** | 4.5 | Household | Seen, unrated | Spielberg | Paramount Plus |  |
 | The Lord of the Rings: The Fellowship of the Ring | 2001 | **4.5** | 4.5 | Family | Rated | Middle-earth | Netflix, Disney Plus, HBO Max | Trilogy day 2026-10-04 with Hudson and Hendrix. Chris gave 4.5 in his own words that evening, replacing the earlier unconfirmed figure. |
 | The NeverEnding Story | 1984 | **4.5** | 4.5 | Family | Rated | 80s Nostalgia | Rent: Apple TV Store |  |
@@ -505,7 +505,7 @@ The app is `index.html` in this folder.
 
 ## UNSORTED
 
-*192 films · avg 3.83*
+*191 films · avg 3.83*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -559,6 +559,7 @@ The app is `index.html` in this folder.
 | Moulin Rouge! | 2001 | **4** | 4 | Date Night | Rated | Unsorted | Disney Plus | Came from SAGE Suggests and was watched. Rated 2026-10-03. |
 | Next Goal Wins | 2023 | **4** |  | Household | Rated | Unsorted | Disney Plus | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated these alone. |
 | Practical Magic | 1998 | **4** |  | Household | Rated | Unsorted | HBO Max | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated these alone. |
+| Psychonautics: A Comic's Exploration Of Psychedelics | 2018 | **4** | 4 | Household | Rated | Unsorted |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Updated 2026-10-04 through the app’s live save to the sheet, then pulled into the vault. |
 | Renfield | 2023 | **4** |  | Household | Rated | Unsorted | Universal+ Amazon Channel | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated these alone. |
 | Scrooged | 1988 | **4** |  | Household | Rated | Unsorted | Rent: Apple TV Store, Google Play Movies | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated these alone. |
 | Sketch | 2025 | **4** |  | Household | Rated | Unsorted |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated these alone. |
@@ -698,9 +699,7 @@ The app is `index.html` in this folder.
 | 100% Wolf | 2020 | **2.5** |  | Household | Rated | Unsorted | Universal+ Amazon Channel | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 2.5. Pixie left blank; he rated these alone. |
 | Once | 2007 | **2.5** | 2.5 | Date Night | Rated | Unsorted |  | Came from SAGE Suggests and was watched. Rated 2026-10-03. |
 | Apollo 11 | 2019 |  |  | Queue | Watchlist | Unsorted | Rent: Apple TV Store, Google Play Movies | Came from SAGE Suggests. Chris put it on the Watchlist on 2026-10-04, correcting an earlier read of his paste as already watched. Not seen yet. |
-| LEAP! FKA BALLERINA |  |  |  | Household | Seen, unrated | Unsorted |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. |
 | Past Lives | 2023 |  |  | Queue | Watchlist | Unsorted | Netflix | Came from SAGE Suggests. Chris put it on the Watchlist on 2026-10-04, correcting an earlier read of his paste as already watched. Not seen yet. |
-| Psychonautics: A Comic's Exploration Of Psychedelics | 2018 |  |  | Household | Seen, unrated | Unsorted |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. |
 
 ---
 
@@ -710,9 +709,7 @@ The app is `index.html` in this folder.
 
 **7 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers.
 
-**2 watched but never rated.**
-
-**TMDB enrichment: 592 of 598 films have a poster.**
+**TMDB enrichment: 592 of 597 films have a poster.**
 
 ---
 
@@ -738,9 +735,9 @@ The app is `index.html` in this folder.
 | Irish Lane | 7 | 3 | 4.47 |
 | Prestige | 14 | 14 | 4.42 |
 | Space & Science | 7 | 7 | 4.41 |
-| Christmas | 37 | 36 | 4.35 |
 | Time & Second Chances | 8 | 5 | 4.34 |
 | Blockbuster | 20 | 20 | 4.33 |
+| Christmas | 37 | 36 | 4.33 |
 | Love That Costs | 12 | 10 | 4.32 |
 | Whimsy | 1 | 1 | 4.30 |
 | Classic Canon | 12 | 10 | 4.25 |
@@ -754,7 +751,7 @@ The app is `index.html` in this folder.
 | Cornetto | 3 | 3 | 4.00 |
 | Rebuild & Relocate | 1 | 1 | 4.00 |
 | Family Adventure | 9 | 8 | 3.84 |
-| Unsorted | 193 | 189 | 3.83 |
+| Unsorted | 192 | 190 | 3.83 |
 | 80s Nostalgia | 12 | 12 | 3.82 |
 | Modern Rom-com | 23 | 19 | 3.78 |
 | Whodunnit | 2 | 2 | 3.75 |
@@ -767,10 +764,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-04
 
-- **598 films.** Rated 430 · Seen, unrated 136 · Watchlist 27 · Owned, unwatched 3 · Not released 1 · Not watching 1
-- **Chris 562 rated, avg 4.11. Pixie 392 rated, avg 4.26.**
-- Rewatches (4.0+): **381** · enjoyed once (3.5): 139 · below: 42
+- **597 films.** Rated 432 · Seen, unrated 133 · Watchlist 27 · Owned, unwatched 3 · Not released 1 · Not watching 1
+- **Chris 563 rated, avg 4.11. Pixie 393 rated, avg 4.25.**
+- Rewatches (4.0+): **382** · enjoyed once (3.5): 139 · below: 42
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (14) · 4.8 (35) · 4.7 (23) · 4.6 (23) · 4.5 (76) · 4.4 (18) · 4.3 (33) · 4.2 (30) · 4.1 (13) · 4.0 (108) · 3.9 (48) · 3.8 (32) · 3.7 (6) · 3.6 (17) · 3.5 (36) · 3.4 (5) · 3.3 (2) · 3.2 (2) · 3.1 (2) · 3.0 (28) · 2.5 (3)
-- Context: Household 312 · Family 149 · Date Night 84 · Queue 40 · Solo 13
-- Retired rows kept in the CSV but hidden: 17
+- Spread: 5.0 (8) · 4.9 (14) · 4.8 (35) · 4.7 (19) · 4.6 (23) · 4.5 (79) · 4.4 (18) · 4.3 (35) · 4.2 (30) · 4.1 (13) · 4.0 (108) · 3.9 (48) · 3.8 (32) · 3.7 (6) · 3.6 (17) · 3.5 (36) · 3.4 (5) · 3.3 (2) · 3.2 (2) · 3.1 (2) · 3.0 (28) · 2.5 (3)
+- Context: Household 311 · Family 149 · Date Night 84 · Queue 40 · Solo 13
+- Retired rows kept in the CSV but hidden: 18

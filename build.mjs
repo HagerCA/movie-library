@@ -49,7 +49,7 @@ const csvEscape = v => {
 
 const COLS = ['Title', 'Year', 'Genre', 'Chris', 'Pixie', 'Context', 'Status', 'Lane',
   'Streaming', 'Streaming Checked', 'Chris Says', 'Pixie Says', 'Boys Say',
-  'TMDB ID', 'Poster', 'Runtime', 'Overview', 'Note', 'Flag'];
+  'TMDB ID', 'Poster', 'Runtime', 'Overview', 'Note', 'Cert', 'Flag'];
 
 if (!fs.existsSync(CSV)) { console.error('No movie-library.csv beside build.mjs.'); process.exit(1); }
 const rows = parseCSV(fs.readFileSync(CSV, 'utf8'));
@@ -92,6 +92,7 @@ const allRows = rows.map((r, i) => ({
   rt: Number(txt(r, 'Runtime')) || null,
   ov: txt(r, 'Overview'),
   n: txt(r, 'Note'),
+  cert: txt(r, 'Cert'),
   f: txt(r, 'Flag').toLowerCase()
 })).filter(f => f.t);
 
@@ -102,7 +103,7 @@ const films = allRows.filter(f => f.s !== 'Dropped');
 /* normalise the CSV back out so Excel round-trips stay clean */
 fs.writeFileSync(CSV, '﻿' + COLS.join(',') + '\n' + allRows.map(f =>
   [f.t, f.y ?? '', f.g, f.c ?? '', f.p ?? '', f.w, f.s, f.l, f.sv, f.sc,
-   f.cs, f.ps, f.bs, f.id, f.img, f.rt ?? '', f.ov, f.n, f.f].map(csvEscape).join(',')
+   f.cs, f.ps, f.bs, f.id, f.img, f.rt ?? '', f.ov, f.n, f.cert, f.f].map(csvEscape).join(',')
 ).join('\n') + '\n', 'utf8');
 
 /* ------------------------------------------------------- suggestions.csv */
@@ -298,7 +299,7 @@ fs.writeFileSync(path.join(DIR, 'library.json'), JSON.stringify(films, null, 1),
 const appData = films.map(f => ({
   t: f.t, y: f.y, g: f.g, c: f.c, p: f.p, w: f.w, s: f.s, l: f.l,
   sv: f.sv, sc: f.sc, cs: f.cs, ps: f.ps, bs: f.bs,
-  img: f.img, rt: f.rt, ov: f.ov, n: f.n, f: f.f
+  img: f.img, rt: f.rt, ov: f.ov, n: f.n, cert: f.cert, f: f.f
 }));
 
 for (const need of ['app.css', 'app.js']) {

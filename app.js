@@ -261,6 +261,7 @@
     { k: 'need',    label: 'Seen, Needs a Number', fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
     { k: 'xmas',    label: '\uD83C\uDF84 Christmas',  fn: function (f) { return f.l === 'Christmas'; } },
     { k: 'stream',  label: '\u2705 Watch Tonight',  fn: function (f) { return classify(f.sv).k === 'have'; } },
+    { k: 'pick',    label: '🎲 Pick One',     special: true },
     { k: 'sagg',    label: '✨ SAGE Suggests', special: true },
     { k: 'soon',    label: '🎬 Coming Soon', special: true },
     { k: 'people',  label: '⭐ Our People',   special: true }
@@ -390,6 +391,7 @@
   }
 
   function render() {
+    if (tab === 'pick') return renderPick();
     if (tab === 'sagg') return renderSuggest();
     if (tab === 'soon') return renderSoon();
     if (tab === 'people') return renderPeople();
@@ -669,13 +671,23 @@
           '<button class="pbtn" data-set="context" data-val="Date Night">Date Night</button>' +
           '<button class="pbtn" data-set="context" data-val="Family">With the boys</button>' +
         '</div>' +
+        /* Not interested. Sets Status to Dropped, which hides the film from
+         * every tab, count and export. The row itself is never deleted, same
+         * rule as the rest of the vault, so a mistake is one tap back. */
+        '<div class="actions">' +
+          '<button class="pbtn danger" data-set="status" data-val="Dropped">' +
+            'Not interested, remove it</button>' +
+          (d.s === 'Dropped'
+            ? '<button class="pbtn" data-set="status" data-val="Seen, unrated">Put it back</button>'
+            : '') +
+        '</div>' +
         '<div class="eh">Say something about it</div>' +
         '<textarea class="tsay" id="sayC" rows="2" placeholder="Chris says...">' + esc(p.chrisSays || '') + '</textarea>' +
         '<textarea class="tsay" id="sayP" rows="2" placeholder="Pixie says...">' + esc(p.pixieSays || '') + '</textarea>' +
         '<textarea class="tsay" id="sayB" rows="2" placeholder="The boys say...">' + esc(p.boysSay || '') + '</textarea>' +
         '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
-          ? 'Changed. Open <b>Review</b> at the bottom to send it to SAGE.'
-          : 'Changes are held on this device until you hand them to SAGE.') + '</div>' +
+          ? 'Changed and saved to the sheet. It stays in <b>Review</b> until SAGE rebuilds the app.'
+          : 'Every change saves straight to the sheet. Review is just the receipt.') + '</div>' +
       '</div>' +
       '<div class="rows">' + row('Watched with', d.w) + row('Status', d.s) + row('Lane', d.l) +
         '</div>' +
@@ -696,7 +708,7 @@
     if (!box) return;
     var flash = function (msg) {
       var h = $('ehint');
-      if (h) h.innerHTML = msg || 'Changed. Open <b>Review</b> at the bottom to send it to SAGE.';
+      if (h) h.innerHTML = msg || 'Saved to the sheet. It stays in <b>Review</b> until SAGE rebuilds the app.';
     };
     box.querySelectorAll('.picker').forEach(function (pk) {
       var who = pk.dataset.who;
@@ -770,6 +782,136 @@
       (sc ? '<span class="checked">checked ' + esc(sc) + '</span>' : '');
   }
 
+  /* ------------------------------------------------------------- pick one
+   * A coin toss with guardrails. The three filters are Chris's own words:
+   * seen or unseen, with the kids or date night or adults only. "Adults only"
+   * means nobody under twelve in the room, so it is everything that is not a
+   * family watch and not animated family, which is a judgement call worth
+   * saying out loud rather than burying.
+   * "Only what we can watch tonight" defaults ON, because a random pick that
+   * turns out to cost four dollars or not exist in Costa Rica is the one
+   * failure this button cannot afford. */
+  var pickSeen = 'either';
+  var pickWho = 'any';
+  var pickFree = true;
+  var pickResult = null;
+
+  var PICK_SEEN = [
+    { k: 'either', label: 'Either' },
+    { k: 'seen',   label: 'Something we have seen' },
+    { k: 'unseen', label: 'Something new to us' }
+  ];
+  var PICK_WHO = [
+    { k: 'any',    label: 'Anyone' },
+    { k: 'fam',    label: 'With the boys · G, PG' },
+    { k: 'date',   label: 'Date night 🍷' },
+    { k: 'adults', label: 'Adults only · PG-13 and up' }
+  ];
+
+  /* Age certificates, from TMDB, on 581 of the 597 films. Guessing this from
+   * genre and lane leaked Turbo and The Secret Life of Pets 2 into an
+   * adults-only filter on 2026-10-04, so it is a fact now rather than a label
+   * somebody typed. A film with no certificate is never guessed into either
+   * room: it only shows under "Anyone". */
+  var KID_CERTS = ['G', 'PG'];
+  var ADULT_CERTS = ['PG-13', 'R', 'NC-17'];
+  function isKidSafe(f) {
+    if (f.cert) return KID_CERTS.indexOf(f.cert) > -1;
+    return f.w === 'Family' || f.g === 'Animated / family';
+  }
+  function isAdultsOnly(f) {
+    if (f.cert) return ADULT_CERTS.indexOf(f.cert) > -1;
+    return false;
+  }
+  function pickPool() {
+    return DATA.filter(function (f) {
+      if (pickSeen === 'seen' && !/^(rated|seen)/i.test(f.s)) return false;
+      if (pickSeen === 'unseen' && !/watchlist|owned|theaters|not released/i.test(f.s)) return false;
+      if (pickWho === 'fam' && !isKidSafe(f)) return false;
+      if (pickWho === 'date' && f.w !== 'Date Night') return false;
+      if (pickWho === 'adults' && !isAdultsOnly(f)) return false;
+      if (pickFree && classify(f.sv).k !== 'have') return false;
+      return true;
+    });
+  }
+  function spin() {
+    var pool = pickPool();
+    if (!pool.length) { pickResult = null; return; }
+    var next = pool[Math.floor(Math.random() * pool.length)];
+    // Never hand back the same film twice in a row when there is a choice.
+    if (pool.length > 1 && pickResult && next.t === pickResult.t) {
+      next = pool[(pool.indexOf(next) + 1) % pool.length];
+    }
+    pickResult = next;
+  }
+
+  function renderPick() {
+    gridEl.className = 'sugglist';
+    var pool = pickPool();
+    var pills = function (id, opts, sel) {
+      return '<div class="audpills" data-pills="' + id + '">' + opts.map(function (o) {
+        return '<button class="aud' + (o.k === sel ? ' on' : '') + '" data-v="' + o.k + '">' +
+          o.label + '</button>';
+      }).join('') + '</div>';
+    };
+    var card = '';
+    if (pickResult) {
+      var d = pickResult, i = DATA.indexOf(d);
+      var score = d.c === null || d.c === undefined ? '' :
+        '<span class="pickscore">' + num(d.c) + '</span>';
+      card = '<div class="pickcard" data-i="' + i + '">' +
+        '<div class="pickart">' + art(d) + '</div>' +
+        '<div class="pickmeta">' +
+          '<div class="pickname">' + esc(d.t) + ' ' + score + '</div>' +
+          '<div class="picksub">' + [d.y, d.cert || null, d.g, d.rt ? d.rt + ' min' : '', d.l]
+            .filter(Boolean).map(esc).join(' · ') + '</div>' +
+          '<div class="picksub">' + esc(d.s) + (d.w ? ' · ' + esc(d.w) : '') + '</div>' +
+          '<div class="suggwhere">' + whereBadge(d.sv, d.sc) + '</div>' +
+          (d.ov ? '<p class="pickov">' + esc(d.ov) + '</p>' : '') +
+          '<div class="pickbtns">' +
+            '<button class="pbtn primary" id="pickOpen">Open it</button>' +
+            '<button class="pbtn" id="pickAgain">Spin again</button>' +
+          '</div>' +
+        '</div></div>';
+    } else {
+      card = '<div class="pickempty">' + (pool.length
+        ? 'Hit the button.'
+        : 'Nothing matches those three filters. Loosen one, or untick ' +
+          '<b>only what we already pay for</b>.') + '</div>';
+    }
+
+    gridEl.innerHTML = '<div class="suggintro"><h2>🎲 Pick One</h2>' +
+      '<p>For when the two of you have spent twenty minutes scrolling. Set the room, ' +
+      'hit the button, watch what it says. <b>' + pool.length + '</b> films currently qualify.</p>' +
+      '<div class="pickrow"><span class="picklbl">Seen it?</span>' + pills('seen', PICK_SEEN, pickSeen) + '</div>' +
+      '<div class="pickrow"><span class="picklbl">Who is watching?</span>' + pills('who', PICK_WHO, pickWho) + '</div>' +
+      '<label class="pickchk"><input type="checkbox" id="pickFree"' + (pickFree ? ' checked' : '') + '> ' +
+        'Only what we already pay for' + '</label>' +
+      '<div class="pickgo"><button class="pbtn primary big" id="pickSpin">Pick a random movie</button></div>' +
+      '</div>' + card;
+
+    Array.prototype.forEach.call(gridEl.querySelectorAll('[data-pills]'), function (box) {
+      box.addEventListener('click', function (e) {
+        var b = e.target.closest('.aud'); if (!b) return;
+        if (box.dataset.pills === 'seen') pickSeen = b.dataset.v; else pickWho = b.dataset.v;
+        pickResult = null;
+        renderPick();
+      });
+    });
+    $('pickFree').addEventListener('change', function (e) {
+      pickFree = e.target.checked; pickResult = null; renderPick();
+    });
+    $('pickSpin').addEventListener('click', function () { spin(); renderPick(); });
+    if ($('pickAgain')) $('pickAgain').addEventListener('click', function () { spin(); renderPick(); });
+    if ($('pickOpen')) $('pickOpen').addEventListener('click', function () {
+      openFilm(DATA.indexOf(pickResult));
+    });
+
+    $('empty').hidden = true;
+    $('addbar').hidden = true;
+    $('found').textContent = pool.length + ' films match';
+  }
+
   function renderSuggest() {
     var list = audience === 'All of it' ? SUGG : SUGG.filter(function (x) { return x.who === audience; });
     gridEl.className = 'sugglist';
@@ -836,7 +978,7 @@
         ratePicker('Pixie', 'nP', p.pixie) +
         '<textarea class="tsay" id="sayC" rows="2" placeholder="Chris says...">' + esc(p.chrisSays || '') + '</textarea>' +
         '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
-          ? 'Answered. Open <b>Review</b> at the bottom to send it to SAGE.'
+          ? 'Answered and saved to the sheet.'
           : 'Your answer trains the next batch.') + '</div>' +
       '</div>' + shareRow(x) + '</div>';
     showSheet();
@@ -920,7 +1062,7 @@
         '<div class="eh">Already seen it?</div>' +
         ratePicker('Chris', 'nC', p.chris) +
         '<div class="ehint" id="ehint">' + (Object.keys(p).length > 1
-          ? 'Noted. Open <b>Review</b> at the bottom to send it to SAGE.'
+          ? 'Noted and saved to the sheet.'
           : 'Every yes and no sharpens what gets tracked next.') + '</div>' +
       '</div>' + shareRow(x) + '</div>';
     showSheet();
