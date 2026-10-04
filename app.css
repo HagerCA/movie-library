@@ -2,6 +2,9 @@
     --bg:#0b0d11; --bg2:#13171e; --bg3:#1b2029; --line:#262d38;
     --fg:#eef2f7; --fg2:#9aa6b6; --fg3:#67727f;
     --gold:#e0b253; --gold2:#8a6c28; --rose:#e0714a; --green:#5fb183;
+    /* Los Angeles Football Club gold, for the title only. Chris asked for this
+       on 2026-10-04: the h1 was a white-to-gold fade and read mostly white. */
+    --lafc:#c39e6d; --lafc-hi:#f0dcb8; --lafc-lo:#a37f4e;
     --r:14px;
   }
   *{box-sizing:border-box}
@@ -15,10 +18,12 @@
   /* ---------- hero ---------- */
   header{padding:48px 0 26px;text-align:center;position:relative}
   header:after{content:"";position:absolute;inset:0;z-index:-1;
-    background:radial-gradient(70% 120% at 50% 0%,rgba(224,178,83,.11),transparent 70%)}
+    background:radial-gradient(70% 120% at 50% 0%,rgba(195,158,109,.13),transparent 70%)}
   h1{margin:0;font-size:clamp(28px,5.5vw,46px);font-weight:700;letter-spacing:-.03em;
-    background:linear-gradient(180deg,#fff,var(--gold));-webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;background-clip:text}
+    background:linear-gradient(180deg,var(--lafc-hi) 0%,var(--lafc) 52%,var(--lafc-lo) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;background-clip:text;
+    color:var(--lafc)}
   .tag{margin:8px 0 0;color:var(--fg2);font-size:14px}
   .tag b{color:var(--gold)}
 
