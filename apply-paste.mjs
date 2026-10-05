@@ -151,6 +151,13 @@ for (const line of lines) {
       lRow[lib.at('Note')] = 'Added from the app ' + today +
         (rated ? '. ' : ', unrated. ') + 'Needs genre, lane and a TMDB pass.';
       if (!rated) lRow[lib.at('Flag')] = ''; else lRow[lib.at('Flag')] = 'carry';
+      /* newRow defaults Status to Rated, which is right for a rating and wrong
+       * for everything else. A NEW FILM line carrying neither a number nor a
+       * status lands here: the app emits that shape when a film is added with
+       * only a Context, and before 2026-10-05 it became a Rated row with no
+       * rating, which the build then counted under "need a number". A film
+       * nobody has scored has not been watched, so it queues. */
+      if (!rated && !status) lRow[lib.at('Status')] = 'Watchlist';
       lib.rows.push(lRow); stat.added++;
     } else {
       notFound.push(title); continue;
