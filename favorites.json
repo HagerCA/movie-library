@@ -1,7 +1,7 @@
 {
  "built": "2026-10-05",
- "films": 893,
- "mean": 4.073,
+ "films": 897,
+ "mean": 4.075,
  "directors": [
   {
    "name": "David Yates",
@@ -46,13 +46,6 @@
      "va": 7.6,
      "vc": 6340,
      "sw": "Universal+ Amazon Channel"
-    },
-    {
-     "t": "Guy Ritchie's The Covenant",
-     "y": "2023",
-     "va": 7.7,
-     "vc": 3389,
-     "sw": "Amazon Prime Video"
     },
     {
      "t": "RocknRolla",
@@ -107,11 +100,11 @@
   },
   {
    "name": "Steven Spielberg",
-   "n": 16,
+   "n": 18,
    "leads": 0,
-   "avg": 4.5,
-   "wavg": 4.5,
-   "weighted": 4.415,
+   "avg": 4.49,
+   "wavg": 4.49,
+   "weighted": 4.414,
    "top": [
     "Jaws 5.0",
     "E.T. the Extra-Terrestrial 4.9",
@@ -119,13 +112,6 @@
     "Saving Private Ryan 4.8"
    ],
    "unwatched": [
-    {
-     "t": "Minority Report",
-     "y": "2002",
-     "va": 7.4,
-     "vc": 9979,
-     "sw": "Paramount Plus"
-    },
     {
      "t": "The Color Purple",
      "y": "1985",
@@ -183,54 +169,82 @@
      "sw": "Rent: Apple TV Store"
     },
     {
-     "t": "Lincoln",
-     "y": "2012",
-     "va": 6.8,
-     "vc": 4160,
-     "sw": ""
+     "t": "Amistad",
+     "y": "1997",
+     "va": 7,
+     "vc": 1465,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "West Side Story",
+     "y": "2021",
+     "va": 6.9,
+     "vc": 1853,
+     "sw": "Disney Plus"
     }
    ]
   },
   {
-   "name": "James Gunn",
-   "n": 4,
+   "name": "Christopher Nolan",
+   "n": 6,
    "leads": 0,
-   "avg": 4.75,
-   "wavg": 4.75,
-   "weighted": 4.412,
+   "avg": 4.62,
+   "wavg": 4.62,
+   "weighted": 4.4,
    "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Superman 4.5"
+    "Interstellar 4.8",
+    "Inception 4.8",
+    "The Dark Knight Rises 4.8",
+    "Oppenheimer 4.5"
    ],
    "unwatched": [
     {
-     "t": "The Suicide Squad",
-     "y": "2021",
-     "va": 7.4,
-     "vc": 9955,
+     "t": "Memento",
+     "y": "2000",
+     "va": 8.2,
+     "vc": 16836,
+     "sw": "Universal+ Amazon Channel"
+    },
+    {
+     "t": "Batman Begins",
+     "y": "2005",
+     "va": 7.7,
+     "vc": 23278,
+     "sw": "Amazon Prime Video, HBO Max, Universal+ Amazon Channel"
+    },
+    {
+     "t": "Dunkirk",
+     "y": "2017",
+     "va": 7.5,
+     "vc": 18044,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Tenet",
+     "y": "2020",
+     "va": 7.2,
+     "vc": 11585,
      "sw": "HBO Max"
     },
     {
-     "t": "Slither",
-     "y": "2006",
-     "va": 6.6,
-     "vc": 1804,
-     "sw": "Rent: Apple TV Store"
+     "t": "Insomnia",
+     "y": "2002",
+     "va": 7,
+     "vc": 5566,
+     "sw": ""
     },
     {
-     "t": "Super",
-     "y": "2010",
+     "t": "Following",
+     "y": "1999",
+     "va": 7.1,
+     "vc": 1984,
+     "sw": ""
+    },
+    {
+     "t": "Doodlebug",
+     "y": "1997",
      "va": 6.5,
-     "vc": 1801,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "Movie 43",
-     "y": "2013",
-     "va": 4.7,
-     "vc": 2585,
+     "vc": 509,
      "sw": ""
     }
    ]
@@ -271,7 +285,7 @@
    "leads": 0,
    "avg": 4.57,
    "wavg": 4.57,
-   "weighted": 4.369,
+   "weighted": 4.37,
    "top": [
     "The Lord of the Rings: The Return of the King 4.8",
     "The Lord of the Rings: The Two Towers 4.6",
@@ -333,78 +347,6 @@
      "y": "1987",
      "va": 6.3,
      "vc": 952,
-     "sw": ""
-    }
-   ]
-  },
-  {
-   "name": "Christopher Nolan",
-   "n": 5,
-   "leads": 0,
-   "avg": 4.58,
-   "wavg": 4.58,
-   "weighted": 4.355,
-   "top": [
-    "Interstellar 4.8",
-    "Inception 4.8",
-    "Oppenheimer 4.5",
-    "The Dark Knight 4.5"
-   ],
-   "unwatched": [
-    {
-     "t": "Memento",
-     "y": "2000",
-     "va": 8.2,
-     "vc": 16836,
-     "sw": "Universal+ Amazon Channel"
-    },
-    {
-     "t": "The Dark Knight Rises",
-     "y": "2012",
-     "va": 7.8,
-     "vc": 25052,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Batman Begins",
-     "y": "2005",
-     "va": 7.7,
-     "vc": 23278,
-     "sw": "Amazon Prime Video, HBO Max, Universal+ Amazon Channel"
-    },
-    {
-     "t": "Dunkirk",
-     "y": "2017",
-     "va": 7.5,
-     "vc": 18044,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Tenet",
-     "y": "2020",
-     "va": 7.2,
-     "vc": 11585,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Insomnia",
-     "y": "2002",
-     "va": 7,
-     "vc": 5566,
-     "sw": ""
-    },
-    {
-     "t": "Following",
-     "y": "1999",
-     "va": 7.1,
-     "vc": 1984,
-     "sw": ""
-    },
-    {
-     "t": "Doodlebug",
-     "y": "1997",
-     "va": 6.5,
-     "vc": 509,
      "sw": ""
     }
    ]
@@ -496,12 +438,49 @@
    ]
   },
   {
+   "name": "James Gunn",
+   "n": 5,
+   "leads": 0,
+   "avg": 4.56,
+   "wavg": 4.56,
+   "weighted": 4.344,
+   "top": [
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Guardians of the Galaxy Vol. 2 4.9",
+    "Guardians of the Galaxy Vol. 1 4.7",
+    "Superman 4.5"
+   ],
+   "unwatched": [
+    {
+     "t": "Slither",
+     "y": "2006",
+     "va": 6.6,
+     "vc": 1804,
+     "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "Super",
+     "y": "2010",
+     "va": 6.5,
+     "vc": 1801,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Movie 43",
+     "y": "2013",
+     "va": 4.7,
+     "vc": 2585,
+     "sw": ""
+    }
+   ]
+  },
+  {
    "name": "Denis Villeneuve",
    "n": 3,
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.342,
+   "weighted": 4.343,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -585,7 +564,7 @@
    "leads": 0,
    "avg": 4.45,
    "wavg": 4.45,
-   "weighted": 4.299,
+   "weighted": 4.3,
    "top": [
     "The Adam Project 4.8",
     "Deadpool & Wolverine 4.8",
@@ -650,7 +629,7 @@
    "leads": 0,
    "avg": 4.43,
    "wavg": 4.43,
-   "weighted": 4.289,
+   "weighted": 4.29,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: Civil War 4.7",
@@ -721,96 +700,17 @@
    ]
   },
   {
-   "name": "James Gunn",
-   "n": 4,
-   "leads": 0,
-   "avg": 4.75,
-   "wavg": 4.75,
-   "weighted": 4.412,
-   "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Guardians of the Galaxy Vol. 2 4.9",
-    "Guardians of the Galaxy Vol. 1 4.7",
-    "Superman 4.5"
-   ],
-   "unwatched": [
-    {
-     "t": "The Suicide Squad",
-     "y": "2021",
-     "va": 7.4,
-     "vc": 9955,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Dawn of the Dead",
-     "y": "2004",
-     "va": 7.1,
-     "vc": 4734,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Slither",
-     "y": "2006",
-     "va": 6.6,
-     "vc": 1804,
-     "sw": "Rent: Apple TV Store"
-    },
-    {
-     "t": "Super",
-     "y": "2010",
-     "va": 6.5,
-     "vc": 1801,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "Tromeo & Juliet",
-     "y": "1996",
-     "va": 6,
-     "vc": 166,
-     "sw": ""
-    },
-    {
-     "t": "The Belko Experiment",
-     "y": "2017",
-     "va": 6.2,
-     "vc": 1738,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Scooby-Doo 2: Monsters Unleashed",
-     "y": "2004",
-     "va": 6.1,
-     "vc": 3001,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Scooby-Doo",
-     "y": "2002",
-     "va": 6.1,
-     "vc": 4901,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Movie 43",
-     "y": "2013",
-     "va": 4.7,
-     "vc": 2585,
-     "sw": ""
-    }
-   ]
-  },
-  {
    "name": "Christopher Nolan",
-   "n": 5,
+   "n": 6,
    "leads": 0,
-   "avg": 4.58,
-   "wavg": 4.58,
-   "weighted": 4.355,
+   "avg": 4.62,
+   "wavg": 4.62,
+   "weighted": 4.4,
    "top": [
     "Interstellar 4.8",
     "Inception 4.8",
-    "Oppenheimer 4.5",
-    "The Dark Knight 4.5"
+    "The Dark Knight Rises 4.8",
+    "Oppenheimer 4.5"
    ],
    "unwatched": [
     {
@@ -819,13 +719,6 @@
      "va": 8.2,
      "vc": 16836,
      "sw": "Universal+ Amazon Channel"
-    },
-    {
-     "t": "The Dark Knight Rises",
-     "y": "2012",
-     "va": 7.8,
-     "vc": 25052,
-     "sw": "HBO Max"
     },
     {
      "t": "Batman Begins",
@@ -900,13 +793,6 @@
      "sw": "Universal+ Amazon Channel"
     },
     {
-     "t": "Guy Ritchie's The Covenant",
-     "y": "2023",
-     "va": 7.7,
-     "vc": 3389,
-     "sw": "Amazon Prime Video"
-    },
-    {
      "t": "RocknRolla",
      "y": "2008",
      "va": 7,
@@ -948,6 +834,92 @@
      "vc": 323,
      "sw": "Rent: Apple TV Store"
     }
+   ]
+  },
+  {
+   "name": "James Gunn",
+   "n": 5,
+   "leads": 0,
+   "avg": 4.56,
+   "wavg": 4.56,
+   "weighted": 4.344,
+   "top": [
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Guardians of the Galaxy Vol. 2 4.9",
+    "Guardians of the Galaxy Vol. 1 4.7",
+    "Superman 4.5"
+   ],
+   "unwatched": [
+    {
+     "t": "Dawn of the Dead",
+     "y": "2004",
+     "va": 7.1,
+     "vc": 4734,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Slither",
+     "y": "2006",
+     "va": 6.6,
+     "vc": 1804,
+     "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "Super",
+     "y": "2010",
+     "va": 6.5,
+     "vc": 1801,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Tromeo & Juliet",
+     "y": "1996",
+     "va": 6,
+     "vc": 166,
+     "sw": ""
+    },
+    {
+     "t": "The Belko Experiment",
+     "y": "2017",
+     "va": 6.2,
+     "vc": 1738,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Scooby-Doo 2: Monsters Unleashed",
+     "y": "2004",
+     "va": 6.1,
+     "vc": 3001,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Scooby-Doo",
+     "y": "2002",
+     "va": 6.1,
+     "vc": 4901,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Movie 43",
+     "y": "2013",
+     "va": 4.7,
+     "vc": 2585,
+     "sw": ""
+    }
+   ]
+  },
+  {
+   "name": "Jonathan Nolan",
+   "n": 4,
+   "leads": 0,
+   "avg": 4.6,
+   "wavg": 4.6,
+   "weighted": 4.337,
+   "top": [
+    "Interstellar 4.8",
+    "The Dark Knight Rises 4.8",
+    "The Dark Knight 4.5",
+    "The Prestige 4.3"
    ]
   },
   {
@@ -998,7 +970,7 @@
    "leads": 0,
    "avg": 4.58,
    "wavg": 4.58,
-   "weighted": 4.324,
+   "weighted": 4.325,
    "top": [
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
     "Star Wars: Episode VI - Return of the Jedi 4.7",
@@ -1077,7 +1049,7 @@
    "leads": 0,
    "avg": 4.52,
    "wavg": 4.52,
-   "weighted": 4.321,
+   "weighted": 4.322,
    "top": [
     "Frankenstein 4.6",
     "The Hobbit: The Battle of the Five Armies 4.6",
@@ -1240,48 +1212,6 @@
      "sw": "HBO Max"
     }
    ]
-  },
-  {
-   "name": "Drew Goddard",
-   "n": 2,
-   "leads": 0,
-   "avg": 4.8,
-   "wavg": 4.8,
-   "weighted": 4.316,
-   "top": [
-    "The Martian 4.8",
-    "Project Hail Mary 4.8"
-   ],
-   "unwatched": [
-    {
-     "t": "World War Z",
-     "y": "2013",
-     "va": 6.9,
-     "vc": 17112,
-     "sw": "Netflix, Paramount Plus, Universal+ Amazon Channel"
-    },
-    {
-     "t": "Bad Times at the El Royale",
-     "y": "2018",
-     "va": 6.8,
-     "vc": 3989,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Cloverfield",
-     "y": "2008",
-     "va": 6.7,
-     "vc": 8140,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "The Cabin in the Woods",
-     "y": "2012",
-     "va": 6.7,
-     "vc": 8851,
-     "sw": "Rent: Google Play Movies"
-    }
-   ]
   }
  ],
  "actors": [
@@ -1299,13 +1229,6 @@
     "Harry Potter and the Deathly Hallows: Part 1 4.7"
    ],
    "unwatched": [
-    {
-     "t": "Into the White",
-     "y": "2012",
-     "va": 6.9,
-     "vc": 342,
-     "sw": ""
-    },
     {
      "t": "Wild Target",
      "y": "2010",
@@ -1356,7 +1279,7 @@
    "leads": 9,
    "avg": 4.52,
    "wavg": 4.55,
-   "weighted": 4.49,
+   "weighted": 4.491,
    "top": [
     "Harry Potter and the Order of the Phoenix 4.8",
     "Harry Potter and the Goblet of Fire 4.7",
@@ -1451,20 +1374,6 @@
    ],
    "unwatched": [
     {
-     "t": "X-Men: Days of Future Past",
-     "y": "2014",
-     "va": 7.5,
-     "vc": 16725,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "X2",
-     "y": "2003",
-     "va": 7,
-     "vc": 11229,
-     "sw": "Disney Plus"
-    },
-    {
      "t": "The Da Vinci Code",
      "y": "2006",
      "va": 6.7,
@@ -1484,13 +1393,6 @@
      "va": 6.9,
      "vc": 407,
      "sw": ""
-    },
-    {
-     "t": "X-Men: The Last Stand",
-     "y": "2006",
-     "va": 6.4,
-     "vc": 10700,
-     "sw": "Disney Plus"
     },
     {
      "t": "Mr. Holmes",
@@ -1519,6 +1421,27 @@
      "va": 6.8,
      "vc": 198,
      "sw": ""
+    },
+    {
+     "t": "Six Degrees of Separation",
+     "y": "1993",
+     "va": 6.4,
+     "vc": 384,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Flushed Away",
+     "y": "2006",
+     "va": 6.3,
+     "vc": 4200,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "The Shadow",
+     "y": "1994",
+     "va": 6.1,
+     "vc": 592,
+     "sw": "Rent: Apple TV Store"
     }
    ]
   },
@@ -1536,34 +1459,6 @@
     "Pirates of the Caribbean: The Curse of the Black Pearl 4.5"
    ],
    "unwatched": [
-    {
-     "t": "Edward Scissorhands",
-     "y": "1990",
-     "va": 7.7,
-     "vc": 14075,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Pirates of the Caribbean: Dead Man's Chest",
-     "y": "2006",
-     "va": 7.4,
-     "vc": 17659,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Donnie Brasco",
-     "y": "1997",
-     "va": 7.5,
-     "vc": 5002,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Pirates of the Caribbean: At World's End",
-     "y": "2007",
-     "va": 7.3,
-     "vc": 15891,
-     "sw": "Disney Plus"
-    },
     {
      "t": "A Nightmare on Elm Street",
      "y": "1984",
@@ -1586,25 +1481,53 @@
      "sw": "Disney Plus"
     },
     {
-     "t": "Sleepy Hollow",
-     "y": "1999",
-     "va": 7.2,
-     "vc": 7617,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Finding Neverland",
-     "y": "2004",
-     "va": 7.3,
-     "vc": 3822,
-     "sw": ""
-    },
-    {
      "t": "Sweeney Todd: The Demon Barber of Fleet Street",
      "y": "2007",
      "va": 7.2,
      "vc": 6507,
      "sw": "HBO Max"
+    },
+    {
+     "t": "Fear and Loathing in Las Vegas",
+     "y": "1998",
+     "va": 7.2,
+     "vc": 5204,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Dead Man",
+     "y": "1995",
+     "va": 7.3,
+     "vc": 1799,
+     "sw": ""
+    },
+    {
+     "t": "Rango",
+     "y": "2011",
+     "va": 6.9,
+     "vc": 7343,
+     "sw": "Netflix, Universal+ Amazon Channel"
+    },
+    {
+     "t": "Chocolat",
+     "y": "2000",
+     "va": 7,
+     "vc": 3585,
+     "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "Pirates of the Caribbean: Dead Men Tell No Tales",
+     "y": "2017",
+     "va": 6.7,
+     "vc": 13107,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Arizona Dream",
+     "y": "1993",
+     "va": 7.1,
+     "vc": 805,
+     "sw": ""
     }
    ]
   },
@@ -1622,13 +1545,6 @@
     "Rebel Moon - Part One: A Child of Fire 4.3 (supporting)"
    ],
    "unwatched": [
-    {
-     "t": "Green Street Hooligans",
-     "y": "2005",
-     "va": 7.3,
-     "vc": 2652,
-     "sw": ""
-    },
     {
      "t": "Papillon",
      "y": "2017",
@@ -1691,6 +1607,13 @@
      "va": 6,
      "vc": 750,
      "sw": ""
+    },
+    {
+     "t": "Abandon",
+     "y": "2002",
+     "va": 4.8,
+     "vc": 189,
+     "sw": ""
     }
    ]
   },
@@ -1700,7 +1623,7 @@
    "leads": 2,
    "avg": 4.62,
    "wavg": 4.59,
-   "weighted": 4.442,
+   "weighted": 4.443,
    "top": [
     "Arrival 4.6",
     "Mission: Impossible - Rogue Nation 4.5",
@@ -1728,13 +1651,6 @@
      "va": 7.2,
      "vc": 5864,
      "sw": "HBO Max"
-    },
-    {
-     "t": "Mission: Impossible - Ghost Protocol",
-     "y": "2011",
-     "va": 7.1,
-     "vc": 11047,
-     "sw": "Netflix, Paramount Plus, Universal+ Amazon Channel"
     },
     {
      "t": "Wake Up Dead Man: A Knives Out Mystery",
@@ -1777,6 +1693,13 @@
      "va": 6.6,
      "vc": 5901,
      "sw": "Disney Plus, HBO Max"
+    },
+    {
+     "t": "Kill the Messenger",
+     "y": "2014",
+     "va": 6.6,
+     "vc": 951,
+     "sw": ""
     }
    ]
   },
@@ -1802,13 +1725,6 @@
      "sw": "Universal+ Amazon Channel"
     },
     {
-     "t": "X-Men: Days of Future Past",
-     "y": "2014",
-     "va": 7.5,
-     "vc": 16725,
-     "sw": "Disney Plus"
-    },
-    {
      "t": "The Sheep Detectives",
      "y": "2026",
      "va": 7.9,
@@ -1828,13 +1744,6 @@
      "va": 7.3,
      "vc": 5702,
      "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "X2",
-     "y": "2003",
-     "va": 7,
-     "vc": 11229,
-     "sw": "Disney Plus"
     },
     {
      "t": "Eddie the Eagle",
@@ -1863,6 +1772,20 @@
      "va": 6.9,
      "vc": 964,
      "sw": "Disney Plus"
+    },
+    {
+     "t": "Song Sung Blue",
+     "y": "2025",
+     "va": 7.4,
+     "vc": 328,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Australia",
+     "y": "2008",
+     "va": 6.6,
+     "vc": 2503,
+     "sw": ""
     }
    ]
   },
@@ -1880,13 +1803,6 @@
     "Dune 4.8 (supporting)"
    ],
    "unwatched": [
-    {
-     "t": "No Country for Old Men",
-     "y": "2007",
-     "va": 8,
-     "vc": 13841,
-     "sw": "Netflix"
-    },
     {
      "t": "American Gangster",
      "y": "2007",
@@ -1949,6 +1865,13 @@
      "va": 6.8,
      "vc": 5367,
      "sw": "HBO Max"
+    },
+    {
+     "t": "Labor Day",
+     "y": "2013",
+     "va": 7.1,
+     "vc": 1398,
+     "sw": "Netflix"
     }
    ]
   },
@@ -1986,13 +1909,6 @@
      "va": 7.9,
      "vc": 3016,
      "sw": ""
-    },
-    {
-     "t": "Zodiac",
-     "y": "2007",
-     "va": 7.5,
-     "vc": 11960,
-     "sw": "HBO Max"
     },
     {
      "t": "Poor Things",
@@ -2035,6 +1951,13 @@
      "va": 6.8,
      "vc": 5687,
      "sw": "Netflix, Sony One Amazon Channel"
+    },
+    {
+     "t": "Mickey 17",
+     "y": "2025",
+     "va": 6.8,
+     "vc": 4032,
+     "sw": "Netflix, HBO Max"
     }
    ]
   },
@@ -2139,13 +2062,6 @@
    ],
    "unwatched": [
     {
-     "t": "Django Unchained",
-     "y": "2012",
-     "va": 8.2,
-     "vc": 28696,
-     "sw": "HBO Max"
-    },
-    {
      "t": "Shutter Island",
      "y": "2010",
      "va": 8.2,
@@ -2160,13 +2076,6 @@
      "sw": "Netflix, Amazon Prime Video"
     },
     {
-     "t": "The Wolf of Wall Street",
-     "y": "2013",
-     "va": 8,
-     "vc": 26639,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
      "t": "The Revenant",
      "y": "2015",
      "va": 7.5,
@@ -2179,13 +2088,6 @@
      "va": 7.6,
      "vc": 8575,
      "sw": "HBO Max"
-    },
-    {
-     "t": "The Great Gatsby",
-     "y": "2013",
-     "va": 7.3,
-     "vc": 13211,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
     },
     {
      "t": "Gangs of New York",
@@ -2207,6 +2109,27 @@
      "va": 7.3,
      "vc": 4341,
      "sw": "HBO Max"
+    },
+    {
+     "t": "The Aviator",
+     "y": "2004",
+     "va": 7.2,
+     "vc": 6028,
+     "sw": "Rent: Google Play Movies"
+    },
+    {
+     "t": "The Basketball Diaries",
+     "y": "1995",
+     "va": 7.4,
+     "vc": 2297,
+     "sw": ""
+    },
+    {
+     "t": "Before the Flood",
+     "y": "2016",
+     "va": 7.7,
+     "vc": 832,
+     "sw": "Disney Plus"
     }
    ]
   },
@@ -2225,25 +2148,11 @@
    ],
    "unwatched": [
     {
-     "t": "Zodiac",
-     "y": "2007",
-     "va": 7.5,
-     "vc": 11960,
-     "sw": "HBO Max"
-    },
-    {
      "t": "The Judge",
      "y": "2014",
      "va": 7.3,
      "vc": 4568,
      "sw": "HBO Max"
-    },
-    {
-     "t": "Iron Man 3",
-     "y": "2013",
-     "va": 6.9,
-     "vc": 23942,
-     "sw": "Disney Plus"
     },
     {
      "t": "Natural Born Killers",
@@ -2293,6 +2202,20 @@
      "va": 7,
      "vc": 439,
      "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "The Soloist",
+     "y": "2009",
+     "va": 6.7,
+     "vc": 856,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "U.S. Marshals",
+     "y": "1998",
+     "va": 6.6,
+     "vc": 1886,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
     }
    ]
   }
@@ -2469,7 +2392,7 @@
    "leads": 2,
    "avg": 4.52,
    "wavg": 4.69,
-   "weighted": 4.499,
+   "weighted": 4.5,
    "top": [
     "The Princess Bride 5.0",
     "Forrest Gump 4.8",
@@ -2777,7 +2700,7 @@
    "leads": 5,
    "avg": 4.48,
    "wavg": 4.48,
-   "weighted": 4.394,
+   "weighted": 4.395,
    "top": [
     "Kate & Leopold 4.6",
     "Sleepless in Seattle 4.5",
@@ -3193,87 +3116,88 @@
    ]
   },
   {
-   "name": "Juliette Lewis",
-   "n": 3,
+   "name": "Sally Field",
+   "n": 4,
    "leads": 2,
-   "avg": 4.37,
-   "wavg": 4.44,
-   "weighted": 4.308,
+   "avg": 4.5,
+   "wavg": 4.45,
+   "weighted": 4.325,
    "top": [
-    "National Lampoon’s Christmas Vacation 4.5",
-    "What's Eating Gilbert Grape 4.5",
-    "Due Date 4.1 (supporting)"
+    "Lincoln 4.5",
+    "Remarkably Bright Creatures 4.3",
+    "Forrest Gump 4.8 (supporting)",
+    "The Amazing Spider-Man 4.4 (supporting)"
    ],
    "unwatched": [
     {
-     "t": "Cape Fear",
-     "y": "1991",
-     "va": 7.3,
-     "vc": 4038,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "From Dusk Till Dawn",
-     "y": "1996",
-     "va": 7.1,
-     "vc": 6736,
-     "sw": "Netflix, Paramount Plus"
-    },
-    {
-     "t": "Nerve",
-     "y": "2016",
-     "va": 7,
-     "vc": 7108,
-     "sw": "Rent: Apple TV Store"
-    },
-    {
-     "t": "Natural Born Killers",
-     "y": "1994",
-     "va": 7.1,
-     "vc": 3933,
+     "t": "Mrs. Doubtfire",
+     "y": "1993",
+     "va": 7.2,
+     "vc": 6823,
      "sw": "Disney Plus"
     },
     {
-     "t": "Strange Days",
-     "y": "1995",
+     "t": "Homeward Bound: The Incredible Journey",
+     "y": "1993",
      "va": 7,
-     "vc": 1622,
+     "vc": 1155,
      "sw": "Disney Plus"
     },
     {
-     "t": "August: Osage County",
-     "y": "2013",
-     "va": 6.9,
-     "vc": 1623,
+     "t": "Where the Heart Is",
+     "y": "2000",
+     "va": 7.1,
+     "vc": 766,
      "sw": ""
     },
     {
-     "t": "Husbands and Wives",
-     "y": "1992",
+     "t": "Smokey and the Bandit",
+     "y": "1977",
      "va": 7,
-     "vc": 512,
-     "sw": "Rent: Apple TV Store"
+     "vc": 837,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
     },
     {
-     "t": "Enough",
-     "y": "2002",
-     "va": 6.6,
-     "vc": 1273,
-     "sw": "HBO Max"
+     "t": "The Little Mermaid: Ariel's Beginning",
+     "y": "2008",
+     "va": 6.7,
+     "vc": 1094,
+     "sw": "Disney Plus"
     },
     {
-     "t": "Kalifornia",
-     "y": "1993",
-     "va": 6.6,
-     "vc": 907,
-     "sw": "Rent: Apple TV Store"
-    },
-    {
-     "t": "Over Your Dead Body",
-     "y": "2026",
-     "va": 6.4,
-     "vc": 630,
+     "t": "Not Without My Daughter",
+     "y": "1991",
+     "va": 6.9,
+     "vc": 377,
      "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "Norma Rae",
+     "y": "1979",
+     "va": 7.2,
+     "vc": 213,
+     "sw": ""
+    },
+    {
+     "t": "Places in the Heart",
+     "y": "1984",
+     "va": 7.2,
+     "vc": 204,
+     "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "Homeward Bound II: Lost in San Francisco",
+     "y": "1996",
+     "va": 6.6,
+     "vc": 552,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Absence of Malice",
+     "y": "1981",
+     "va": 6.6,
+     "vc": 261,
+     "sw": "Rent: Apple TV Store"
     }
    ]
   }
@@ -3281,10 +3205,10 @@
  "composers": [
   {
    "name": "John Williams",
-   "n": 28,
+   "n": 30,
    "leads": 0,
-   "avg": 4.46,
-   "wavg": 4.46,
+   "avg": 4.45,
+   "wavg": 4.45,
    "weighted": 4.409,
    "top": [
     "Jaws 5.0",
@@ -3322,13 +3246,6 @@
      "sw": "Disney Plus"
     },
     {
-     "t": "Minority Report",
-     "y": "2002",
-     "va": 7.4,
-     "vc": 9979,
-     "sw": "Paramount Plus"
-    },
-    {
      "t": "JFK",
      "y": "1991",
      "va": 7.6,
@@ -3362,6 +3279,13 @@
      "va": 7.2,
      "vc": 4504,
      "sw": "HBO Max"
+    },
+    {
+     "t": "Munich",
+     "y": "2005",
+     "va": 7.1,
+     "vc": 3106,
+     "sw": "Paramount Plus"
     }
    ]
   },
@@ -3371,7 +3295,7 @@
    "leads": 0,
    "avg": 4.56,
    "wavg": 4.56,
-   "weighted": 4.381,
+   "weighted": 4.382,
    "top": [
     "The Lord of the Rings: The Return of the King 4.8",
     "The Lord of the Rings: The Two Towers 4.6",
@@ -3538,92 +3462,6 @@
    ]
   },
   {
-   "name": "John Murphy",
-   "n": 4,
-   "leads": 0,
-   "avg": 4.55,
-   "wavg": 4.55,
-   "weighted": 4.312,
-   "top": [
-    "Guardians of the Galaxy Vol. 3 4.9",
-    "Superman 4.5",
-    "Snatch 4.5",
-    "Lock, Stock and Two Smoking Barrels 4.3"
-   ],
-   "unwatched": [
-    {
-     "t": "The Suicide Squad",
-     "y": "2021",
-     "va": 7.4,
-     "vc": 9955,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "28 Days Later",
-     "y": "2002",
-     "va": 7.2,
-     "vc": 8928,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Kick-Ass",
-     "y": "2010",
-     "va": 7.1,
-     "vc": 12675,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Sunshine",
-     "y": "2007",
-     "va": 7,
-     "vc": 4454,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "28 Weeks Later",
-     "y": "2007",
-     "va": 6.6,
-     "vc": 5901,
-     "sw": "Disney Plus, HBO Max"
-    },
-    {
-     "t": "The Last House on the Left",
-     "y": "2009",
-     "va": 6.5,
-     "vc": 2027,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Friday After Next",
-     "y": "2002",
-     "va": 6.4,
-     "vc": 480,
-     "sw": ""
-    },
-    {
-     "t": "Millions",
-     "y": "2005",
-     "va": 6.4,
-     "vc": 428,
-     "sw": ""
-    },
-    {
-     "t": "Intermission",
-     "y": "2003",
-     "va": 6.2,
-     "vc": 180,
-     "sw": ""
-    },
-    {
-     "t": "Mean Machine",
-     "y": "2001",
-     "va": 6.3,
-     "vc": 664,
-     "sw": ""
-    }
-   ]
-  },
-  {
    "name": "Michael Giacchino",
    "n": 24,
    "leads": 0,
@@ -3680,13 +3518,6 @@
      "sw": "Disney Plus"
     },
     {
-     "t": "Mission: Impossible - Ghost Protocol",
-     "y": "2011",
-     "va": 7.1,
-     "vc": 11048,
-     "sw": "Netflix, Paramount Plus, Universal+ Amazon Channel"
-    },
-    {
      "t": "50/50",
      "y": "2011",
      "va": 7.2,
@@ -3706,6 +3537,99 @@
      "va": 7.8,
      "vc": 870,
      "sw": "Disney Plus"
+    },
+    {
+     "t": "Day & Night",
+     "y": "2010",
+     "va": 7.7,
+     "vc": 980,
+     "sw": "Disney Plus"
+    }
+   ]
+  },
+  {
+   "name": "Hans Zimmer",
+   "n": 25,
+   "leads": 0,
+   "avg": 4.32,
+   "wavg": 4.32,
+   "weighted": 4.286,
+   "top": [
+    "Sherlock Holmes: A Game of Shadows 4.9",
+    "Interstellar 4.8",
+    "Inception 4.8",
+    "Dune 4.8"
+   ],
+   "unwatched": [
+    {
+     "t": "Gladiator",
+     "y": "2000",
+     "va": 8.2,
+     "vc": 21596,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "12 Years a Slave",
+     "y": "2013",
+     "va": 7.9,
+     "vc": 12259,
+     "sw": "Amazon Prime Video, Paramount Plus, MUBI"
+    },
+    {
+     "t": "Batman Begins",
+     "y": "2005",
+     "va": 7.7,
+     "vc": 23278,
+     "sw": "Amazon Prime Video, HBO Max, Universal+ Amazon Channel"
+    },
+    {
+     "t": "Rain Man",
+     "y": "1988",
+     "va": 7.7,
+     "vc": 7367,
+     "sw": "Amazon Prime Video"
+    },
+    {
+     "t": "F1",
+     "y": "2025",
+     "va": 7.8,
+     "vc": 4765,
+     "sw": "Apple TV"
+    },
+    {
+     "t": "Blade Runner 2049",
+     "y": "2017",
+     "va": 7.6,
+     "vc": 15778,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Spirit: Stallion of the Cimarron",
+     "y": "2002",
+     "va": 7.7,
+     "vc": 5041,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "The Last Samurai",
+     "y": "2003",
+     "va": 7.6,
+     "vc": 7809,
+     "sw": "Netflix, Amazon Prime Video, HBO Max"
+    },
+    {
+     "t": "Dunkirk",
+     "y": "2017",
+     "va": 7.5,
+     "vc": 18044,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Thelma & Louise",
+     "y": "1991",
+     "va": 7.6,
+     "vc": 4020,
+     "sw": "Amazon Prime Video, MUBI"
     }
    ]
   },
@@ -3715,7 +3639,7 @@
    "leads": 0,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.27,
+   "weighted": 4.271,
    "top": [
     "Step Brothers 4.6",
     "The Other Guys 4.5",
@@ -3800,7 +3724,7 @@
    "leads": 0,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.27,
+   "weighted": 4.271,
    "top": [
     "Anchorman: The Legend of Ron Burgundy 4.7",
     "Talladega Nights: The Ballad of Ricky Bobby 4.6",
@@ -3880,88 +3804,88 @@
    ]
   },
   {
-   "name": "Hans Zimmer",
-   "n": 24,
+   "name": "John Murphy",
+   "n": 5,
    "leads": 0,
-   "avg": 4.3,
-   "wavg": 4.3,
-   "weighted": 4.268,
+   "avg": 4.4,
+   "wavg": 4.4,
+   "weighted": 4.255,
    "top": [
-    "Sherlock Holmes: A Game of Shadows 4.9",
-    "Interstellar 4.8",
-    "Inception 4.8",
-    "Dune 4.8"
+    "Guardians of the Galaxy Vol. 3 4.9",
+    "Superman 4.5",
+    "Snatch 4.5",
+    "Lock, Stock and Two Smoking Barrels 4.3"
    ],
    "unwatched": [
     {
-     "t": "Gladiator",
-     "y": "2000",
-     "va": 8.2,
-     "vc": 21596,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "12 Years a Slave",
-     "y": "2013",
-     "va": 7.9,
-     "vc": 12259,
-     "sw": "Amazon Prime Video, Paramount Plus, MUBI"
-    },
-    {
-     "t": "The Dark Knight Rises",
-     "y": "2012",
-     "va": 7.8,
-     "vc": 25052,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Batman Begins",
-     "y": "2005",
-     "va": 7.7,
-     "vc": 23278,
-     "sw": "Amazon Prime Video, HBO Max, Universal+ Amazon Channel"
-    },
-    {
-     "t": "Rain Man",
-     "y": "1988",
-     "va": 7.7,
-     "vc": 7367,
-     "sw": "Amazon Prime Video"
-    },
-    {
-     "t": "F1",
-     "y": "2025",
-     "va": 7.8,
-     "vc": 4765,
-     "sw": "Apple TV"
-    },
-    {
-     "t": "Blade Runner 2049",
-     "y": "2017",
-     "va": 7.6,
-     "vc": 15778,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Spirit: Stallion of the Cimarron",
+     "t": "28 Days Later",
      "y": "2002",
-     "va": 7.7,
-     "vc": 5041,
+     "va": 7.2,
+     "vc": 8928,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Kick-Ass",
+     "y": "2010",
+     "va": 7.1,
+     "vc": 12675,
      "sw": "Rent: Apple TV Store, Google Play Movies"
     },
     {
-     "t": "The Last Samurai",
+     "t": "Sunshine",
+     "y": "2007",
+     "va": 7,
+     "vc": 4454,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "28 Weeks Later",
+     "y": "2007",
+     "va": 6.6,
+     "vc": 5901,
+     "sw": "Disney Plus, HBO Max"
+    },
+    {
+     "t": "The Last House on the Left",
+     "y": "2009",
+     "va": 6.5,
+     "vc": 2027,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Friday After Next",
+     "y": "2002",
+     "va": 6.4,
+     "vc": 480,
+     "sw": ""
+    },
+    {
+     "t": "Millions",
+     "y": "2005",
+     "va": 6.4,
+     "vc": 428,
+     "sw": ""
+    },
+    {
+     "t": "Intermission",
      "y": "2003",
-     "va": 7.6,
-     "vc": 7809,
-     "sw": "Netflix, Amazon Prime Video, HBO Max"
+     "va": 6.2,
+     "vc": 180,
+     "sw": ""
     },
     {
-     "t": "Dunkirk",
-     "y": "2017",
-     "va": 7.5,
-     "vc": 18044,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
+     "t": "Mean Machine",
+     "y": "2001",
+     "va": 6.3,
+     "vc": 664,
+     "sw": ""
+    },
+    {
+     "t": "All About the Benjamins",
+     "y": "2002",
+     "va": 5.9,
+     "vc": 194,
+     "sw": "Rent: Apple TV Store"
     }
    ]
   }
@@ -4240,25 +4164,11 @@
    ],
    "unwatched": [
     {
-     "t": "Zodiac",
-     "y": "2007",
-     "va": 7.5,
-     "vc": 11960,
-     "sw": "HBO Max"
-    },
-    {
      "t": "The Judge",
      "y": "2014",
      "va": 7.3,
      "vc": 4568,
      "sw": "HBO Max"
-    },
-    {
-     "t": "Iron Man 3",
-     "y": "2013",
-     "va": 6.9,
-     "vc": 23942,
-     "sw": "Disney Plus"
     },
     {
      "t": "Natural Born Killers",
@@ -4308,6 +4218,20 @@
      "va": 7,
      "vc": 439,
      "sw": "Rent: Apple TV Store"
+    },
+    {
+     "t": "The Soloist",
+     "y": "2009",
+     "va": 6.7,
+     "vc": 856,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "U.S. Marshals",
+     "y": "1998",
+     "va": 6.6,
+     "vc": 1886,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
     }
    ]
   },
@@ -4403,7 +4327,7 @@
    "leads": 6,
    "avg": 4.28,
    "wavg": 4.24,
-   "weighted": 4.222,
+   "weighted": 4.223,
    "top": [
     "Jojo Rabbit 4.8",
     "Captain America: Civil War 4.7",
@@ -4837,9 +4761,15 @@
   },
   {
    "name": "Sci-fi",
-   "n": 71,
+   "n": 72,
    "avg": 4.16,
-   "weighted": 4.153
+   "weighted": 4.155
+  },
+  {
+   "name": "Action",
+   "n": 59,
+   "avg": 4.14,
+   "weighted": 4.135
   },
   {
    "name": "Adventure",
@@ -4848,28 +4778,22 @@
    "weighted": 4.131
   },
   {
-   "name": "Action",
-   "n": 58,
-   "avg": 4.13,
-   "weighted": 4.124
+   "name": "Action-comedy",
+   "n": 109,
+   "avg": 4.12,
+   "weighted": 4.12
   },
   {
-   "name": "Action-comedy",
-   "n": 108,
+   "name": "Period drama",
+   "n": 4,
    "avg": 4.13,
-   "weighted": 4.123
+   "weighted": 4.1
   },
   {
    "name": "Romance",
    "n": 34,
    "avg": 4.08,
    "weighted": 4.076
-  },
-  {
-   "name": "Period drama",
-   "n": 3,
-   "avg": 4,
-   "weighted": 4.042
   },
   {
    "name": "Comedy",
@@ -4899,9 +4823,9 @@
   },
   {
    "name": "Spielberg",
-   "n": 15,
-   "avg": 4.51,
-   "weighted": 4.415
+   "n": 17,
+   "avg": 4.49,
+   "weighted": 4.414
   },
   {
    "name": "Marvel",
@@ -4919,13 +4843,13 @@
    "name": "Middle-earth",
    "n": 6,
    "avg": 4.57,
-   "weighted": 4.369
+   "weighted": 4.37
   },
   {
    "name": "Ryan Reynolds",
    "n": 4,
    "avg": 4.63,
-   "weighted": 4.349
+   "weighted": 4.35
   },
   {
    "name": "Prestige",
@@ -4937,7 +4861,13 @@
    "name": "Mind-Bender",
    "n": 5,
    "avg": 4.44,
-   "weighted": 4.277
+   "weighted": 4.278
+  },
+  {
+   "name": "Wizarding World",
+   "n": 3,
+   "avg": 4.53,
+   "weighted": 4.271
   },
   {
    "name": "Space & Science",
@@ -4946,16 +4876,10 @@
    "weighted": 4.27
   },
   {
-   "name": "Wizarding World",
-   "n": 3,
-   "avg": 4.53,
-   "weighted": 4.27
-  },
-  {
    "name": "Nora Ephron",
    "n": 3,
    "avg": 4.5,
-   "weighted": 4.256
+   "weighted": 4.257
   },
   {
    "name": "Love That Costs",
@@ -4964,22 +4888,22 @@
    "weighted": 4.25
   },
   {
+   "name": "Irish Lane",
+   "n": 3,
+   "avg": 4.47,
+   "weighted": 4.243
+  },
+  {
    "name": "Documentary",
    "n": 64,
    "avg": 4.25,
    "weighted": 4.243
   },
   {
-   "name": "Irish Lane",
-   "n": 3,
-   "avg": 4.47,
-   "weighted": 4.242
-  },
-  {
    "name": "Time & Second Chances",
    "n": 13,
    "avg": 4.25,
-   "weighted": 4.211
+   "weighted": 4.212
   },
   {
    "name": "Blockbuster",
@@ -5015,7 +4939,7 @@
    "name": "Austen",
    "n": 2,
    "avg": 4.25,
-   "weighted": 4.132
+   "weighted": 4.133
   },
   {
    "name": "Christmas",
@@ -5039,13 +4963,13 @@
    "name": "Cornetto",
    "n": 3,
    "avg": 4,
-   "weighted": 4.042
+   "weighted": 4.043
   },
   {
    "name": "Music & Musicals",
    "n": 11,
    "avg": 4.01,
-   "weighted": 4.026
+   "weighted": 4.027
   },
   {
    "name": "Unsorted",
@@ -5072,16 +4996,16 @@
    "weighted": 3.955
   },
   {
+   "name": "Superhero",
+   "n": 22,
+   "avg": 3.9,
+   "weighted": 3.931
+  },
+  {
    "name": "80s Nostalgia",
    "n": 14,
    "avg": 3.86,
    "weighted": 3.905
-  },
-  {
-   "name": "Superhero",
-   "n": 20,
-   "avg": 3.86,
-   "weighted": 3.9
   },
   {
    "name": "Modern Comedy",
@@ -5099,7 +5023,7 @@
    "name": "Action",
    "n": 14,
    "avg": 3.82,
-   "weighted": 3.877
+   "weighted": 3.878
   },
   {
    "name": "Whodunnit",
@@ -5123,7 +5047,7 @@
    "name": "Streaming-Era",
    "n": 3,
    "avg": 3,
-   "weighted": 3.613
+   "weighted": 3.614
   }
  ],
  "unwatchedChecked": "2026-10-05",
