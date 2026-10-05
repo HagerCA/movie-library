@@ -423,6 +423,20 @@ console.log('  Our People: ' + (favorites
   ? favorites.directors.length + ' directors, ' + favorites.actors.length + ' actors, ' +
     favorites.actresses.length + ' actresses from ' + favorites.films + ' rated films'
   : 'favorites.json missing, run credits.mjs'));
+/* The "N you have not seen" drawer under each person is the half of Our People
+ * that generates a watch rather than confirming taste, and it renders purely
+ * from `unwatched` in favorites.json. When that is absent the tab still looks
+ * finished, so the loss is invisible unless the build says it out loud. */
+if (favorites) {
+  const PC = ['directors', 'actors', 'actresses', 'writers', 'composers', 'prolific'];
+  let withU = 0, total = 0;
+  for (const c of PC) for (const p of favorites[c] || []) { total++; if (p.unwatched) withU++; }
+  console.log(withU
+    ? '    unwatched filmographies on ' + withU + '/' + total + ' people, availability dated ' +
+      (favorites.unwatchedChecked || 'UNDATED') + ' for ' + (favorites.unwatchedRegion || '?')
+    : '    WARNING: no unwatched filmographies. The "you have not seen" drawer ' +
+      'will be missing from every person. Fix with: node discover.mjs');
+}
 console.log('  SAGE Suggests: ' + suggestions.length + ' picks (' + Object.entries(suggestions.reduce((m,x)=>(m[x.who]=(m[x.who]||0)+1,m),{})).map(([k,v])=>k+' '+v).join(', ') + ')');
 console.log('Wrote index.html, movie-library.md, library.json');
 console.log('  app.css and app.js are source files and were not touched.');

@@ -191,6 +191,40 @@ function byField(field) {
 favorites.genres = byField('g');
 favorites.lanes = byField('lane').filter(x => x.n >= 2);
 
+/* Carry forward the unwatched filmographies that discover.mjs attached.
+ *
+ * This file is rewritten from scratch on every run, and before 2026-10-05 that
+ * silently deleted every `unwatched` list, which is the data the Our People tab
+ * renders its "N you have not seen" drawer from. No error, no warning: the
+ * drawer just stopped existing, and the app looked like it had lost a feature.
+ * That is exactly what happened between 2026-10-04 and 2026-10-05.
+ *
+ * So the lists survive a credits run now, filtered against the current library
+ * so a film rated since the last discover pass drops out rather than being
+ * offered as unseen. The dates stay on them, because a carried-forward list is
+ * older than this run and the tab says so on screen. Run discover.mjs to
+ * refresh them properly.
+ */
+const PEOPLE_CATS = ['directors', 'actors', 'actresses', 'writers', 'composers', 'prolific'];
+let carried = 0, pruned = 0;
+if (fs.existsSync(OUT)) {
+  const prev = JSON.parse(fs.readFileSync(OUT, 'utf8'));
+  const seen = new Set(films.map(f => f.t.toLowerCase().trim()));
+  const old = new Map();
+  for (const cat of PEOPLE_CATS)
+    for (const p of prev[cat] || []) if (p.unwatched) old.set(cat + '::' + p.name, p.unwatched);
+  for (const cat of PEOPLE_CATS)
+    for (const p of favorites[cat] || []) {
+      const list = old.get(cat + '::' + p.name);
+      if (!list) continue;
+      const keep = list.filter(f => !seen.has(String(f.t).toLowerCase().trim()));
+      pruned += list.length - keep.length;
+      if (keep.length) { p.unwatched = keep; carried++; }
+    }
+  if (prev.unwatchedChecked) favorites.unwatchedChecked = prev.unwatchedChecked;
+  if (prev.unwatchedRegion) favorites.unwatchedRegion = prev.unwatchedRegion;
+}
+
 fs.writeFileSync(OUT, JSON.stringify(favorites, null, 1), 'utf8');
 
 const show = (label, list) => {
@@ -210,3 +244,8 @@ favorites.prolific.slice(0, 8).forEach((e, i) =>
   console.log('  ' + (i + 1) + '. ' + e.name.padEnd(26) + e.n + ' films, avg ' + e.avg.toFixed(2)));
 show('GENRES', favorites.genres);
 console.log('\nWrote favorites.json');
+if (carried) console.log('  carried forward ' + carried + ' unwatched filmographies' +
+  (pruned ? ', pruned ' + pruned + ' film(s) now rated in the library' : '') +
+  '. Dated ' + (favorites.unwatchedChecked || '?') + '. Run discover.mjs to refresh.');
+else console.log('  NO unwatched filmographies attached. The Our People drawer will be ' +
+  'missing until you run: node discover.mjs');

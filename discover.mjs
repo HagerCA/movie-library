@@ -49,7 +49,7 @@ const PRIOR_SCORE  = 6.3;   // TMDB's own global mean, roughly
 /* Reunion specials and promo pieces are listed as movies on TMDB and are not
    films anybody sits down to watch. "Harry Potter 20th Anniversary: Return to
    Hogwarts" was the one that made this necessary. */
-const JUNK = /\b(\d+th Anniversary|Return to Hogwarts|Making of|Behind the Scenes|Blooper|Featurette|Promo)\b/i;
+const JUNK = /\b(\d+th Anniversary|Return to Hogwarts|Making of|Behind the Scenes|Blooper|Featurette|Promo|Holiday Special|Christmas Special)\b/i;
 
 const CAST_CATS = { actors: 1, actresses: 1, prolific: 1 };
 const CREW_JOB = {

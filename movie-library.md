@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-05** · **932 films** · Chris has rated 894 (avg **4.07**), Pixie 479 (avg 4.22)
+Last built **2026-10-05** · **933 films** · Chris has rated 895 (avg **4.07**), Pixie 479 (avg 4.22)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 581 of 894 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 582 of 895 rated films clear it.
 
 ## Columns
 
@@ -206,7 +206,7 @@ The app is `index.html` in this folder.
 
 ## DRAMA
 
-*134 films · avg 4.25*
+*135 films · avg 4.25*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -264,6 +264,7 @@ The app is `index.html` in this folder.
 | Being Eddie | 2025 | **4.3** |  | Household | Rated | Documentary | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 11/14/25. Netflix listed it as "Being Eddie"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.3. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Hidden Figures | 2016 | **4.3** | 4.3 | Family | Rated | Space & Science | Disney Plus | Came from SAGE Suggests and was watched. Rated 2026-10-03. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (space). |
 | Lewis Capaldi: How I'm Feeling Now | 2023 | **4.3** | 4.3 | Household | Rated | Documentary | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 5/4/26. Netflix listed it as "Lewis Capaldi: How I'm Feeling Now"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). Pulled from the Google Sheet 2026-10-04: Chris (blank) -> 4.3; Pixie (blank) -> 4.3; Status Seen, unrated -> Rated. |
+| Lion | 2016 | **4.3** |  | Household | Rated | Prestige | Amazon Prime Video | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Pulled back out of the 2026-10-05 sweep by Chris and rated 4.3 in his own words on 2026-10-05. Pixie left blank: the row came off his own profile and he gave one number without naming her. |
 | Misery | 1990 | **4.3** | 4.3 | Date Night | Rated | Horror | Rent: Apple TV Store, Google Play Movies | Added from the app 2026-10-04. Needs genre, lane and a TMDB pass. |
 | Now You See Me | 2013 | **4.3** |  | Household | Rated | Blockbuster | Universal+ Amazon Channel | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 6/27/25. Netflix listed it as "Now You See Me"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.3. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (big-budget spectacle), not Chris’s own call. Worth a glance. |
 | Now You See Me: Now You Don't | 2025 | **4.3** | 4.3 | Family | Rated | Blockbuster | Amazon Prime Video | Added in the Google Sheet by Chris and pulled into the vault 2026-10-04. Sheet spelled it "Now you see me now you don't"; TMDB title used. Sits beside Now You See Me 4.3 and Now You See Me 2 4.1. Needs a TMDB pass. |
@@ -1044,7 +1045,7 @@ The app is `index.html` in this folder.
 
 **7 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers.
 
-**TMDB enrichment: 929 of 932 films have a poster.**
+**TMDB enrichment: 930 of 933 films have a poster.**
 
 ---
 
@@ -1065,7 +1066,7 @@ The app is `index.html` in this folder.
 | Irish Lane | 7 | 3 | 4.47 |
 | Mind-Bender | 9 | 5 | 4.44 |
 | Marvel | 35 | 35 | 4.43 |
-| Prestige | 24 | 22 | 4.38 |
+| Prestige | 25 | 23 | 4.38 |
 | Space & Science | 13 | 13 | 4.33 |
 | Love That Costs | 12 | 10 | 4.32 |
 | Whimsy | 1 | 1 | 4.30 |
@@ -1102,10 +1103,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-05
 
-- **932 films.** Rated 894 · Watchlist 30 · Owned, unwatched 3 · Seen, Chris partial 2 · Not released 1 · Not watching 1 · In theaters, unseen 1
-- **Chris 894 rated, avg 4.07. Pixie 479 rated, avg 4.22.**
-- Rewatches (4.0+): **581** · enjoyed once (3.5): 251 · below: 62
+- **933 films.** Rated 895 · Watchlist 30 · Owned, unwatched 3 · Seen, Chris partial 2 · Not released 1 · Not watching 1 · In theaters, unseen 1
+- **Chris 895 rated, avg 4.07. Pixie 479 rated, avg 4.22.**
+- Rewatches (4.0+): **582** · enjoyed once (3.5): 251 · below: 62
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (14) · 4.8 (43) · 4.7 (21) · 4.6 (39) · 4.5 (114) · 4.4 (22) · 4.3 (80) · 4.2 (51) · 4.1 (42) · 4.0 (147) · 3.9 (90) · 3.8 (56) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (8) · 2.0 (1) · 1.0 (2)
-- Context: Household 621 · Family 161 · Date Night 95 · Queue 41 · Solo 14
-- Retired rows kept in the CSV but hidden: 267
+- Spread: 5.0 (8) · 4.9 (14) · 4.8 (43) · 4.7 (21) · 4.6 (39) · 4.5 (114) · 4.4 (22) · 4.3 (81) · 4.2 (51) · 4.1 (42) · 4.0 (147) · 3.9 (90) · 3.8 (56) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (8) · 2.0 (1) · 1.0 (2)
+- Context: Household 622 · Family 161 · Date Night 95 · Queue 41 · Solo 14
+- Retired rows kept in the CSV but hidden: 266
