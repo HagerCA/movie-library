@@ -1,7 +1,7 @@
 {
  "built": "2026-10-11",
- "films": 929,
- "mean": 4.078,
+ "films": 930,
+ "mean": 4.079,
  "directors": [
   {
    "name": "David Yates",
@@ -9,7 +9,7 @@
    "leads": 0,
    "avg": 4.64,
    "wavg": 4.64,
-   "weighted": 4.437,
+   "weighted": 4.438,
    "top": [
     "Harry Potter and the Order of the Phoenix 4.8",
     "Harry Potter and the Half-Blood Prince 4.7",
@@ -23,7 +23,7 @@
    "leads": 0,
    "avg": 4.53,
    "wavg": 4.53,
-   "weighted": 4.407,
+   "weighted": 4.408,
    "top": [
     "The Gentlemen 4.9",
     "Sherlock Holmes: A Game of Shadows 4.9",
@@ -111,7 +111,7 @@
    "leads": 0,
    "avg": 4.45,
    "wavg": 4.45,
-   "weighted": 4.387,
+   "weighted": 4.388,
    "top": [
     "Jaws 5.0",
     "E.T. the Extra-Terrestrial 4.9",
@@ -357,7 +357,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.344,
+   "weighted": 4.345,
    "top": [
     "Dune 4.8",
     "Dune: Part Two 4.7",
@@ -428,7 +428,7 @@
    "leads": 0,
    "avg": 4.49,
    "wavg": 4.49,
-   "weighted": 4.337,
+   "weighted": 4.338,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: The Winter Soldier 4.8",
@@ -465,7 +465,7 @@
    "leads": 0,
    "avg": 4.49,
    "wavg": 4.49,
-   "weighted": 4.337,
+   "weighted": 4.338,
    "top": [
     "Avengers: Endgame 4.8",
     "Captain America: The Winter Soldier 4.8",
@@ -502,7 +502,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.33,
+   "weighted": 4.331,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
@@ -756,7 +756,7 @@
    "leads": 0,
    "avg": 4.7,
    "wavg": 4.7,
-   "weighted": 4.344,
+   "weighted": 4.345,
    "top": [
     "Dune 4.8",
     "Forrest Gump 4.8",
@@ -841,7 +841,7 @@
    "leads": 0,
    "avg": 4.46,
    "wavg": 4.46,
-   "weighted": 4.339,
+   "weighted": 4.34,
    "top": [
     "The Gentlemen 4.9",
     "The Man from U.N.C.L.E. 4.6",
@@ -906,7 +906,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.33,
+   "weighted": 4.331,
    "top": [
     "Soul 5.0",
     "Up 4.8",
@@ -935,7 +935,7 @@
    "leads": 0,
    "avg": 4.67,
    "wavg": 4.67,
-   "weighted": 4.33,
+   "weighted": 4.331,
    "top": [
     "Paddington 2 4.8",
     "Paddington 4.7",
@@ -948,7 +948,7 @@
    "leads": 0,
    "avg": 4.58,
    "wavg": 4.58,
-   "weighted": 4.326,
+   "weighted": 4.327,
    "top": [
     "Star Wars: Episode V - The Empire Strikes Back 4.9",
     "Star Wars: Episode VI - Return of the Jedi 4.7",
@@ -1298,6 +1298,92 @@
    ]
   },
   {
+   "name": "Mark Ruffalo",
+   "n": 12,
+   "leads": 8,
+   "avg": 4.52,
+   "wavg": 4.5,
+   "weighted": 4.447,
+   "top": [
+    "Thor: Ragnarok 4.8",
+    "Avengers: Endgame 4.8",
+    "The Adam Project 4.8",
+    "The Avengers 4.6"
+   ],
+   "unwatched": [
+    {
+     "t": "Shutter Island",
+     "y": "2010",
+     "va": 8.2,
+     "vc": 26519,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Spotlight",
+     "y": "2015",
+     "va": 7.8,
+     "vc": 9005,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "Poor Things",
+     "y": "2023",
+     "va": 7.6,
+     "vc": 5795,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Dark Waters",
+     "y": "2019",
+     "va": 7.5,
+     "vc": 2627,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Collateral",
+     "y": "2004",
+     "va": 7.2,
+     "vc": 6532,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "The Normal Heart",
+     "y": "2014",
+     "va": 7.7,
+     "vc": 934,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "The Last Castle",
+     "y": "2001",
+     "va": 7.2,
+     "vc": 1497,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "13 Going on 30",
+     "y": "2004",
+     "va": 6.8,
+     "vc": 5687,
+     "sw": "Netflix, Sony One Amazon Channel"
+    },
+    {
+     "t": "Mickey 17",
+     "y": "2025",
+     "va": 6.8,
+     "vc": 4032,
+     "sw": "Netflix, HBO Max"
+    },
+    {
+     "t": "Crime 101",
+     "y": "2026",
+     "va": 7,
+     "vc": 1396,
+     "sw": "Amazon Prime Video"
+    }
+   ]
+  },
+  {
    "name": "Jeremy Renner",
    "n": 6,
    "leads": 2,
@@ -1466,92 +1552,6 @@
      "va": 6.6,
      "vc": 1192,
      "sw": "Rent: Google Play Movies"
-    }
-   ]
-  },
-  {
-   "name": "Mark Ruffalo",
-   "n": 11,
-   "leads": 8,
-   "avg": 4.48,
-   "wavg": 4.49,
-   "weighted": 4.433,
-   "top": [
-    "Thor: Ragnarok 4.8",
-    "Avengers: Endgame 4.8",
-    "The Adam Project 4.8",
-    "The Avengers 4.6"
-   ],
-   "unwatched": [
-    {
-     "t": "Shutter Island",
-     "y": "2010",
-     "va": 8.2,
-     "vc": 26519,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Spotlight",
-     "y": "2015",
-     "va": 7.8,
-     "vc": 9005,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "Spider-Man: Brand New Day",
-     "y": "2026",
-     "va": 7.9,
-     "vc": 3016,
-     "sw": ""
-    },
-    {
-     "t": "Poor Things",
-     "y": "2023",
-     "va": 7.6,
-     "vc": 5795,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Dark Waters",
-     "y": "2019",
-     "va": 7.5,
-     "vc": 2627,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Collateral",
-     "y": "2004",
-     "va": 7.2,
-     "vc": 6532,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "The Normal Heart",
-     "y": "2014",
-     "va": 7.7,
-     "vc": 934,
-     "sw": "HBO Max"
-    },
-    {
-     "t": "The Last Castle",
-     "y": "2001",
-     "va": 7.2,
-     "vc": 1497,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "13 Going on 30",
-     "y": "2004",
-     "va": 6.8,
-     "vc": 5687,
-     "sw": "Netflix, Sony One Amazon Channel"
-    },
-    {
-     "t": "Mickey 17",
-     "y": "2025",
-     "va": 6.8,
-     "vc": 4032,
-     "sw": "Netflix, HBO Max"
     }
    ]
   },
@@ -1733,7 +1733,7 @@
    "leads": 7,
    "avg": 4.49,
    "wavg": 4.49,
-   "weighted": 4.42,
+   "weighted": 4.421,
    "top": [
     "Inception 4.8",
     "Catch Me If You Can 4.6",
@@ -1986,88 +1986,88 @@
    ]
   },
   {
-   "name": "Diego Luna",
-   "n": 4,
-   "leads": 2,
-   "avg": 4.42,
-   "wavg": 4.56,
-   "weighted": 4.401,
+   "name": "Tom Holland",
+   "n": 8,
+   "leads": 7,
+   "avg": 4.41,
+   "wavg": 4.47,
+   "weighted": 4.408,
    "top": [
-    "Rogue One: A Star Wars Story 4.9",
-    "The Book of Life 4.5",
-    "The Terminal 4.6 (supporting)",
-    "A Rainy Day in New York 3.7 (supporting)"
+    "Spider-Man: Brand New Day 4.9",
+    "Spider-Man: Far From Home 4.8",
+    "Spider-Man: No Way Home 4.8",
+    "Spider-Man: Homecoming 4.7"
    ],
    "unwatched": [
     {
-     "t": "Y Tu Mamá También",
-     "y": "2001",
+     "t": "The Impossible",
+     "y": "2012",
      "va": 7.4,
-     "vc": 1847,
-     "sw": ""
+     "vc": 6882,
+     "sw": "Rent: Apple TV Store"
     },
     {
-     "t": "Milk",
-     "y": "2008",
+     "t": "The Devil All the Time",
+     "y": "2020",
      "va": 7.2,
-     "vc": 2509,
+     "vc": 3800,
+     "sw": "Netflix"
+    },
+    {
+     "t": "Cherry",
+     "y": "2021",
+     "va": 7.3,
+     "vc": 1435,
+     "sw": "Apple TV"
+    },
+    {
+     "t": "Locke",
+     "y": "2014",
+     "va": 6.9,
+     "vc": 3058,
+     "sw": "Rent: Google Play Movies"
+    },
+    {
+     "t": "The Current War",
+     "y": "2018",
+     "va": 6.7,
+     "vc": 1179,
      "sw": "Rent: Apple TV Store, Google Play Movies"
     },
     {
-     "t": "Open Range",
-     "y": "2003",
-     "va": 7.2,
-     "vc": 1274,
-     "sw": ""
-    },
-    {
-     "t": "Elysium",
-     "y": "2013",
+     "t": "Chaos Walking",
+     "y": "2021",
      "va": 6.5,
-     "vc": 9869,
-     "sw": "HBO Max"
+     "vc": 2718,
+     "sw": "Universal+ Amazon Channel"
     },
     {
-     "t": "Rudo & Cursi",
-     "y": "2008",
-     "va": 7.2,
-     "vc": 240,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Dirty Dancing: Havana Nights",
-     "y": "2004",
-     "va": 6.4,
-     "vc": 721,
-     "sw": ""
-    },
-    {
-     "t": "Criminal",
-     "y": "2004",
-     "va": 6.2,
-     "vc": 161,
-     "sw": "Rent: Google Play Movies, Apple TV Store"
-    },
-    {
-     "t": "Blood Father",
-     "y": "2016",
-     "va": 6.2,
-     "vc": 1718,
-     "sw": "Amazon Prime Video, Adrenalina Pura Amazon channel"
-    },
-    {
-     "t": "Vampires: Los Muertos",
-     "y": "2002",
-     "va": 5.4,
-     "vc": 262,
+     "t": "How I Live Now",
+     "y": "2013",
+     "va": 6.6,
+     "vc": 979,
      "sw": "Sony One Amazon Channel"
     },
     {
-     "t": "Flatliners",
+     "t": "The Lost City of Z",
      "y": "2017",
-     "va": 5.6,
-     "vc": 2439,
-     "sw": "HBO Max"
+     "va": 6.4,
+     "vc": 3173,
+     "sw": "Rent: Google Play Movies"
+    },
+    {
+     "t": "Pilgrimage",
+     "y": "2017",
+     "va": 6,
+     "vc": 317,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Edge of Winter",
+     "y": "2016",
+     "va": 5.8,
+     "vc": 188,
+     "sw": "Rent: Google Play Movies, Apple TV Store"
     }
    ]
   }
@@ -2416,7 +2416,7 @@
    "leads": 2,
    "avg": 4.57,
    "wavg": 4.64,
-   "weighted": 4.437,
+   "weighted": 4.438,
    "top": [
     "Rogue One: A Star Wars Story 4.9",
     "A Monster Calls 4.5",
@@ -2802,7 +2802,7 @@
    "leads": 2,
    "avg": 4.5,
    "wavg": 4.5,
-   "weighted": 4.346,
+   "weighted": 4.347,
    "top": [
     "Something's Gotta Give 4.5",
     "The Family Stone 4.5",
@@ -3228,6 +3228,92 @@
    ]
   },
   {
+   "name": "Michael Giacchino",
+   "n": 25,
+   "leads": 0,
+   "avg": 4.36,
+   "wavg": 4.36,
+   "weighted": 4.321,
+   "top": [
+    "Rogue One: A Star Wars Story 4.9",
+    "Spider-Man: Brand New Day 4.9",
+    "Spider-Man: Far From Home 4.8",
+    "Spider-Man: No Way Home 4.8"
+   ],
+   "unwatched": [
+    {
+     "t": "The Batman",
+     "y": "2022",
+     "va": 7.7,
+     "vc": 12605,
+     "sw": "HBO Max, Universal+ Amazon Channel"
+    },
+    {
+     "t": "Zootopia 2",
+     "y": "2025",
+     "va": 7.7,
+     "vc": 3507,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Dawn of the Planet of the Apes",
+     "y": "2014",
+     "va": 7.3,
+     "vc": 12537,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Star Trek Into Darkness",
+     "y": "2013",
+     "va": 7.3,
+     "vc": 9902,
+     "sw": "Paramount Plus, Universal+ Amazon Channel"
+    },
+    {
+     "t": "War for the Planet of the Apes",
+     "y": "2017",
+     "va": 7.2,
+     "vc": 9996,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "50/50",
+     "y": "2011",
+     "va": 7.2,
+     "vc": 4280,
+     "sw": "Netflix"
+    },
+    {
+     "t": "Partly Cloudy",
+     "y": "2009",
+     "va": 7.7,
+     "vc": 1137,
+     "sw": ""
+    },
+    {
+     "t": "La luna",
+     "y": "2012",
+     "va": 7.8,
+     "vc": 870,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "Day & Night",
+     "y": "2010",
+     "va": 7.7,
+     "vc": 980,
+     "sw": "Disney Plus"
+    },
+    {
+     "t": "The Book of Henry",
+     "y": "2017",
+     "va": 7.5,
+     "vc": 1382,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    }
+   ]
+  },
+  {
    "name": "Thomas Newman",
    "n": 9,
    "leads": 0,
@@ -3310,92 +3396,6 @@
      "va": 7.3,
      "vc": 4568,
      "sw": "HBO Max"
-    }
-   ]
-  },
-  {
-   "name": "Michael Giacchino",
-   "n": 24,
-   "leads": 0,
-   "avg": 4.34,
-   "wavg": 4.34,
-   "weighted": 4.3,
-   "top": [
-    "Rogue One: A Star Wars Story 4.9",
-    "Spider-Man: Far From Home 4.8",
-    "Spider-Man: No Way Home 4.8",
-    "Jojo Rabbit 4.8"
-   ],
-   "unwatched": [
-    {
-     "t": "The Batman",
-     "y": "2022",
-     "va": 7.7,
-     "vc": 12605,
-     "sw": "HBO Max, Universal+ Amazon Channel"
-    },
-    {
-     "t": "Spider-Man: Brand New Day",
-     "y": "2026",
-     "va": 7.9,
-     "vc": 3016,
-     "sw": ""
-    },
-    {
-     "t": "Zootopia 2",
-     "y": "2025",
-     "va": 7.7,
-     "vc": 3507,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Dawn of the Planet of the Apes",
-     "y": "2014",
-     "va": 7.3,
-     "vc": 12537,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Star Trek Into Darkness",
-     "y": "2013",
-     "va": 7.3,
-     "vc": 9902,
-     "sw": "Paramount Plus, Universal+ Amazon Channel"
-    },
-    {
-     "t": "War for the Planet of the Apes",
-     "y": "2017",
-     "va": 7.2,
-     "vc": 9996,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "50/50",
-     "y": "2011",
-     "va": 7.2,
-     "vc": 4280,
-     "sw": "Netflix"
-    },
-    {
-     "t": "Partly Cloudy",
-     "y": "2009",
-     "va": 7.7,
-     "vc": 1137,
-     "sw": ""
-    },
-    {
-     "t": "La luna",
-     "y": "2012",
-     "va": 7.8,
-     "vc": 870,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Day & Night",
-     "y": "2010",
-     "va": 7.7,
-     "vc": 980,
-     "sw": "Disney Plus"
     }
    ]
   },
@@ -4462,88 +4462,88 @@
    ]
   },
   {
-   "name": "Samuel L. Jackson",
+   "name": "Mark Ruffalo",
    "n": 12,
-   "leads": 7,
-   "avg": 4.25,
-   "wavg": 4.34,
-   "weighted": 4.304,
+   "leads": 8,
+   "avg": 4.52,
+   "wavg": 4.5,
+   "weighted": 4.447,
    "top": [
-    "Spider-Man: Far From Home 4.8",
-    "Pulp Fiction 4.8",
-    "Captain America: The Winter Soldier 4.8",
-    "Kingsman: The Secret Service 4.5"
+    "Thor: Ragnarok 4.8",
+    "Avengers: Endgame 4.8",
+    "The Adam Project 4.8",
+    "The Avengers 4.6"
    ],
    "unwatched": [
     {
-     "t": "The Hateful Eight",
+     "t": "Shutter Island",
+     "y": "2010",
+     "va": 8.2,
+     "vc": 26519,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Spotlight",
      "y": "2015",
      "va": 7.8,
-     "vc": 15673,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
+     "vc": 9005,
+     "sw": "HBO Max"
     },
     {
-     "t": "Star Wars: Episode III - Revenge of the Sith",
-     "y": "2005",
-     "va": 7.5,
-     "vc": 15362,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Coach Carter",
-     "y": "2005",
+     "t": "Poor Things",
+     "y": "2023",
      "va": 7.6,
-     "vc": 3410,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Jackie Brown",
-     "y": "1997",
-     "va": 7.4,
-     "vc": 7154,
-     "sw": "Rent: Apple TV Store, Google Play Movies"
-    },
-    {
-     "t": "Die Hard: With a Vengeance",
-     "y": "1995",
-     "va": 7.3,
-     "vc": 6869,
+     "vc": 5795,
      "sw": "Disney Plus"
     },
     {
-     "t": "A Time to Kill",
-     "y": "1996",
-     "va": 7.4,
-     "vc": 3111,
-     "sw": "Netflix, Disney Plus, Paramount Plus"
-    },
-    {
-     "t": "Unbreakable",
-     "y": "2000",
-     "va": 7.1,
-     "vc": 10191,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "The Banker",
-     "y": "2020",
-     "va": 7.6,
-     "vc": 1164,
-     "sw": "Apple TV"
-    },
-    {
-     "t": "The Negotiator",
-     "y": "1998",
-     "va": 7.1,
-     "vc": 2507,
-     "sw": "Disney Plus"
-    },
-    {
-     "t": "Menace II Society",
-     "y": "1993",
+     "t": "Dark Waters",
+     "y": "2019",
      "va": 7.5,
-     "vc": 958,
-     "sw": ""
+     "vc": 2627,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "Collateral",
+     "y": "2004",
+     "va": 7.2,
+     "vc": 6532,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "The Normal Heart",
+     "y": "2014",
+     "va": 7.7,
+     "vc": 934,
+     "sw": "HBO Max"
+    },
+    {
+     "t": "The Last Castle",
+     "y": "2001",
+     "va": 7.2,
+     "vc": 1497,
+     "sw": "Rent: Apple TV Store, Google Play Movies"
+    },
+    {
+     "t": "13 Going on 30",
+     "y": "2004",
+     "va": 6.8,
+     "vc": 5687,
+     "sw": "Netflix, Sony One Amazon Channel"
+    },
+    {
+     "t": "Mickey 17",
+     "y": "2025",
+     "va": 6.8,
+     "vc": 4032,
+     "sw": "Netflix, HBO Max"
+    },
+    {
+     "t": "Crime 101",
+     "y": "2026",
+     "va": 7,
+     "vc": 1396,
+     "sw": "Amazon Prime Video"
     }
    ]
   }
@@ -4556,16 +4556,16 @@
    "weighted": 4.243
   },
   {
+   "name": "Action",
+   "n": 64,
+   "avg": 4.16,
+   "weighted": 4.153
+  },
+  {
    "name": "Sci-fi",
    "n": 73,
    "avg": 4.15,
    "weighted": 4.151
-  },
-  {
-   "name": "Action",
-   "n": 63,
-   "avg": 4.15,
-   "weighted": 4.142
   },
   {
    "name": "Adventure",
@@ -4577,7 +4577,7 @@
    "name": "Period drama",
    "n": 5,
    "avg": 4.16,
-   "weighted": 4.123
+   "weighted": 4.124
   },
   {
    "name": "Action-comedy",
@@ -4627,7 +4627,13 @@
    "name": "Star Wars",
    "n": 8,
    "avg": 4.54,
-   "weighted": 4.384
+   "weighted": 4.385
+  },
+  {
+   "name": "Marvel",
+   "n": 38,
+   "avg": 4.41,
+   "weighted": 4.374
   },
   {
    "name": "Middle-earth",
@@ -4636,16 +4642,10 @@
    "weighted": 4.371
   },
   {
-   "name": "Marvel",
-   "n": 37,
-   "avg": 4.39,
-   "weighted": 4.361
-  },
-  {
    "name": "Ryan Reynolds",
    "n": 4,
    "avg": 4.63,
-   "weighted": 4.351
+   "weighted": 4.352
   },
   {
    "name": "Prestige",
@@ -4687,7 +4687,7 @@
    "name": "Irish Lane",
    "n": 3,
    "avg": 4.47,
-   "weighted": 4.244
+   "weighted": 4.245
   },
   {
    "name": "Documentary",
@@ -4699,13 +4699,13 @@
    "name": "Time & Second Chances",
    "n": 14,
    "avg": 4.27,
-   "weighted": 4.228
+   "weighted": 4.229
   },
   {
    "name": "Blockbuster",
    "n": 43,
    "avg": 4.22,
-   "weighted": 4.204
+   "weighted": 4.205
   },
   {
    "name": "Whimsy",
@@ -4741,7 +4741,7 @@
    "name": "Austen",
    "n": 2,
    "avg": 4.25,
-   "weighted": 4.135
+   "weighted": 4.136
   },
   {
    "name": "Christmas",
@@ -4759,25 +4759,25 @@
    "name": "British Absurd",
    "n": 2,
    "avg": 4.05,
-   "weighted": 4.068
+   "weighted": 4.069
   },
   {
    "name": "Cornetto",
    "n": 3,
    "avg": 4,
-   "weighted": 4.044
+   "weighted": 4.045
   },
   {
    "name": "Music & Musicals",
    "n": 11,
    "avg": 4.01,
-   "weighted": 4.027
+   "weighted": 4.028
   },
   {
    "name": "Unsorted",
    "n": 22,
    "avg": 3.99,
-   "weighted": 4
+   "weighted": 4.001
   },
   {
    "name": "80s Nostalgia",
@@ -4825,7 +4825,7 @@
    "name": "Action",
    "n": 14,
    "avg": 3.82,
-   "weighted": 3.878
+   "weighted": 3.879
   },
   {
    "name": "Whodunnit",
@@ -4843,7 +4843,7 @@
    "name": "Kid Sport",
    "n": 15,
    "avg": 3.67,
-   "weighted": 3.758
+   "weighted": 3.759
   },
   {
    "name": "Streaming-Era",

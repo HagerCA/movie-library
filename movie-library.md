@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-11** · **999 films** · Chris has rated 931 (avg **4.08**), Pixie 516 (avg 4.22)
+Last built **2026-10-11** · **1000 films** · Chris has rated 932 (avg **4.08**), Pixie 517 (avg 4.22)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 611 of 931 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 612 of 932 rated films clear it.
 
 ## Columns
 
@@ -670,10 +670,11 @@ The app is `index.html` in this folder.
 
 ## ACTION
 
-*67 films · avg 4.15*
+*68 films · avg 4.16*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
+| Spider-Man: Brand New Day | 2026 | **4.9** | 4.9 | Household | Rated | Marvel | Rent: Apple TV Store | Tracked in Coming Soon, then watched. Rated 4.9 by Christopher in chat 2026-10-11; one number, so Pixie's column is seeded from it, and the audience was not stated, so Context is Household. He bought it on Amazon Prime Video 2026-10-11, so the family owns it. TMDB's Costa Rica listing, checked the same day, still shows only an Apple TV Store rental and no Amazon entry; his purchase is the fact, the listing has not caught up. Genre and Lane set by SAGE 2026-10-11 to sit beside the other Marvel films, not Christopher's own call. |
 | Captain America: The Winter Soldier | 2014 | **4.8** | 4.8 | Household | Rated | Marvel | Disney Plus | Added from the app 2026-10-05, unrated. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
 | The Dark Knight Rises | 2012 | **4.8** | 4.8 | Date Night | Rated | Superhero | HBO Max | Added from the app 2026-10-05. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. Carry flag cleared: Chris gave this number himself in the 2026-10-05 paste. |
 | A Knight's Tale | 2001 | **4.7** | 4.7 | Family | Rated | Blockbuster | HBO Max |  |
@@ -1111,7 +1112,7 @@ The app is `index.html` in this folder.
 
 **7 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers.
 
-**TMDB enrichment: 996 of 999 films have a poster.**
+**TMDB enrichment: 997 of 1000 films have a poster.**
 
 ---
 
@@ -1130,7 +1131,7 @@ The app is `index.html` in this folder.
 | Shane Black | 2 | 1 | 4.50 |
 | Irish Lane | 7 | 3 | 4.47 |
 | Spielberg | 21 | 18 | 4.46 |
-| Marvel | 37 | 37 | 4.39 |
+| Marvel | 38 | 38 | 4.41 |
 | Prestige | 31 | 25 | 4.39 |
 | Mind-Bender | 12 | 6 | 4.37 |
 | Space & Science | 14 | 13 | 4.33 |
@@ -1169,10 +1170,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-10-11
 
-- **999 films.** Rated 931 · Watchlist 59 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
-- **Chris 931 rated, avg 4.08. Pixie 516 rated, avg 4.22.**
-- Rewatches (4.0+): **611** · enjoyed once (3.5): 257 · below: 63
+- **1000 films.** Rated 932 · Watchlist 59 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
+- **Chris 932 rated, avg 4.08. Pixie 517 rated, avg 4.22.**
+- Rewatches (4.0+): **612** · enjoyed once (3.5): 257 · below: 63
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (14) · 4.8 (45) · 4.7 (21) · 4.6 (41) · 4.5 (120) · 4.4 (23) · 4.3 (89) · 4.2 (52) · 4.1 (45) · 4.0 (153) · 3.9 (93) · 3.8 (59) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
-- Context: Household 666 · Family 167 · Date Night 104 · Queue 48 · Solo 14
+- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (41) · 4.5 (120) · 4.4 (23) · 4.3 (89) · 4.2 (52) · 4.1 (45) · 4.0 (153) · 3.9 (93) · 3.8 (59) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
+- Context: Household 667 · Family 167 · Date Night 104 · Queue 48 · Solo 14
 - Retired rows kept in the CSV but hidden: 266
