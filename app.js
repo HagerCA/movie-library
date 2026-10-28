@@ -259,6 +259,7 @@
     { k: 'fam',     label: 'With the Boys',       fn: function (f) { return f.w === 'Family'; } },
     { k: 'need',    label: 'Needs a Rating',      fn: function (f) { return f.c === null && /^seen/i.test(f.s); } },
     { k: 'xmas',    label: '\uD83C\uDF84 Christmas',  fn: function (f) { return f.l === 'Christmas'; } },
+    { k: 'hween',   label: '\uD83C\uDF83 Halloween',  fn: function (f) { return f.l === 'Halloween'; } },
     /* The 5s and Watch Tonight came out on 2026-10-04 at Chris's request, to
      * streamline this row. The Picker replaced them: its "only what we already
      * pay for" tick does the Watch Tonight job. */
