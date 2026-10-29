@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-28** · **1032 films** · Chris has rated 941 (avg **4.08**), Pixie 525 (avg 4.22)
+Last built **2026-10-29** · **1035 films** · Chris has rated 944 (avg **4.08**), Pixie 528 (avg 4.22)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 618 of 941 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 620 of 944 rated films clear it.
 
 ## Columns
 
@@ -29,7 +29,7 @@ The app is `index.html` in this folder.
 
 ## ROM-COM
 
-*112 films · avg 3.95*
+*113 films · avg 3.95*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -143,6 +143,7 @@ The app is `index.html` in this folder.
 | Confessions of a Shopaholic | 2009 |  |  | Queue | Watchlist | Modern Rom-com |  |  |
 | Holidate | 2020 |  |  | Queue | Watchlist | Modern Rom-com | Netflix |  |
 | Love, Rosie | 2014 |  |  | Queue | Watchlist | Modern Rom-com |  |  |
+| Punch-Drunk Love | 2002 |  |  | Household | Watchlist | Modern Rom-com |  | Added from the app 2026-10-29, unrated. Needs genre, lane and a TMDB pass. |
 | Return to Me | 2000 |  |  | Queue | Watchlist | Classic Canon | Rent: Apple TV Store, Google Play Movies |  |
 | The Half of It | 2020 |  |  | Queue | Watchlist | Modern Rom-com | Netflix |  |
 
@@ -274,6 +275,7 @@ The app is `index.html` in this folder.
 | Casino | 1995 | **4.4** |  | Household | Rated | Prestige | Rent: Apple TV Store, Google Play Movies | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4.4. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (acclaimed drama), not Chris’s own call. Worth a glance. |
 | Once Upon a Time in Hollywood | 2019 | **4.4** | 4.4 | Household | Rated | Prestige | Netflix, Amazon Prime Video | Status was Seen, unrated with a rating already on the row, which cannot both be true; set to Rated 2026-10-04. The sheet was stale on this row and the paste was newer. |
 | Searching for Bobby Fischer | 1993 | **4.4** |  | Household | Rated | Unsorted |  | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 1/10/21. Netflix listed it as "Searching for Bobby Fischer"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.4. Pixie left blank; he rated alone. |
+| Ali | 2001 | **4.3** | 4.3 | Household | Rated | Period |  | Added from the app 2026-10-05, unrated. Needs genre, lane and a TMDB pass. |
 | Being Eddie | 2025 | **4.3** |  | Household | Rated | Documentary | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 11/14/25. Netflix listed it as "Being Eddie"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.3. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Edward Scissorhands | 1990 | **4.3** | 4.3 | Family | Rated | Whimsy | Disney Plus | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
 | Hidden Figures | 2016 | **4.3** | 4.3 | Family | Rated | Space & Science | Disney Plus | Came from SAGE Suggests and was watched. Rated 2026-10-03. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (space). |
@@ -362,7 +364,6 @@ The app is `index.html` in this folder.
 | Split | 2017 | **3** |  | Household | Rated | Horror | Amazon Prime Video, HBO Max | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (horror), not Chris’s own call. Worth a glance. |
 | Thunderheart | 1992 | **3** |  | Household | Rated | Unsorted |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3. Pixie left blank; he rated these alone. |
 | A Cure for Wellness | 2017 |  |  | Queue | Watchlist | Mind-Bender | Amazon Prime Video, Disney Plus | Queued 2026-10-05 from Gore Verbinski as directors, ranked by the same credibility-weighted score Our People uses. Not seen as far as the library knows: Chris asked for these so he could recognise the ones he has already watched. Genre and Lane set by SAGE to match the sibling films already in the library, not Chris’s own call. |
-| Ali | 2001 |  |  | Household | Watchlist | Period |  | Added from the app 2026-10-05, unrated. Needs genre, lane and a TMDB pass. |
 | Apollo 11 | 2019 |  |  | Queue | Watchlist | Documentary | Rent: Apple TV Store, Google Play Movies | Came from SAGE Suggests. Chris put it on the Watchlist on 2026-10-04, correcting an earlier read of his paste as already watched. Not seen yet. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Django Unchained | 2012 |  |  | Household | Watchlist | Prestige | HBO Max | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
 | Donnie Brasco | 1997 |  |  | Household | Watchlist | Prestige | Buy: Apple TV Store, Google Play Movies | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
@@ -381,7 +382,7 @@ The app is `index.html` in this folder.
 
 ## COMEDY
 
-*160 films · avg 4.01*
+*161 films · avg 4.01*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -545,10 +546,11 @@ The app is `index.html` in this folder.
 | Hocus Pocus | 1993 |  |  | Family | Watchlist | Halloween | Disney Plus | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Set on Halloween night. Context Queue to Family 2026-10-28, Halloween family list. |
 | MouseHunt | 1997 |  |  | Queue | Watchlist | Classic Comedy | Rent: Google Play Movies | Queued 2026-10-05 from Gore Verbinski as directors, ranked by the same credibility-weighted score Our People uses. Not seen as far as the library knows: Chris asked for these so he could recognise the ones he has already watched. Genre and Lane set by SAGE to match the sibling films already in the library, not Chris’s own call. |
 | The Best Christmas Pageant Ever | 2024 |  |  | Family | Watchlist | Christmas | HBO Max | Added 2026-10-04 from the family Christmas list. Needs a number. |
+| The Longest Yard | 2005 |  |  | Household | Watchlist | Frat Pack | HBO Max, Sony One Amazon Channel | Added from the app 2026-10-29, unrated. Needs genre, lane and a TMDB pass. |
 
 ## ACTION-COMEDY
 
-*121 films · avg 4.11*
+*122 films · avg 4.11*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -631,6 +633,7 @@ The app is `index.html` in this folder.
 | Goosebumps | 2015 | **3.9** |  | Household | Rated | Frat Pack | Netflix, Amazon Prime Video, HBO Max | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 10/14/23. Netflix listed it as "Goosebumps"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (Frat Pack cast). |
 | Hellboy II: The Golden Army | 2008 | **3.9** | 3.9 | Household | Rated | Superhero | Rent: Apple TV Store, Google Play Movies | Added from the app 2026-10-05, unrated. Needs genre, lane and a TMDB pass. |
 | Jules | 2023 | **3.9** |  | Household | Rated | Modern Comedy | Netflix | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (post-2000 comedy), not Chris’s own call. Worth a glance. |
+| Matchbox | 2026 | **3.9** † | 3.9 | Family | Rated | Family Adventure | Apple TV | Added from the app 2026-10-29. Needs genre, lane and a TMDB pass. TMDB title is Matchbox the Movie (2026-10-05). Auto-match first hit a 4-minute short (1631887); re-pointed 2026-10-29. |
 | Matchbox the Movie | 2026 | **3.9** |  | Household | Rated | Modern Comedy | Apple TV | From Christopher's Day One 2026-10-10 (Apple TV, 3.9, with John Cena), routed by /triage 2026-10-20. Rating is his; Pixie's column left blank because the entry does not say whether she watched. Lane set by SAGE to match the library's action comedies, not his call. |
 | Novocaine | 2025 | **3.9** |  | Household | Rated | Superhero | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 3/15/26. Netflix listed it as "Novocaine"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (comics). |
 | The Peanut Butter Falcon | 2019 | **3.9** |  | Household | Rated | Modern Comedy |  | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (post-2000 comedy), not Chris’s own call. Worth a glance. |
@@ -840,7 +843,7 @@ The app is `index.html` in this folder.
 
 ## SCI-FI
 
-*87 films · avg 4.16*
+*87 films · avg 4.17*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -862,6 +865,7 @@ The app is `index.html` in this folder.
 | Ad Astra | 2019 | **4.6** |  | Household | Rated | Space & Science | Disney Plus, Paramount Plus, Universal+ Amazon Channel | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 11/19/23. Netflix listed it as "Ad Astra"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.6. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (space). |
 | Arrival | 2016 | **4.6** | 4.6 | Date Night | Rated | Mind-Bender | HBO Max, Universal+ Amazon Channel | The closest thing to Interstellar on the queue. |
 | Jurassic Park | 1993 | **4.6** | 4.6 | Household | Rated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max | Status was Seen, unrated with a rating already on the row, which cannot both be true; set to Rated 2026-10-04. The sheet was stale on this row and the paste was newer. |
+| A Quiet Place | 2018 | **4.5** | 4.5 | Family | Rated | Halloween | Netflix, Paramount Plus | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Context Queue to Family 2026-10-28, Halloween family list. |
 | Back to the Future Part II | 1989 | **4.5** | 4.5 | Household | Rated | Sci-fi Canon | Amazon Prime Video, Universal+ Amazon Channel | Status was Seen, unrated with a rating already on the row, which cannot both be true; set to Rated 2026-10-04. The sheet was stale on this row and the paste was newer. |
 | IF | 2024 | **4.5** | 4.5 | Household | Rated | Sci-fi Canon | Rent: Apple TV Store, Google Play Movies | Was carried at 4.6 as seen but unrated. Chris gave 4.5 in his own words on 2026-10-04, which supersedes it. |
 | Jurassic World | 2015 | **4.5** | 4.5 | Household | Rated | Sci-fi Canon | Netflix, Amazon Prime Video, Disney Plus, HBO Max | Status was Seen, unrated with a rating already on the row, which cannot both be true; set to Rated 2026-10-04. The sheet was stale on this row and the paste was newer. |
@@ -919,7 +923,6 @@ The app is `index.html` in this folder.
 | The Marvels | 2023 | **3.5** |  | Household | Rated | Marvel | Disney Plus | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.5. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (Marvel Studios). |
 | Morbius | 2022 | **3.1** |  | Household | Rated | Superhero | Rent: Apple TV Store, Google Play Movies | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.1. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (comics). |
 | Back to the Future Part III | 1990 | **2.5** | 2.5 | Family | Rated | 80s Nostalgia | HBO Max, Universal+ Amazon Channel | The only sub-3 film in the library. "Love them all except for number three of course." |
-| A Quiet Place | 2018 |  |  | Family | Watchlist | Halloween | Netflix, Paramount Plus | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Context Queue to Family 2026-10-28, Halloween family list. |
 | A Quiet Place Part II | 2021 |  |  | Family | Watchlist | Halloween | Netflix, Paramount Plus, Universal+ Amazon Channel | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Context Queue to Family 2026-10-28, Halloween family list. |
 | A Quiet Place: Day One | 2024 |  |  | Queue | Watchlist | Mind-Bender | Paramount Plus | Never seen. Confirmed a film, not a series, so it clears the no-series rule. |
 | Annihilation | 2018 |  |  | Queue | Watchlist | Mind-Bender | Rent: Apple TV Store, Google Play Movies |  |
@@ -1149,9 +1152,9 @@ The app is `index.html` in this folder.
 
 **No open conflicts.** ✓
 
-**7 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers.
+**8 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers, Matchbox.
 
-**TMDB enrichment: 1029 of 1032 films have a poster.**
+**TMDB enrichment: 1032 of 1035 films have a poster.**
 
 ---
 
@@ -1175,32 +1178,32 @@ The app is `index.html` in this folder.
 | Mind-Bender | 12 | 6 | 4.37 |
 | Space & Science | 14 | 13 | 4.33 |
 | Love That Costs | 14 | 11 | 4.33 |
+| Halloween | 27 | 4 | 4.30 |
 | Whimsy | 3 | 3 | 4.30 |
 | Time & Second Chances | 17 | 14 | 4.27 |
 | Documentary | 67 | 65 | 4.26 |
 | Austen | 5 | 2 | 4.25 |
 | Richard Curtis | 4 | 4 | 4.25 |
-| Halloween | 27 | 3 | 4.23 |
 | Blockbuster | 46 | 44 | 4.22 |
 | Classic Comedy | 19 | 18 | 4.19 |
 | Classic Canon | 19 | 16 | 4.17 |
 | Sci-fi Canon | 35 | 33 | 4.15 |
 | Christmas | 57 | 56 | 4.13 |
-| Period | 18 | 13 | 4.11 |
+| Period | 18 | 14 | 4.12 |
 | British Absurd | 2 | 2 | 4.05 |
 | Music & Musicals | 12 | 11 | 4.01 |
 | Cornetto | 3 | 3 | 4.00 |
 | Rebuild & Relocate | 1 | 1 | 4.00 |
 | Animated Family | 162 | 159 | 3.98 |
 | 80s Nostalgia | 23 | 23 | 3.97 |
-| Frat Pack | 48 | 48 | 3.97 |
+| Frat Pack | 49 | 48 | 3.97 |
 | Unsorted | 25 | 23 | 3.97 |
 | Superhero | 28 | 27 | 3.93 |
-| Family Adventure | 31 | 30 | 3.88 |
+| Family Adventure | 32 | 31 | 3.88 |
 | Modern Comedy | 89 | 88 | 3.88 |
 | Horror | 8 | 5 | 3.86 |
 | Action | 15 | 15 | 3.85 |
-| Modern Rom-com | 65 | 61 | 3.84 |
+| Modern Rom-com | 66 | 61 | 3.84 |
 | Whodunnit | 5 | 5 | 3.70 |
 | Kid Sport | 15 | 15 | 3.67 |
 | Streaming-Era | 4 | 4 | 3.40 |
@@ -1208,12 +1211,12 @@ The app is `index.html` in this folder.
 
 ---
 
-## Counts, built 2026-10-28
+## Counts, built 2026-10-29
 
-- **1032 films.** Rated 941 · Watchlist 82 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
-- **Chris 941 rated, avg 4.08. Pixie 525 rated, avg 4.22.**
-- Rewatches (4.0+): **618** · enjoyed once (3.5): 260 · below: 63
+- **1035 films.** Rated 944 · Watchlist 82 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
+- **Chris 944 rated, avg 4.08. Pixie 528 rated, avg 4.22.**
+- Rewatches (4.0+): **620** · enjoyed once (3.5): 261 · below: 63
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (121) · 4.4 (25) · 4.3 (88) · 4.2 (53) · 4.1 (48) · 4.0 (152) · 3.9 (95) · 3.8 (60) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
-- Context: Household 674 · Family 192 · Date Night 105 · Queue 47 · Solo 14
+- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (89) · 4.2 (53) · 4.1 (48) · 4.0 (152) · 3.9 (96) · 3.8 (60) · 3.7 (21) · 3.6 (25) · 3.5 (59) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
+- Context: Household 676 · Family 193 · Date Night 105 · Queue 47 · Solo 14
 - Retired rows kept in the CSV but hidden: 266
