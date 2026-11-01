@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-10-29** · **1036 films** · Chris has rated 958 (avg **4.08**), Pixie 542 (avg 4.21)
+Last built **2026-11-01** · **1037 films** · Chris has rated 959 (avg **4.08**), Pixie 543 (avg 4.21)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 629 of 958 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 629 of 959 rated films clear it.
 
 ## Columns
 
@@ -551,7 +551,7 @@ The app is `index.html` in this folder.
 
 ## ACTION-COMEDY
 
-*122 films · avg 4.10*
+*123 films · avg 4.10*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -635,6 +635,7 @@ The app is `index.html` in this folder.
 | Goosebumps | 2015 | **3.9** |  | Household | Rated | Frat Pack | Netflix, Amazon Prime Video, HBO Max | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 10/14/23. Netflix listed it as "Goosebumps"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (Frat Pack cast). |
 | Hellboy II: The Golden Army | 2008 | **3.9** | 3.9 | Household | Rated | Superhero | Rent: Apple TV Store, Google Play Movies | Added from the app 2026-10-05, unrated. Needs genre, lane and a TMDB pass. |
 | Jules | 2023 | **3.9** |  | Household | Rated | Modern Comedy | Netflix | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (post-2000 comedy), not Chris’s own call. Worth a glance. |
+| Love and Monsters | 2020 | **3.9** | 3.9 | Family | Rated | Halloween | Netflix | Watched Sat 2026-10-31, Halloween night, at home on Netflix with Pixie, the boys and a friend. Christopher in his Day One journal of 2026-10-31: "Solid, I give it a 3.9, so does the Pixie." Pixie's 3.9 is as he reported it. The boys watched and Hudson fell asleep; no ratings from the boys or the friend. Asked for the watch list in the same journal and watched before it got there, so it went straight in as Rated on 2026-11-01. Year is 2020 (TMDB 590223, released 2020-10-16), not the 2021 he remembered. Genre and Lane are SAGE's, matched to Tremors. |
 | Matchbox | 2026 | **3.9** † | 3.9 | Family | Rated | Family Adventure | Apple TV | Added from the app 2026-10-29. Needs genre, lane and a TMDB pass. TMDB title is Matchbox the Movie (2026-10-05). Auto-match first hit a 4-minute short (1631887); re-pointed 2026-10-29. |
 | Matchbox the Movie | 2026 | **3.9** |  | Household | Rated | Modern Comedy | Apple TV | From Christopher's Day One 2026-10-10 (Apple TV, 3.9, with John Cena), routed by /triage 2026-10-20. Rating is his; Pixie's column left blank because the entry does not say whether she watched. Lane set by SAGE to match the library's action comedies, not his call. |
 | Novocaine | 2025 | **3.9** |  | Household | Rated | Superhero | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 3/15/26. Netflix listed it as "Novocaine"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 3.9. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (comics). |
@@ -1155,7 +1156,7 @@ The app is `index.html` in this folder.
 
 **9 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers, Matchbox, In Your Eyes.
 
-**TMDB enrichment: 1033 of 1036 films have a poster.**
+**TMDB enrichment: 1034 of 1037 films have a poster.**
 
 ---
 
@@ -1187,9 +1188,9 @@ The app is `index.html` in this folder.
 | Blockbuster | 46 | 45 | 4.21 |
 | Classic Comedy | 19 | 18 | 4.19 |
 | Classic Canon | 19 | 16 | 4.17 |
-| Halloween | 27 | 9 | 4.16 |
 | Sci-fi Canon | 35 | 33 | 4.15 |
 | Christmas | 57 | 56 | 4.13 |
+| Halloween | 28 | 10 | 4.13 |
 | Period | 18 | 14 | 4.12 |
 | British Absurd | 2 | 2 | 4.05 |
 | Music & Musicals | 12 | 11 | 4.01 |
@@ -1212,12 +1213,12 @@ The app is `index.html` in this folder.
 
 ---
 
-## Counts, built 2026-10-29
+## Counts, built 2026-11-01
 
-- **1036 films.** Rated 958 · Watchlist 69 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
-- **Chris 958 rated, avg 4.08. Pixie 542 rated, avg 4.21.**
-- Rewatches (4.0+): **629** · enjoyed once (3.5): 266 · below: 63
+- **1037 films.** Rated 959 · Watchlist 69 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
+- **Chris 959 rated, avg 4.08. Pixie 543 rated, avg 4.21.**
+- Rewatches (4.0+): **629** · enjoyed once (3.5): 267 · below: 63
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (91) · 4.2 (53) · 4.1 (48) · 4.0 (159) · 3.9 (98) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
-- Context: Household 676 · Family 193 · Date Night 106 · Queue 47 · Solo 14
+- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (91) · 4.2 (53) · 4.1 (48) · 4.0 (159) · 3.9 (99) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
+- Context: Household 676 · Family 194 · Date Night 106 · Queue 47 · Solo 14
 - Retired rows kept in the CSV but hidden: 266
