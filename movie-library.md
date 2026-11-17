@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-11-17** · **1039 films** · Chris has rated 961 (avg **4.08**), Pixie 545 (avg 4.21)
+Last built **2026-11-17** · **1039 films** · Chris has rated 962 (avg **4.08**), Pixie 546 (avg 4.21)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 631 of 961 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 632 of 962 rated films clear it.
 
 ## Columns
 
@@ -846,7 +846,7 @@ The app is `index.html` in this folder.
 
 ## SCI-FI
 
-*88 films · avg 4.16*
+*88 films · avg 4.17*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -881,6 +881,7 @@ The app is `index.html` in this folder.
 | Serenity | 2005 | **4.4** |  | Household | Rated | Space & Science | Rent: Apple TV Store, Google Play Movies | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4.4. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (space). |
 | Signs | 2002 | **4.4** | 4.4 | Household | Rated | Halloween | Disney Plus | Rated by Christopher in chat 2026-10-28 while asking for Halloween picks. One number given, written to both columns. |
 | Star Wars: Episode IX - The Rise of Skywalker | 2019 | **4.4** | 4.4 | Family | Rated | Star Wars | Disney Plus |  |
+| A Quiet Place Part II | 2021 | **4.3** | 4.3 | Family | Rated | Halloween | Netflix, Paramount Plus, Universal+ Amazon Channel | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Context Queue to Family 2026-10-28, Halloween family list. |
 | Minority Report | 2002 | **4.3** | 4.3 | Date Night | Rated | Spielberg | Paramount Plus | Added from the app 2026-10-05. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. Carry flag cleared: Chris gave this number himself in the 2026-10-05 paste. |
 | Rebel Moon - Part One: A Child of Fire | 2023 | **4.3** |  | Household | Rated | Sci-fi Canon | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 1/15/24. Netflix listed it as "Rebel Moon — Part One: A Child of Fire"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.3. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (sci-fi), not Chris’s own call. Worth a glance. |
 | Spaceman | 2024 | **4.3** | 4.3 | Household | Rated | Space & Science | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 6/2/24. Netflix listed it as "Spaceman"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (space). Pulled from the Google Sheet 2026-10-04: Chris (blank) -> 4.3; Pixie (blank) -> 4.3; Status Seen, unrated -> Rated. |
@@ -928,7 +929,6 @@ The app is `index.html` in this folder.
 | The Marvels | 2023 | **3.5** |  | Household | Rated | Marvel | Disney Plus | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.5. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (Marvel Studios). |
 | Morbius | 2022 | **3.1** |  | Household | Rated | Superhero | Rent: Apple TV Store, Google Play Movies | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 3.1. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a strong pattern (comics). |
 | Back to the Future Part III | 1990 | **2.5** | 2.5 | Family | Rated | 80s Nostalgia | HBO Max, Universal+ Amazon Channel | The only sub-3 film in the library. "Love them all except for number three of course." |
-| A Quiet Place Part II | 2021 |  |  | Family | Watchlist | Halloween | Netflix, Paramount Plus, Universal+ Amazon Channel | Halloween 2026 pick, PG-13 and under, suspense over gore. Added 2026-10-28 at Christopher's request. Context Queue to Family 2026-10-28, Halloween family list. |
 | A Quiet Place: Day One | 2024 |  |  | Queue | Watchlist | Mind-Bender | Paramount Plus | Never seen. Confirmed a film, not a series, so it clears the no-series rule. |
 | Annihilation | 2018 |  |  | Queue | Watchlist | Mind-Bender | Rent: Apple TV Store, Google Play Movies |  |
 | Coherence | 2013 |  |  | Queue | Watchlist | Mind-Bender | Rent: Apple TV Store, Google Play Movies |  |
@@ -1191,8 +1191,8 @@ The app is `index.html` in this folder.
 | Classic Comedy | 19 | 18 | 4.19 |
 | Classic Canon | 19 | 16 | 4.17 |
 | Sci-fi Canon | 35 | 33 | 4.15 |
+| Halloween | 28 | 11 | 4.15 |
 | Christmas | 57 | 56 | 4.13 |
-| Halloween | 28 | 10 | 4.13 |
 | Period | 18 | 14 | 4.12 |
 | British Absurd | 2 | 2 | 4.05 |
 | Music & Musicals | 12 | 11 | 4.01 |
@@ -1217,10 +1217,10 @@ The app is `index.html` in this folder.
 
 ## Counts, built 2026-11-17
 
-- **1039 films.** Rated 961 · Watchlist 69 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
-- **Chris 961 rated, avg 4.08. Pixie 545 rated, avg 4.21.**
-- Rewatches (4.0+): **631** · enjoyed once (3.5): 267 · below: 63
+- **1039 films.** Rated 962 · Watchlist 68 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
+- **Chris 962 rated, avg 4.08. Pixie 546 rated, avg 4.21.**
+- Rewatches (4.0+): **632** · enjoyed once (3.5): 267 · below: 63
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (91) · 4.2 (53) · 4.1 (49) · 4.0 (160) · 3.9 (99) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
+- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (92) · 4.2 (53) · 4.1 (49) · 4.0 (160) · 3.9 (99) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
 - Context: Household 676 · Family 195 · Date Night 107 · Queue 47 · Solo 14
 - Retired rows kept in the CSV but hidden: 266
