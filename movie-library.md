@@ -5,14 +5,14 @@ Edit the CSV, or the [Google Sheet](https://docs.google.com/spreadsheets/d/1e674
 
     node 11-Artifacts/movie-library/build.mjs
 
-Last built **2026-11-01** · **1037 films** · Chris has rated 959 (avg **4.08**), Pixie 543 (avg 4.21)
+Last built **2026-11-17** · **1039 films** · Chris has rated 961 (avg **4.08**), Pixie 545 (avg 4.21)
 The app is `index.html` in this folder.
 
 ## The scale
 
 > *"If something's a 3.5 it means that we enjoyed it but wouldn't necessarily watch it again. Four and above we'll love so much that we go back to watch them time and time again."* — Chris, 2026-10-03
 
-**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 629 of 959 rated films clear it.
+**4.0 is the rewatch threshold.** A predicted 3.5 is a miss, not a near-win. 631 of 961 rated films clear it.
 
 ## Columns
 
@@ -218,7 +218,7 @@ The app is `index.html` in this folder.
 
 ## DRAMA
 
-*158 films · avg 4.25*
+*159 films · avg 4.24*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -329,6 +329,7 @@ The app is `index.html` in this folder.
 | Buena Vista Social Club | 1999 | **4** |  | Household | Rated | Documentary | Amazon Prime Video | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 7/19/10. Netflix listed it as "Buena Vista Social Club"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Chasing Coral | 2017 | **4** | 4 | Household | Rated | Documentary | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 9/25/20. Netflix listed it as "Chasing Coral"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Django Unchained | 2012 | **4** | 4 | Household | Rated | Prestige | HBO Max | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
+| Dumb Money | 2023 | **4** | 4 | Date Night | Rated | Prestige | Rent: Apple TV Store | Watched Mon 2026-11-16, Christopher and Pixie after the boys went to bed. Christopher in his Day One journal of 2026-11-16: "I give Dumb Money a 4.0. Very entertaining... This one was just for Pixie and me." One number given for a film they both watched, so it is written to both columns; Pixie's may differ. Genre and Lane are SAGE's. |
 | Elway | 2025 | **4** |  | Household | Rated | Documentary | Netflix | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 1/10/26. Netflix listed it as "Elway"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (documentary). |
 | Finding Neverland | 2004 | **4** | 4 | Household | Rated | Prestige |  | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
 | Green Street Hooligans | 2005 | **4** | 4 | Household | Rated | Unsorted |  | Added from the app 2026-10-05, unrated. Came in from the Our People unwatched drawer. Genre and Lane set by SAGE on 2026-10-05 to match the sibling films already in the library, not Chris’s own call. |
@@ -845,7 +846,7 @@ The app is `index.html` in this folder.
 
 ## SCI-FI
 
-*87 films · avg 4.16*
+*88 films · avg 4.16*
 
 | Film | Year | Chris | Pixie | Context | Status | Lane | Streaming | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -887,6 +888,7 @@ The app is `index.html` in this folder.
 | Star Wars: Episode VII - The Force Awakens | 2015 | **4.2** | 4.2 | Family | Rated | Star Wars | Disney Plus |  |
 | Star Wars: Episode VIII - The Last Jedi | 2017 | **4.2** | 4.2 | Family | Rated | Star Wars | Disney Plus |  |
 | Venom | 2018 | **4.2** | 4.2 | Household | Rated | Sci-fi Canon | HBO Max | Status was Seen, unrated with a rating already on the row, which cannot both be true; set to Rated 2026-10-04. The sheet was stale on this row and the paste was newer. |
+| Allen | 2026 | **4.1** | 4.1 | Family | Rated | Family Adventure | Netflix | Watched Mon 2026-11-16 at home on Netflix with Pixie and the boys. Christopher in his Day One journal of 2026-11-16: "I like it. It's super cute. I give it a 4.1. I think the Pixie said the same thing." Pixie's 4.1 is as he reported it. No ratings from the boys. He wrote "Alan" in the journal and said "Alan Daly's movie" at /start on 2026-11-17; resolved to Allen (TMDB 1518204, released 2026-11-12, directed by Daley Pearson and Jeffrey Walker). Genre and Lane are SAGE's. |
 | Ant-Man and the Wasp | 2018 | **4.1** |  | Household | Rated | Marvel | Disney Plus | From the Amazon Prime purchase list, read from Chris’s own account 2026-10-04. He said he has seen every one of them, so Status is seen rather than owned. No rating given; blank beats invented. Needs genre, lane and a number. Rated by Chris in the Google Sheet and pulled into the vault 2026-10-04: Chris 4.1. Pixie left blank; he rated these alone. Genre and Lane filled by SAGE 2026-10-04 from a TMDB fact (same collection as a film you lane-ed). |
 | Limitless | 2011 | **4.1** |  | Household | Rated | Sci-fi Canon | Netflix, Amazon Prime Video, HBO Max, Universal+ Amazon Channel | From the Netflix viewing history on Chris’s own profile, exported 2026-10-04. Last watched 8/26/24. Netflix listed it as "Limitless"; TMDB confirms it as a film, which is the only reason it is here. No rating given; blank beats invented. Chris rated it in the Google Sheet and it was pulled into the vault 2026-10-04: Chris 4.1. Pixie left blank; he rated alone. Genre and Lane filled by SAGE 2026-10-04 by rule of thumb (sci-fi), not Chris’s own call. Worth a glance. |
 | Looper | 2012 | **4.1** | 4.1 | Queue | Rated | Time & Second Chances | Rent: Google Play Movies | Was on the queue as unseen. Rated in the sheet 2026-10-03, so it has been watched. |
@@ -1156,7 +1158,7 @@ The app is `index.html` in this folder.
 
 **9 unconfirmed second-hand ratings:** Flight of the Navigator, Mission: Impossible - Dead Reckoning, Interview With the Vampire: The Vampire Chronicles, And Two If By Sea, Hotel Transylvania 3, Dr. Seuss' The Lorax, Marvel's The Avengers, Matchbox, In Your Eyes.
 
-**TMDB enrichment: 1034 of 1037 films have a poster.**
+**TMDB enrichment: 1036 of 1039 films have a poster.**
 
 ---
 
@@ -1177,7 +1179,7 @@ The app is `index.html` in this folder.
 | Marvel | 38 | 38 | 4.41 |
 | Spielberg | 21 | 20 | 4.40 |
 | Mind-Bender | 12 | 6 | 4.37 |
-| Prestige | 31 | 27 | 4.36 |
+| Prestige | 32 | 28 | 4.35 |
 | Space & Science | 14 | 13 | 4.33 |
 | Whimsy | 3 | 3 | 4.30 |
 | Time & Second Chances | 17 | 14 | 4.27 |
@@ -1201,7 +1203,7 @@ The app is `index.html` in this folder.
 | Unsorted | 25 | 23 | 3.97 |
 | Frat Pack | 49 | 49 | 3.96 |
 | Superhero | 28 | 28 | 3.92 |
-| Family Adventure | 32 | 31 | 3.88 |
+| Family Adventure | 33 | 32 | 3.88 |
 | Modern Comedy | 89 | 88 | 3.88 |
 | Horror | 8 | 5 | 3.86 |
 | Modern Rom-com | 67 | 62 | 3.85 |
@@ -1213,12 +1215,12 @@ The app is `index.html` in this folder.
 
 ---
 
-## Counts, built 2026-11-01
+## Counts, built 2026-11-17
 
-- **1037 films.** Rated 959 · Watchlist 69 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
-- **Chris 959 rated, avg 4.08. Pixie 543 rated, avg 4.21.**
-- Rewatches (4.0+): **629** · enjoyed once (3.5): 267 · below: 63
+- **1039 films.** Rated 961 · Watchlist 69 · Owned, unwatched 3 · Not watching 2 · Seen, Chris partial 2 · Not released 1 · In theaters, unseen 1
+- **Chris 961 rated, avg 4.08. Pixie 545 rated, avg 4.21.**
+- Rewatches (4.0+): **631** · enjoyed once (3.5): 267 · below: 63
 - Where they differ: **3** (Fifty Shades of Grey, Amélie, Star Wars: Episode IV - A New Hope)
-- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (91) · 4.2 (53) · 4.1 (48) · 4.0 (159) · 3.9 (99) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
-- Context: Household 676 · Family 194 · Date Night 106 · Queue 47 · Solo 14
+- Spread: 5.0 (8) · 4.9 (15) · 4.8 (45) · 4.7 (21) · 4.6 (42) · 4.5 (122) · 4.4 (25) · 4.3 (91) · 4.2 (53) · 4.1 (49) · 4.0 (160) · 3.9 (99) · 3.8 (60) · 3.7 (22) · 3.6 (26) · 3.5 (60) · 3.4 (7) · 3.3 (4) · 3.2 (4) · 3.1 (4) · 3.0 (32) · 2.5 (9) · 2.0 (1) · 1.0 (2)
+- Context: Household 676 · Family 195 · Date Night 107 · Queue 47 · Solo 14
 - Retired rows kept in the CSV but hidden: 266
